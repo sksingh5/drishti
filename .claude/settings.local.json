@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:dicra.nabard.org)",
+      "WebSearch",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:www.undp.org)",
+      "WebFetch(domain:www.climatestackinnovationchallenge.com)",
+      "WebFetch(domain:digitalx.undp.org)",
+      "WebFetch(domain:yourstory.com)",
+      "WebFetch(domain:www.webnewswire.com)",
+      "WebFetch(domain:edunovations.com)",
+      "WebFetch(domain:vajiramandravi.com)",
+      "Bash(bash:*)",
+      "Bash(npx create-next-app@latest:*)",
+      "Bash(mkdir -p _temp_backup)",
+      "Bash(mv dicrav2/.env.example _temp_backup/)",
+      "Bash(mv dicrav2/.superpowers _temp_backup/)",
+      "Bash(mv dicrav2/CLAUDE.md _temp_backup/)",
+      "Bash(mv dicrav2/tasks _temp_backup/)",
+      "Bash(npx shadcn@latest:*)"
+    ]
+  }
+}
