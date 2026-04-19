@@ -1,0 +1,9 @@
+[project]
+name = "dicrav2-pipeline"
+version = "0.1.0"
+description = "Climate risk data pipeline for DiCRA v2"
+requires-python = ">=3.12"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
