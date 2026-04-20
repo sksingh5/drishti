@@ -128,3 +128,9 @@
     @apply font-sans;
   }
 }
+
+/* MapLibre GL JS */
+.maplibregl-map {
+  width: 100%;
+  height: 100%;
+}
