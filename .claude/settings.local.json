@@ -44,7 +44,9 @@
       "Bash(7z x:*)",
       "Bash(powershell.exe -Command \"Get-Command 7z* -ErrorAction SilentlyContinue | Select-Object Name,Source\")",
       "Bash(python3 -c \"import py7zr; print\\('py7zr available'\\)\")",
-      "Bash(python3 -m pip install py7zr -q)"
+      "Bash(python3 -m pip install py7zr -q)",
+      "Bash(mkdir -p /c/Users/Santosh/Claude_Access/dicrav2/app/api/states/\\\\[stateId\\\\]/districts)",
+      "Bash(mkdir -p /c/Users/Santosh/Claude_Access/dicrav2/app/api/districts/\\\\[districtId\\\\]/history)"
     ]
   }
 }

@@ -25,7 +25,7 @@ export function AlertsDashboard({ alerts: rawAlerts }: { alerts: any[] }) {
     <div className="mx-auto max-w-7xl px-4 py-6">
       <div className="mb-6 flex items-center justify-between">
         <h1 className="text-2xl font-bold text-neutral-900">Active Alerts</h1>
-        <Select value={severityFilter} onValueChange={setSeverityFilter}>
+        <Select value={severityFilter} onValueChange={(v) => setSeverityFilter(v ?? "all")}>
           <SelectTrigger className="w-[150px]"><SelectValue placeholder="Severity" /></SelectTrigger>
           <SelectContent>
             <SelectItem value="all">All</SelectItem>
@@ -55,7 +55,7 @@ export function AlertsDashboard({ alerts: rawAlerts }: { alerts: any[] }) {
                 <TableRow key={alert.id}>
                   <TableCell className="font-medium">{alert.district_name}</TableCell>
                   <TableCell>{alert.state_name}</TableCell>
-                  <TableCell>{INDICATOR_LABELS[alert.indicator_type] || alert.indicator_type}</TableCell>
+                  <TableCell>{INDICATOR_LABELS[alert.indicator_type as IndicatorType] || alert.indicator_type}</TableCell>
                   <TableCell>{alert.current_value}</TableCell>
                   <TableCell>{alert.threshold_value}</TableCell>
                   <TableCell><Badge variant={alert.severity === "critical" ? "destructive" : "outline"}>{alert.severity}</Badge></TableCell>

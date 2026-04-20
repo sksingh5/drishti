@@ -34,15 +34,15 @@ export default function ComparePage() {
     <div className="mx-auto max-w-7xl px-4 py-6">
       <h1 className="mb-6 text-2xl font-bold text-neutral-900">Compare Districts</h1>
       <div className="mb-6 flex flex-wrap gap-4">
-        <Select value={selectedState} onValueChange={setSelectedState}>
+        <Select value={selectedState} onValueChange={(v) => setSelectedState(v ?? "")}>
           <SelectTrigger className="w-[250px]"><SelectValue placeholder="Select state" /></SelectTrigger>
           <SelectContent>{states.map((s: any) => (<SelectItem key={s.id} value={String(s.id)}>{s.name}</SelectItem>))}</SelectContent>
         </Select>
-        <Select value={district1Id} onValueChange={setDistrict1Id}>
+        <Select value={district1Id} onValueChange={(v) => setDistrict1Id(v ?? "")}>
           <SelectTrigger className="w-[250px]"><SelectValue placeholder="District 1" /></SelectTrigger>
           <SelectContent>{districts.map(d => (<SelectItem key={d.id} value={String(d.id)}>{d.name}</SelectItem>))}</SelectContent>
         </Select>
-        <Select value={district2Id} onValueChange={setDistrict2Id}>
+        <Select value={district2Id} onValueChange={(v) => setDistrict2Id(v ?? "")}>
           <SelectTrigger className="w-[250px]"><SelectValue placeholder="District 2" /></SelectTrigger>
           <SelectContent>{districts.filter(d => String(d.id) !== district1Id).map(d => (<SelectItem key={d.id} value={String(d.id)}>{d.name}</SelectItem>))}</SelectContent>
         </Select>
