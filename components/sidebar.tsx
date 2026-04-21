@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 import { Home, ArrowLeftRight, Bell, SlidersHorizontal, BookOpen } from "lucide-react";
 
 const NAV_ITEMS = [
-  { href: "/", label: "Overview", icon: Home },
+  { href: "/dashboard", label: "Overview", icon: Home },
   { href: "/compare", label: "Compare", icon: ArrowLeftRight },
   { href: "/alerts", label: "Alerts", icon: Bell },
   { href: "/weights", label: "Weights", icon: SlidersHorizontal },
@@ -25,7 +25,9 @@ export function Sidebar() {
       </Link>
 
       {NAV_ITEMS.map(({ href, label, icon: Icon }) => {
-        const isActive = href === "/" ? pathname === "/" : pathname.startsWith(href);
+        const isActive = href === "/dashboard"
+          ? pathname === "/dashboard" || pathname.startsWith("/state") || pathname.startsWith("/district")
+          : pathname.startsWith(href);
         return (
           <Link key={href} href={href} title={label}
                 className={cn(
