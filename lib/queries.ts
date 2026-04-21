@@ -84,3 +84,44 @@ export async function getWeightPresets() {
   const { data } = await supabase.from("risk_score_defaults").select("name, description, weights").order("name");
   return data || [];
 }
+
+export async function getIndicatorStatus(): Promise<
+  { indicator_type: string; district_count: number; latest_period: string }[]
+> {
+  const supabase = await createClient();
+
+  // Fetch indicator data — paginate to handle large datasets
+  const allRows: { indicator_type: string; district_id: number; period_start: string }[] = [];
+  let offset = 0;
+  while (true) {
+    const { data } = await supabase
+      .from("climate_indicators")
+      .select("indicator_type, district_id, period_start")
+      .order("period_start", { ascending: false })
+      .range(offset, offset + 999);
+    if (!data || data.length === 0) break;
+    allRows.push(...(data as any[]));
+    if (data.length < 1000) break;
+    offset += 1000;
+  }
+
+  if (allRows.length === 0) return [];
+
+  // Group by indicator_type — count distinct districts, find latest period
+  const statusMap = new Map<string, { districts: Set<number>; latest: string }>();
+  for (const row of allRows) {
+    const key = row.indicator_type;
+    if (!statusMap.has(key)) {
+      statusMap.set(key, { districts: new Set(), latest: row.period_start });
+    }
+    const entry = statusMap.get(key)!;
+    entry.districts.add(row.district_id);
+    if (row.period_start > entry.latest) entry.latest = row.period_start;
+  }
+
+  return Array.from(statusMap.entries()).map(([type, info]) => ({
+    indicator_type: type,
+    district_count: info.districts.size,
+    latest_period: info.latest,
+  }));
+}
