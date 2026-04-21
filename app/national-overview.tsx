@@ -1,37 +1,153 @@
 "use client";
+
 import { useRouter } from "next/navigation";
+import { AlertTriangle, TrendingUp, Minus, Check } from "lucide-react";
 import { StateWithScore } from "@/lib/types";
 import { ChoroplethMap } from "@/components/map/choropleth-map";
 import { MapLegend } from "@/components/map/map-legend";
 import { StateRanking } from "@/components/state-ranking";
 import { useWeights } from "@/components/weight-provider";
 import { computeCompositeScore } from "@/lib/scoring-client";
+import { StatCard } from "@/components/stat-card";
+import { IndicatorCard } from "@/components/indicator-card";
+import { RiskDonut } from "@/components/risk-donut";
+import { MethodologyBanner } from "@/components/methodology-banner";
+import { SourceFooter } from "@/components/source-footer";
+import { classifyRisk } from "@/lib/indicators";
+import type { IndicatorType } from "@/lib/indicators";
+import type { RiskLevel } from "@/lib/indicators";
 
 export function NationalOverview({ states }: { states: StateWithScore[] }) {
   const router = useRouter();
   const { weights } = useWeights();
 
-  const mapFeatures = states.map(s => ({
+  const mapFeatures = states.map((s) => ({
     id: s.id,
     lgd_code: s.lgd_code,
     name: s.name,
     score: computeCompositeScore(s.indicator_scores, weights),
   }));
 
+  // Classify each state by risk level
+  const riskCounts: Record<RiskLevel, number> = { critical: 0, high: 0, moderate: 0, low: 0 };
+  for (const s of states) {
+    const score = computeCompositeScore(s.indicator_scores, weights);
+    if (score !== null) {
+      riskCounts[classifyRisk(score)]++;
+    }
+  }
+  const totalClassified = riskCounts.critical + riskCounts.high + riskCounts.moderate + riskCounts.low;
+
+  // Compute national average for key indicators
+  function avgIndicator(key: IndicatorType): number | null {
+    let sum = 0;
+    let count = 0;
+    for (const s of states) {
+      const val = s.indicator_scores[key];
+      if (val !== undefined && val !== null) {
+        sum += val;
+        count++;
+      }
+    }
+    return count > 0 ? Math.round(sum / count) : null;
+  }
+
   return (
-    <div className="mx-auto max-w-7xl px-4 py-6">
-      <h1 className="mb-4 text-2xl font-bold text-neutral-900">Climate Risk — National Overview</h1>
-      <div className="grid grid-cols-1 gap-6 lg:grid-cols-4">
-        <div className="lg:col-span-3">
-          <div className="relative h-[600px] overflow-hidden rounded-lg border bg-white">
-            <ChoroplethMap geojsonUrl="/geo/states.json" features={mapFeatures} onFeatureClick={f => router.push(`/state/${f.id}`)} fitBounds={[[68, 6], [98, 37]]} />
-            <div className="absolute bottom-4 left-4"><MapLegend /></div>
+    <div style={{ padding: "24px 28px" }}>
+      {/* Header row */}
+      <div className="flex items-end justify-between mb-6">
+        <div>
+          <h1
+            className="text-[26px] font-black tracking-[-0.5px] leading-none"
+            style={{ color: "var(--dicra-text-primary)" }}
+          >
+            National Overview
+          </h1>
+          <p className="text-[13px] mt-1.5" style={{ color: "var(--dicra-text-muted)" }}>
+            784 districts across 36 states &amp; UTs
+          </p>
+        </div>
+        <span
+          className="text-[10px] font-bold uppercase tracking-[0.8px] px-3 py-1.5 rounded-[var(--dicra-radius-sm)]"
+          style={{
+            background: "var(--dicra-surface-muted)",
+            color: "var(--dicra-text-secondary)",
+            border: "1px solid var(--dicra-border)",
+          }}
+        >
+          Latest Period
+        </span>
+      </div>
+
+      {/* Stat cards row */}
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 mb-6">
+        <StatCard
+          label="Critical Risk Districts"
+          value={riskCounts.critical}
+          accentColor="var(--dicra-risk-critical)"
+          iconBg="var(--dicra-risk-critical-bg)"
+          icon={<AlertTriangle size={16} style={{ color: "var(--dicra-risk-critical)" }} />}
+          total={totalClassified}
+        />
+        <StatCard
+          label="High Risk Districts"
+          value={riskCounts.high}
+          accentColor="var(--dicra-risk-high)"
+          iconBg="var(--dicra-risk-high-bg)"
+          icon={<TrendingUp size={16} style={{ color: "var(--dicra-risk-high)" }} />}
+          total={totalClassified}
+        />
+        <StatCard
+          label="Moderate Risk Districts"
+          value={riskCounts.moderate}
+          accentColor="var(--dicra-risk-moderate)"
+          iconBg="var(--dicra-risk-moderate-bg)"
+          icon={<Minus size={16} style={{ color: "var(--dicra-risk-moderate)" }} />}
+          total={totalClassified}
+        />
+        <StatCard
+          label="Low Risk Districts"
+          value={riskCounts.low}
+          accentColor="var(--dicra-risk-low)"
+          iconBg="var(--dicra-risk-low-bg)"
+          icon={<Check size={16} style={{ color: "var(--dicra-risk-low)" }} />}
+          total={totalClassified}
+        />
+      </div>
+
+      {/* Content grid: Map + Right panel */}
+      <div className="flex gap-4 mb-6" style={{ minHeight: 520 }}>
+        <div className="flex-1 relative overflow-hidden rounded-[var(--dicra-radius-lg)] border border-[var(--dicra-border)] bg-[var(--dicra-surface)]">
+          <ChoroplethMap
+            geojsonUrl="/geo/states.json"
+            features={mapFeatures}
+            onFeatureClick={(f) => router.push(`/state/${f.id}`)}
+            fitBounds={[[68, 6], [98, 37]]}
+          />
+          <div className="absolute bottom-4 left-4">
+            <MapLegend />
           </div>
         </div>
-        <div className="rounded-lg border bg-white p-4">
-          <StateRanking states={states} />
+        <div className="flex flex-col gap-3" style={{ width: 320, flexShrink: 0 }}>
+          <RiskDonut counts={riskCounts} total={totalClassified} />
+          <div className="flex-1 overflow-auto rounded-[var(--dicra-radius-lg)] border border-[var(--dicra-border)] bg-[var(--dicra-surface)] p-4">
+            <StateRanking states={states} />
+          </div>
         </div>
       </div>
+
+      {/* Indicator summary row */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-4">
+        <IndicatorCard indicatorType="rainfall_anomaly" score={avgIndicator("rainfall_anomaly")} showExplainer={false} />
+        <IndicatorCard indicatorType="heat_stress" score={avgIndicator("heat_stress")} showExplainer={false} />
+        <IndicatorCard indicatorType="vegetation_health" score={avgIndicator("vegetation_health")} showExplainer={false} />
+      </div>
+
+      {/* Methodology banner */}
+      <MethodologyBanner />
+
+      {/* Source footer */}
+      <SourceFooter />
     </div>
   );
 }
