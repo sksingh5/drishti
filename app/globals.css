@@ -4,12 +4,97 @@
 
 @custom-variant dark (&:is(.dark *));
 
+:root {
+  /* Identity */
+  --dicra-brand: #142B21;
+  --dicra-brand-mid: #1A3D2C;
+  --dicra-accent: #34D399;
+  --dicra-accent-subtle: rgba(52, 211, 153, 0.1);
+
+  /* Surfaces */
+  --dicra-bg: #F6F5F1;
+  --dicra-surface: #FFFFFF;
+  --dicra-surface-muted: #F9F8F5;
+  --dicra-border: #EDEAE4;
+  --dicra-border-subtle: #F0EDE7;
+
+  /* Text */
+  --dicra-text-primary: #111111;
+  --dicra-text-secondary: #3D3A34;
+  --dicra-text-muted: #8C877D;
+  --dicra-text-faint: #B5B0A6;
+
+  /* Risk levels */
+  --dicra-risk-critical: #DC2626;
+  --dicra-risk-high: #EA580C;
+  --dicra-risk-moderate: #D97706;
+  --dicra-risk-low: #16A34A;
+  --dicra-risk-critical-bg: #FEF2F2;
+  --dicra-risk-high-bg: #FFF7ED;
+  --dicra-risk-moderate-bg: #FFFBEB;
+  --dicra-risk-low-bg: #F0FDF4;
+
+  /* Indicator colors */
+  --dicra-ind-rainfall: #3B82F6;
+  --dicra-ind-heat: #EF4444;
+  --dicra-ind-drought: #F59E0B;
+  --dicra-ind-vegetation: #22C55E;
+  --dicra-ind-flood: #8B5CF6;
+  --dicra-ind-moisture: #06B6D4;
+
+  /* Radii */
+  --dicra-radius-sm: 6px;
+  --dicra-radius-md: 10px;
+  --dicra-radius-lg: 14px;
+  --dicra-radius-xl: 16px;
+
+  /* Shadows */
+  --dicra-shadow-card: 0 1px 2px rgba(0,0,0,0.04);
+  --dicra-shadow-dropdown: 0 4px 16px rgba(0,0,0,0.08);
+
+  /* Map shadcn tokens to DiCRA palette */
+  --background: var(--dicra-bg);
+  --foreground: var(--dicra-text-primary);
+  --card: var(--dicra-surface);
+  --card-foreground: var(--dicra-text-primary);
+  --popover: var(--dicra-surface);
+  --popover-foreground: var(--dicra-text-primary);
+  --primary: var(--dicra-brand);
+  --primary-foreground: #FFFFFF;
+  --secondary: var(--dicra-surface-muted);
+  --secondary-foreground: var(--dicra-text-secondary);
+  --muted: var(--dicra-surface-muted);
+  --muted-foreground: var(--dicra-text-muted);
+  --accent: var(--dicra-accent);
+  --accent-foreground: var(--dicra-brand);
+  --destructive: var(--dicra-risk-critical);
+  --border: var(--dicra-border);
+  --input: var(--dicra-border);
+  --ring: var(--dicra-accent);
+  --radius: 0.875rem;
+
+  --chart-1: var(--dicra-ind-rainfall);
+  --chart-2: var(--dicra-ind-heat);
+  --chart-3: var(--dicra-ind-drought);
+  --chart-4: var(--dicra-ind-vegetation);
+  --chart-5: var(--dicra-ind-flood);
+
+  --sidebar: var(--dicra-brand);
+  --sidebar-foreground: rgba(255,255,255,0.7);
+  --sidebar-primary: var(--dicra-accent);
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: var(--dicra-accent-subtle);
+  --sidebar-accent-foreground: var(--dicra-accent);
+  --sidebar-border: rgba(255,255,255,0.1);
+  --sidebar-ring: var(--dicra-accent);
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-sans);
-  --font-mono: var(--font-geist-mono);
-  --font-heading: var(--font-sans);
+  --font-sans: 'DM Sans', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-heading: 'DM Sans', system-ui, sans-serif;
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -46,41 +131,18 @@
   --radius-2xl: calc(var(--radius) * 1.8);
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
-}
-
-:root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
-  --radius: 0.625rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  --color-dicra-brand: var(--dicra-brand);
+  --color-dicra-brand-mid: var(--dicra-brand-mid);
+  --color-dicra-accent: var(--dicra-accent);
+  --color-dicra-bg: var(--dicra-bg);
+  --color-dicra-surface: var(--dicra-surface);
+  --color-dicra-surface-muted: var(--dicra-surface-muted);
+  --color-dicra-border: var(--dicra-border);
+  --color-dicra-border-subtle: var(--dicra-border-subtle);
+  --color-dicra-text-primary: var(--dicra-text-primary);
+  --color-dicra-text-secondary: var(--dicra-text-secondary);
+  --color-dicra-text-muted: var(--dicra-text-muted);
+  --color-dicra-text-faint: var(--dicra-text-faint);
 }
 
 .dark {
