@@ -1,8 +1,10 @@
 "use client";
 import { useState } from "react";
-import { Badge } from "@/components/ui/badge";
+import { AlertTriangle, Bell, TrendingUp } from "lucide-react";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import { StatCard } from "@/components/stat-card";
+import { SourceFooter } from "@/components/source-footer";
 import { INDICATOR_LABELS, IndicatorType } from "@/lib/types";
 
 export function AlertsDashboard({ alerts: rawAlerts }: { alerts: any[] }) {
@@ -19,12 +21,14 @@ export function AlertsDashboard({ alerts: rawAlerts }: { alerts: any[] }) {
     triggered_at: a.triggered_at,
   }));
 
+  const criticalCount = alerts.filter(a => a.severity === "critical").length;
+  const warningCount = alerts.filter(a => a.severity === "warning").length;
   const filtered = severityFilter === "all" ? alerts : alerts.filter((a: any) => a.severity === severityFilter);
 
   return (
-    <div className="mx-auto max-w-7xl px-4 py-6">
+    <div className="mx-auto max-w-7xl px-4 py-6" style={{ background: "var(--dicra-bg)" }}>
       <div className="mb-6 flex items-center justify-between">
-        <h1 className="text-2xl font-bold text-neutral-900">Active Alerts</h1>
+        <h1 className="text-2xl font-bold" style={{ color: "var(--dicra-text-primary)" }}>Active Alerts</h1>
         <Select value={severityFilter} onValueChange={(v) => setSeverityFilter(v ?? "all")}>
           <SelectTrigger className="w-[150px]"><SelectValue placeholder="Severity" /></SelectTrigger>
           <SelectContent>
@@ -34,38 +38,82 @@ export function AlertsDashboard({ alerts: rawAlerts }: { alerts: any[] }) {
           </SelectContent>
         </Select>
       </div>
+
+      {/* Stat cards */}
+      <div className="mb-6 grid grid-cols-1 gap-4 sm:grid-cols-3">
+        <StatCard
+          label="Total Active Alerts"
+          value={alerts.length}
+          accentColor="var(--dicra-brand)"
+          iconBg="var(--dicra-surface-muted)"
+          icon={<Bell size={16} style={{ color: "var(--dicra-brand)" }} />}
+        />
+        <StatCard
+          label="Critical Alerts"
+          value={criticalCount}
+          accentColor="var(--dicra-risk-critical)"
+          iconBg="var(--dicra-risk-critical-bg)"
+          icon={<AlertTriangle size={16} style={{ color: "var(--dicra-risk-critical)" }} />}
+          total={alerts.length}
+        />
+        <StatCard
+          label="Warning Alerts"
+          value={warningCount}
+          accentColor="var(--dicra-risk-high)"
+          iconBg="var(--dicra-risk-high-bg)"
+          icon={<TrendingUp size={16} style={{ color: "var(--dicra-risk-high)" }} />}
+          total={alerts.length}
+        />
+      </div>
+
       {filtered.length === 0 ? (
-        <p className="py-12 text-center text-neutral-400">No active alerts</p>
+        <p className="py-12 text-center" style={{ color: "var(--dicra-text-faint)" }}>No active alerts</p>
       ) : (
-        <div className="rounded-lg border bg-white">
+        <div className="rounded-[var(--dicra-radius-lg)] border border-[var(--dicra-border)] bg-[var(--dicra-surface)] overflow-hidden">
           <Table>
             <TableHeader>
-              <TableRow>
-                <TableHead>District</TableHead>
-                <TableHead>State</TableHead>
-                <TableHead>Indicator</TableHead>
-                <TableHead>Score</TableHead>
-                <TableHead>Threshold</TableHead>
-                <TableHead>Severity</TableHead>
-                <TableHead>Triggered</TableHead>
+              <TableRow style={{ background: "var(--dicra-surface-muted)" }}>
+                <TableHead style={{ color: "var(--dicra-text-secondary)" }}>District</TableHead>
+                <TableHead style={{ color: "var(--dicra-text-secondary)" }}>State</TableHead>
+                <TableHead style={{ color: "var(--dicra-text-secondary)" }}>Indicator</TableHead>
+                <TableHead style={{ color: "var(--dicra-text-secondary)" }}>Score</TableHead>
+                <TableHead style={{ color: "var(--dicra-text-secondary)" }}>Threshold</TableHead>
+                <TableHead style={{ color: "var(--dicra-text-secondary)" }}>Severity</TableHead>
+                <TableHead style={{ color: "var(--dicra-text-secondary)" }}>Triggered</TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
               {filtered.map((alert: any) => (
-                <TableRow key={alert.id}>
-                  <TableCell className="font-medium">{alert.district_name}</TableCell>
-                  <TableCell>{alert.state_name}</TableCell>
-                  <TableCell>{INDICATOR_LABELS[alert.indicator_type as IndicatorType] || alert.indicator_type}</TableCell>
-                  <TableCell>{alert.current_value}</TableCell>
-                  <TableCell>{alert.threshold_value}</TableCell>
-                  <TableCell><Badge variant={alert.severity === "critical" ? "destructive" : "outline"}>{alert.severity}</Badge></TableCell>
-                  <TableCell className="text-neutral-500">{new Date(alert.triggered_at).toLocaleDateString()}</TableCell>
+                <TableRow
+                  key={alert.id}
+                  className="relative"
+                  style={{ borderLeft: `3px solid ${alert.severity === "critical" ? "var(--dicra-risk-critical)" : "var(--dicra-risk-high)"}` }}
+                >
+                  <TableCell className="font-medium" style={{ color: "var(--dicra-text-primary)" }}>{alert.district_name}</TableCell>
+                  <TableCell style={{ color: "var(--dicra-text-secondary)" }}>{alert.state_name}</TableCell>
+                  <TableCell style={{ color: "var(--dicra-text-secondary)" }}>{INDICATOR_LABELS[alert.indicator_type as IndicatorType] || alert.indicator_type}</TableCell>
+                  <TableCell style={{ color: "var(--dicra-text-primary)" }}>{alert.current_value}</TableCell>
+                  <TableCell style={{ color: "var(--dicra-text-muted)" }}>{alert.threshold_value}</TableCell>
+                  <TableCell>
+                    <span
+                      className="text-[10px] font-bold uppercase tracking-wide px-2 py-1 rounded-[5px]"
+                      style={{
+                        background: alert.severity === "critical" ? "var(--dicra-risk-critical-bg)" : "var(--dicra-risk-high-bg)",
+                        color: alert.severity === "critical" ? "var(--dicra-risk-critical)" : "var(--dicra-risk-high)",
+                      }}
+                    >
+                      {alert.severity}
+                    </span>
+                  </TableCell>
+                  <TableCell style={{ color: "var(--dicra-text-muted)" }}>{new Date(alert.triggered_at).toLocaleDateString()}</TableCell>
                 </TableRow>
               ))}
             </TableBody>
           </Table>
         </div>
       )}
+
+      <SourceFooter />
     </div>
   );
 }
