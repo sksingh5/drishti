@@ -3,7 +3,7 @@
 import { useRef, useEffect, useState } from "react";
 import maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
-import { classifyRisk, RISK_COLORS } from "@/lib/types";
+import { classifyRisk, RISK_HEX_COLORS } from "@/lib/indicators";
 
 interface Feature {
   id: number;
@@ -23,7 +23,7 @@ interface ChoroplethMapProps {
 
 function scoreToColor(score: number | null): string {
   if (score === null) return "#e5e5e5";
-  return RISK_COLORS[classifyRisk(score)];
+  return RISK_HEX_COLORS[classifyRisk(score)];
 }
 
 export function ChoroplethMap({ geojsonUrl, features, onFeatureClick, center = [82, 22], zoom = 4, fitBounds }: ChoroplethMapProps) {

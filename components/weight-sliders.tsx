@@ -1,6 +1,6 @@
 "use client";
 import { Slider } from "@/components/ui/slider";
-import { IndicatorType, INDICATOR_LABELS } from "@/lib/types";
+import { IndicatorType, INDICATORS } from "@/lib/indicators";
 import { useWeights } from "@/components/weight-provider";
 
 const ALL_INDICATORS: IndicatorType[] = ["rainfall_anomaly", "drought_index", "vegetation_health", "heat_stress", "flood_risk", "soil_moisture"];
@@ -14,7 +14,7 @@ export function WeightSliders() {
         return (
           <div key={type}>
             <div className="mb-2 flex items-center justify-between">
-              <label className="text-sm font-medium text-neutral-700">{INDICATOR_LABELS[type]}</label>
+              <label className="text-sm font-medium text-neutral-700">{INDICATORS[type].label}</label>
               <span className="text-sm font-bold text-neutral-900">{pct}%</span>
             </div>
             <Slider value={[pct]} min={0} max={60} step={1} onValueChange={(val) => { const v = Array.isArray(val) ? val[0] : val; setWeight(type, v / 100); }} />

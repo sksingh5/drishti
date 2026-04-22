@@ -7,7 +7,8 @@ import { IndicatorCard } from "@/components/indicator-card";
 import { SourceFooter } from "@/components/source-footer";
 import { useWeights } from "@/components/weight-provider";
 import { computeCompositeScore } from "@/lib/scoring-client";
-import { IndicatorType, DistrictWithScore } from "@/lib/types";
+import { DistrictWithScore } from "@/lib/types";
+import { IndicatorType } from "@/lib/indicators";
 
 const ALL_INDICATORS: IndicatorType[] = ["rainfall_anomaly", "drought_index", "vegetation_health", "heat_stress", "flood_risk", "soil_moisture"];
 

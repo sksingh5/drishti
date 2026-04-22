@@ -4,8 +4,8 @@ import { Button } from "@/components/ui/button";
 import { Slider } from "@/components/ui/slider";
 import { SourceFooter } from "@/components/source-footer";
 import { useWeights } from "@/components/weight-provider";
-import { WeightProfile, IndicatorType, INDICATOR_LABELS } from "@/lib/types";
-import { INDICATORS } from "@/lib/indicators";
+import { WeightProfile } from "@/lib/types";
+import { IndicatorType, INDICATORS } from "@/lib/indicators";
 
 const ALL_INDICATORS: IndicatorType[] = ["rainfall_anomaly", "drought_index", "vegetation_health", "heat_stress", "flood_risk", "soil_moisture"];
 
@@ -29,7 +29,7 @@ export default function WeightsPage() {
               return (
                 <div key={type}>
                   <div className="mb-2 flex items-center justify-between">
-                    <label className="text-sm font-medium" style={{ color: "var(--dicra-text-secondary)" }}>{INDICATOR_LABELS[type]}</label>
+                    <label className="text-sm font-medium" style={{ color: "var(--dicra-text-secondary)" }}>{INDICATORS[type].label}</label>
                     <span className="text-sm font-bold" style={{ color: "var(--dicra-text-primary)" }}>{pct}%</span>
                   </div>
                   <Slider value={[pct]} min={0} max={60} step={1} onValueChange={(val) => { const v = Array.isArray(val) ? val[0] : val; setWeight(type, v / 100); }} />

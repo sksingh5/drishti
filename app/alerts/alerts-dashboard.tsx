@@ -5,7 +5,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { StatCard } from "@/components/stat-card";
 import { SourceFooter } from "@/components/source-footer";
-import { INDICATOR_LABELS, IndicatorType } from "@/lib/types";
+import { INDICATORS, IndicatorType } from "@/lib/indicators";
 
 export function AlertsDashboard({ alerts: rawAlerts }: { alerts: any[] }) {
   const [severityFilter, setSeverityFilter] = useState<string>("all");
@@ -91,7 +91,7 @@ export function AlertsDashboard({ alerts: rawAlerts }: { alerts: any[] }) {
                 >
                   <TableCell className="font-medium" style={{ color: "var(--dicra-text-primary)" }}>{alert.district_name}</TableCell>
                   <TableCell style={{ color: "var(--dicra-text-secondary)" }}>{alert.state_name}</TableCell>
-                  <TableCell style={{ color: "var(--dicra-text-secondary)" }}>{INDICATOR_LABELS[alert.indicator_type as IndicatorType] || alert.indicator_type}</TableCell>
+                  <TableCell style={{ color: "var(--dicra-text-secondary)" }}>{INDICATORS[alert.indicator_type as IndicatorType]?.label ?? alert.indicator_type}</TableCell>
                   <TableCell style={{ color: "var(--dicra-text-primary)" }}>{alert.current_value}</TableCell>
                   <TableCell style={{ color: "var(--dicra-text-muted)" }}>{alert.threshold_value}</TableCell>
                   <TableCell>

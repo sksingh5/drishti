@@ -124,6 +124,13 @@ export const RISK_BG_COLORS: Record<RiskLevel, string> = {
   low: "var(--dicra-risk-low-bg)",
 };
 
+export const RISK_HEX_COLORS: Record<RiskLevel, string> = {
+  critical: "#DC2626",
+  high: "#EA580C",
+  moderate: "#D97706",
+  low: "#16A34A",
+};
+
 export const RISK_LABELS: Record<RiskLevel, string> = {
   critical: "CRITICAL",
   high: "HIGH",

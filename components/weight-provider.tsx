@@ -1,7 +1,8 @@
 "use client";
 
 import { createContext, useContext, useState, useEffect, ReactNode } from "react";
-import { IndicatorType, DEFAULT_WEIGHTS } from "@/lib/types";
+import { IndicatorType } from "@/lib/indicators";
+import { DEFAULT_WEIGHTS } from "@/lib/weights";
 import { loadWeights, saveWeights, rebalanceWeights } from "@/lib/weights";
 
 interface WeightContextValue {

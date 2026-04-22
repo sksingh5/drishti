@@ -1,6 +1,6 @@
 "use client";
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
-import { IndicatorType, INDICATOR_LABELS, INDICATOR_COLORS } from "@/lib/types";
+import { IndicatorType, INDICATORS } from "@/lib/indicators";
 
 interface TrendChartProps { data: { period_start: string; indicator_type: string; score: number }[]; indicators?: IndicatorType[]; }
 
@@ -21,7 +21,7 @@ export function TrendChart({ data, indicators }: TrendChartProps) {
         <YAxis domain={[0, 100]} tick={{ fontSize: 12 }} />
         <Tooltip />
         {types.map(type => (
-          <Line key={type} type="monotone" dataKey={type} name={INDICATOR_LABELS[type]} stroke={INDICATOR_COLORS[type]} strokeWidth={2} dot={false} />
+          <Line key={type} type="monotone" dataKey={type} name={INDICATORS[type].label} stroke={INDICATORS[type].color} strokeWidth={2} dot={false} />
         ))}
       </LineChart>
     </ResponsiveContainer>

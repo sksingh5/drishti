@@ -1,4 +1,4 @@
-import { IndicatorType } from "./types";
+import { IndicatorType } from "./indicators";
 
 export function computeCompositeScore(
   indicatorScores: Partial<Record<IndicatorType, number>>,
