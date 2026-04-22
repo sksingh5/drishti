@@ -36,6 +36,7 @@ export function ChoroplethMap({ geojsonUrl, features, onFeatureClick, center = [
 
   useEffect(() => {
     if (!mapContainer.current || map.current) return;
+    const indiaBounds: [[number, number], [number, number]] = [[67, 5], [98, 38]];
     map.current = new maplibregl.Map({
       container: mapContainer.current,
       style: {
@@ -47,6 +48,9 @@ export function ChoroplethMap({ geojsonUrl, features, onFeatureClick, center = [
       },
       center,
       zoom,
+      maxBounds: indiaBounds,
+      minZoom: 3.5,
+      maxZoom: 10,
     });
     map.current.on("load", () => {
       setLoaded(true);
