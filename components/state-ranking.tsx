@@ -38,13 +38,9 @@ export function StateRanking({ states, limit = 10 }: StateRankingProps) {
         >
           Most At-Risk
         </h3>
-        <Link
-          href="/rankings"
-          className="text-[11px] font-semibold no-underline"
-          style={{ color: "var(--dicra-brand)" }}
-        >
-          All &rarr;
-        </Link>
+        <span className="text-[11px] font-semibold" style={{ color: "var(--dicra-text-muted)" }}>
+          Top {limit}
+        </span>
       </div>
 
       {ranked.length === 0 ? (

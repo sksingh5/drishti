@@ -79,12 +79,11 @@ export function DistrictScorecard({ detail, history }: { detail: { district: any
         </div>
 
         {/* Right: 2x2 Metadata Grid */}
-        <div className="grid grid-cols-2 gap-3">
+        <div className="grid grid-cols-3 gap-3">
           {[
             { label: "LGD Code", value: district.lgd_code ?? "—" },
             { label: "Area", value: district.area_sq_km ? `${district.area_sq_km.toLocaleString()} km²` : "—" },
             { label: "Period", value: periodLabel },
-            { label: "Rank", value: district.rank ?? "—" },
           ].map((item) => (
             <div key={item.label}
                  className="rounded-[var(--dicra-radius-lg)] border border-[var(--dicra-border)] p-4 flex flex-col justify-center"
