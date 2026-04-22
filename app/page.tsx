@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { createClient } from "@/lib/supabase/server";
 import { INDICATOR_LIST } from "@/lib/indicators";
 import { SOURCE_LIST, RELIABILITY_STYLES } from "@/lib/sources";
 import { getIndicatorStatus } from "@/lib/queries";
@@ -14,6 +15,9 @@ import {
 } from "lucide-react";
 
 export default async function LandingPage() {
+  const supabase = await createClient();
+  const { count: districtCount } = await supabase.from("districts").select("id", { count: "exact", head: true });
+  const { count: stateCount } = await supabase.from("states").select("id", { count: "exact", head: true });
   const indicatorStatus = await getIndicatorStatus();
 
   return (
@@ -85,7 +89,7 @@ export default async function LandingPage() {
             className="mt-4 text-lg max-w-2xl mx-auto"
             style={{ color: "var(--dicra-text-secondary)" }}
           >
-            Transparent, peer-reviewed indicators across 784 districts — built
+            Transparent, peer-reviewed indicators across {districtCount ?? 784} districts — built
             for policy makers, disaster management authorities, and climate
             researchers.
           </p>
@@ -115,8 +119,8 @@ export default async function LandingPage() {
           {/* Credibility strip */}
           <div className="mt-12 flex items-center justify-center gap-8 flex-wrap">
             {[
-              { icon: BarChart3, label: "6 Indicators" },
-              { icon: MapPin, label: "784 Districts" },
+              { icon: BarChart3, label: `${INDICATOR_LIST.length} Indicators` },
+              { icon: MapPin, label: `${districtCount ?? 784} Districts` },
               { icon: Shield, label: "Peer-Reviewed" },
             ].map(({ icon: Icon, label }) => (
               <div

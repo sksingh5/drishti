@@ -64,7 +64,7 @@ export function NationalOverview({ states }: { states: StateWithScore[] }) {
             National Overview
           </h1>
           <p className="text-[13px] mt-1.5" style={{ color: "var(--dicra-text-muted)" }}>
-            784 districts across 36 states &amp; UTs
+            {totalClassified} districts across {states.length} states &amp; UTs
           </p>
         </div>
         <span
