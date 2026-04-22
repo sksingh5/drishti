@@ -31,8 +31,8 @@ export const INDICATORS: Record<IndicatorType, IndicatorMeta> = {
     resolution: "0.25°",
     frequency: "Monthly",
     reliability: "high",
-    explainer: "Measures how current monthly rainfall deviates from the year's overall monthly average across all districts. Higher score indicates greater anomaly — both excess and deficit increase risk. Note: this is a single-year relative measure, not a 30-year climatological baseline.",
-    methodology: "IMD 0.25° gridded daily rainfall aggregated to monthly district-level totals via zonal statistics. Anomaly computed as |current_month - year_mean| / year_mean, then percentile-ranked across all districts. Both excess and deficit are treated as risk signals.",
+    explainer: "Measures how current monthly rainfall deviates from the 5-year climatological mean (2019-2023) for each district. Higher score indicates greater anomaly — both excess and deficit increase risk. WMO recommends 30-year normals; our 5-year baseline is an interim measure.",
+    methodology: "IMD 0.25° gridded daily rainfall aggregated to monthly district-level totals via zonal statistics. Per-district monthly baseline computed from 2019-2023 means. Anomaly = |current - baseline_mean| / baseline_mean, percentile-ranked across all districts.",
   },
   heat_stress: {
     key: "heat_stress",

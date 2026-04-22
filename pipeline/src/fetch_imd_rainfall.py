@@ -136,21 +136,43 @@ def run(year: int, month: int) -> int:
     print(f"[IMD Rainfall] Computing zonal statistics for {len(districts)} districts...")
     district_rainfall = aggregate_raster_to_districts(month_da, districts, "district_id")
 
-    # Use all district values as the distribution for relative scoring (MVP baseline)
-    historical_all_months = monthly_totals.mean(axis=(1, 2))
+    # Load climatological baseline (2019-2023 per-district monthly means)
+    from src.compute_baseline import load_baseline
+    baseline = load_baseline()
 
-    print(f"[IMD Rainfall] Scoring...")
+    print(f"[IMD Rainfall] Scoring against {len(baseline)}-district climatological baseline...")
     rows = []
     period_start = date(year, month, 1)
     period_end = date(year, month, calendar.monthrange(year, month)[1])
 
+    # Collect all deviations for percentile scoring
+    deviations = []
+    district_data = []
     for _, row in district_rainfall.iterrows():
         rainfall_value = row["mean"]
+        d_id = str(int(row["district_id"]))
         if rainfall_value is None or np.isnan(rainfall_value):
+            district_data.append((int(row["district_id"]), 0.0, None))
+            continue
+
+        # Get baseline mean for this district and month
+        bl = baseline.get(d_id, {}).get(str(month))
+        if bl and bl["mean"] > 0:
+            deviation = abs(rainfall_value - bl["mean"]) / bl["mean"]
+        else:
+            deviation = 0.0
+
+        deviations.append(deviation)
+        district_data.append((int(row["district_id"]), float(rainfall_value), deviation))
+
+    all_deviations = np.array(deviations) if deviations else np.array([0.0])
+
+    for district_id, rainfall_value, deviation in district_data:
+        if deviation is None:
             score = 50
             rainfall_value = 0.0
         else:
-            score = compute_rainfall_anomaly_score(rainfall_value, historical_all_months)
+            score = percentile_score(deviation, all_deviations)
 
         rows.append(IndicatorRow(
             district_id=int(row["district_id"]),

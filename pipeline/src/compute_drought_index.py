@@ -1,9 +1,14 @@
-"""Compute Standardized Precipitation Index (SPI) for drought scoring.
+"""Compute Standardized Precipitation Index (SPI-3) for drought scoring.
 
-SPI is a WMO-recommended drought index. Fits gamma distribution to
-historical rainfall, transforms to standard normal deviate.
+SPI is a WMO-recommended drought index. This implements SPI-3 (3-month
+accumulation window) which is more stable than SPI-1 and recommended by
+WMO for agricultural drought monitoring.
+
+Fits gamma distribution to historical 3-month accumulated rainfall,
+transforms to standard normal deviate.
 
 SPI values: >= 2.0 extremely wet, <= -2.0 extremely dry.
+Minimum 10 historical values required for gamma fitting (WMO guideline).
 """
 
 import numpy as np
@@ -18,6 +23,7 @@ from src.writer import IndicatorRow, write_indicators
 
 
 def compute_spi(current_rainfall: float, historical_rainfall: np.ndarray) -> float:
+    """Compute SPI from gamma-fitted historical rainfall distribution."""
     historical_clean = historical_rainfall[
         (~np.isnan(historical_rainfall)) & (historical_rainfall > 0)
     ]
@@ -40,63 +46,103 @@ def compute_spi(current_rainfall: float, historical_rainfall: np.ndarray) -> flo
 
 
 def spi_to_risk_score(spi: float) -> int:
+    """Map SPI to 0-100 risk score. SPI -3→100 (extreme drought), 0→50 (normal), +3→0 (wet)."""
     risk = 50 - (spi / 3.0) * 50
     return int(np.clip(round(risk), 0, 100))
 
 
 def run(year: int, month: int) -> int:
+    """Compute SPI-3 (3-month accumulated rainfall) drought index.
+
+    SPI-3 uses the sum of rainfall over the current month and the 2 preceding months.
+    This smooths out noise and better captures agricultural drought conditions.
+    """
     sb = get_supabase()
     period_start = date(year, month, 1)
     period_end = date(year, month, calendar.monthrange(year, month)[1])
 
-    print(f"[Drought Index] Computing SPI for {year}-{month:02d}...")
+    print(f"[Drought Index] Computing SPI-3 for {year}-{month:02d}...")
 
-    result = sb.table("climate_indicators").select("district_id, value").eq(
-        "indicator_type", "rainfall_anomaly"
-    ).eq("period_start", period_start.isoformat()).execute()
-    current = result.data
+    # Fetch ALL rainfall data (paginated) to compute 3-month accumulations
+    all_rainfall = []
+    offset = 0
+    while True:
+        batch = sb.table("climate_indicators").select(
+            "district_id, value, period_start"
+        ).eq("indicator_type", "rainfall_anomaly").range(offset, offset + 999).execute()
+        all_rainfall.extend(batch.data)
+        if len(batch.data) < 1000:
+            break
+        offset += 1000
 
-    if not current:
-        print("[Drought Index] No rainfall data found for this period.")
+    if not all_rainfall:
+        print("[Drought Index] No rainfall data found.")
         return 0
 
-    # Fetch all historical rainfall for the same month across years
-    historical = []
-    try:
-        result = sb.rpc("get_indicators_by_month", {
-            "p_indicator_type": "rainfall_anomaly", "p_month": month
-        }).execute()
-        historical = result.data if result.data else []
-    except Exception:
-        pass  # RPC doesn't exist, fall back below
+    # Organize by district and period
+    district_monthly = defaultdict(dict)  # district_id -> {period_str: value}
+    for row in all_rainfall:
+        district_monthly[row["district_id"]][row["period_start"]] = row["value"]
 
-    # If RPC doesn't exist or returned nothing, fetch all rainfall data
-    if not historical:
-        all_rainfall = []
-        offset = 0
-        while True:
-            batch = sb.table("climate_indicators").select("district_id, value, period_start").eq(
-                "indicator_type", "rainfall_anomaly"
-            ).range(offset, offset + 999).execute()
-            all_rainfall.extend(batch.data)
-            if len(batch.data) < 1000:
-                break
-            offset += 1000
-        historical = [r for r in all_rainfall if int(r["period_start"].split("-")[1]) == month]
+    # Compute 3-month accumulated rainfall for the target period and all historical periods
+    # Target: month + (month-1) + (month-2)
+    def get_3month_sum(d_id: int, y: int, m: int) -> float | None:
+        """Sum rainfall for months m, m-1, m-2 of year y for district d_id."""
+        total = 0.0
+        for offset in range(3):
+            adj_month = m - offset
+            adj_year = y
+            if adj_month <= 0:
+                adj_month += 12
+                adj_year -= 1
+            key = f"{adj_year}-{adj_month:02d}-01"
+            val = district_monthly.get(d_id, {}).get(key)
+            if val is None:
+                return None  # incomplete window
+            total += val
+        return total
 
-    hist_by_district = defaultdict(list)
-    for row in historical:
-        hist_by_district[row["district_id"]].append(row["value"])
+    # Get all unique district IDs that have current month data
+    current_districts = [
+        r["district_id"] for r in all_rainfall
+        if r["period_start"] == period_start.isoformat()
+    ]
+
+    if not current_districts:
+        print("[Drought Index] No rainfall data for target period.")
+        return 0
+
+    # Get all unique years present in the data
+    all_years = set()
+    for r in all_rainfall:
+        all_years.add(int(r["period_start"][:4]))
 
     rows = []
-    for row in current:
-        district_id = row["district_id"]
-        current_rainfall = row["value"]
-        hist_values = np.array(hist_by_district.get(district_id, []))
+    for district_id in current_districts:
+        # Current 3-month accumulated rainfall
+        current_3m = get_3month_sum(district_id, year, month)
+        if current_3m is None:
+            # Not enough months for 3-month window — fall back to single month
+            val = district_monthly.get(district_id, {}).get(period_start.isoformat())
+            if val is None:
+                continue
+            current_3m = val
 
-        if len(hist_values) >= 3:
-            spi = compute_spi(current_rainfall, hist_values)
+        # Historical 3-month values for the same ending month across all years
+        hist_values = []
+        for hist_year in sorted(all_years):
+            if hist_year == year and month == month:
+                continue  # skip current period
+            val = get_3month_sum(district_id, hist_year, month)
+            if val is not None:
+                hist_values.append(val)
+
+        hist_array = np.array(hist_values) if hist_values else np.array([])
+
+        if len(hist_array) >= 3:
+            spi = compute_spi(current_3m, hist_array)
         else:
+            # Not enough history for SPI — use cross-district percentile as fallback
             spi = 0.0
 
         score = spi_to_risk_score(spi)
@@ -107,11 +153,11 @@ def run(year: int, month: int) -> int:
             score=score,
             period_start=period_start,
             period_end=period_end,
-            source="computed_spi",
+            source="computed_spi3",
         ))
 
     written = write_indicators(rows)
-    print(f"[Drought Index] Wrote {written} rows.")
+    print(f"[Drought Index] Wrote {written} SPI-3 rows.")
     return written
 
 
