@@ -6,12 +6,22 @@ export async function getStatesWithLatestScores() {
   if (!states) return [];
 
   // Get latest indicators per district, aggregate to state level
-  const { data: scores } = await supabase.from("climate_indicators")
-    .select("district_id, indicator_type, score, districts!inner(state_id)")
-    .order("period_start", { ascending: false });
+  // Paginate to avoid Supabase's default 1000-row limit
+  const scores: any[] = [];
+  let offset = 0;
+  while (true) {
+    const { data: batch } = await supabase.from("climate_indicators")
+      .select("district_id, indicator_type, score, districts!inner(state_id)")
+      .order("period_start", { ascending: false })
+      .range(offset, offset + 999);
+    if (!batch || batch.length === 0) break;
+    scores.push(...batch);
+    if (batch.length < 1000) break;
+    offset += 1000;
+  }
 
   const stateScores = new Map<number, Map<string, number[]>>();
-  if (scores) {
+  if (scores.length > 0) {
     for (const row of scores as any[]) {
       const stateId = row.districts?.state_id;
       if (!stateId) continue;
@@ -40,10 +50,23 @@ export async function getDistrictsForState(stateId: number) {
   if (!districts) return [];
 
   const districtIds = districts.map((d: any) => d.id);
-  const { data: scores } = await supabase.from("climate_indicators").select("district_id, indicator_type, score").in("district_id", districtIds).order("period_start", { ascending: false });
+  // Paginate to avoid Supabase's default 1000-row limit
+  const scores: any[] = [];
+  let offset = 0;
+  while (true) {
+    const { data: batch } = await supabase.from("climate_indicators")
+      .select("district_id, indicator_type, score")
+      .in("district_id", districtIds)
+      .order("period_start", { ascending: false })
+      .range(offset, offset + 999);
+    if (!batch || batch.length === 0) break;
+    scores.push(...batch);
+    if (batch.length < 1000) break;
+    offset += 1000;
+  }
 
   const scoreMap = new Map<number, Record<string, number>>();
-  if (scores) {
+  if (scores.length > 0) {
     for (const row of scores as any[]) {
       if (!scoreMap.has(row.district_id)) scoreMap.set(row.district_id, {});
       const existing = scoreMap.get(row.district_id)!;
