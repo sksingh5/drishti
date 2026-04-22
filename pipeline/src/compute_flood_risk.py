@@ -6,9 +6,7 @@ Flood risk = 40% rainfall score + 40% soil moisture saturation + 20% elevation.
 import numpy as np
 from datetime import date
 import calendar
-from sqlalchemy import text
-
-from src.db import get_engine
+from src.db import get_supabase, get_districts_list
 from src.writer import IndicatorRow, write_indicators
 
 WEIGHT_RAINFALL = 0.4
@@ -17,35 +15,28 @@ WEIGHT_ELEVATION = 0.2
 
 
 def run(year: int, month: int) -> int:
-    engine = get_engine()
+    sb = get_supabase()
     period_start = date(year, month, 1)
     period_end = date(year, month, calendar.monthrange(year, month)[1])
 
     print(f"[Flood Risk] Computing for {year}-{month:02d}...")
 
-    with engine.connect() as conn:
-        rainfall_rows = conn.execute(
-            text("""SELECT district_id, score FROM climate_indicators
-                    WHERE indicator_type = 'rainfall_anomaly' AND period_start = :ps"""),
-            {"ps": period_start.isoformat()},
-        ).fetchall()
+    rainfall_result = sb.table("climate_indicators").select("district_id, score").eq(
+        "indicator_type", "rainfall_anomaly"
+    ).eq("period_start", period_start.isoformat()).execute()
 
-    with engine.connect() as conn:
-        sm_rows = conn.execute(
-            text("""SELECT district_id, score FROM climate_indicators
-                    WHERE indicator_type = 'soil_moisture' AND period_start = :ps"""),
-            {"ps": period_start.isoformat()},
-        ).fetchall()
+    sm_result = sb.table("climate_indicators").select("district_id, score").eq(
+        "indicator_type", "soil_moisture"
+    ).eq("period_start", period_start.isoformat()).execute()
 
-    rainfall_scores = {r.district_id: r.score for r in rainfall_rows}
-    sm_scores = {r.district_id: r.score for r in sm_rows}
+    rainfall_scores = {r["district_id"]: r["score"] for r in rainfall_result.data}
+    sm_scores = {r["district_id"]: r["score"] for r in sm_result.data}
 
-    with engine.connect() as conn:
-        all_districts = conn.execute(text("SELECT id FROM districts")).fetchall()
+    all_districts = get_districts_list()
 
     rows = []
     for d in all_districts:
-        district_id = d.id
+        district_id = d["id"]
         rain_score = rainfall_scores.get(district_id, 50)
         soil_score = sm_scores.get(district_id, 50)
         soil_flood_score = 100 - soil_score  # high moisture = high flood risk

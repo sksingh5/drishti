@@ -11,12 +11,11 @@ import xarray as xr
 import geopandas as gpd
 from datetime import date
 from pathlib import Path
-from sqlalchemy import text
 import calendar
 
 import imdlib as imd
 
-from src.db import get_engine
+from src.db import get_district_polygons
 from src.scoring import percentile_score, METHODOLOGY_VERSION
 from src.zonal import aggregate_raster_to_districts
 from src.writer import IndicatorRow, write_indicators, update_data_source_status
@@ -34,7 +33,7 @@ def fetch_rainfall(year: int) -> xr.Dataset:
         return xr.open_dataset(cache_file)
 
     data = imd.get_data("rain", year, year, fn_format="yearwise")
-    ds = data.to_xarray()
+    ds = data.get_xarray()
     ds.to_netcdf(cache_file)
     return ds
 
@@ -91,14 +90,9 @@ def compute_rainfall_anomaly_score(
     return percentile_score(current_deviation, historical_deviations)
 
 
-def get_district_polygons() -> gpd.GeoDataFrame:
-    """Load district polygons from the database."""
-    engine = get_engine()
-    return gpd.read_postgis(
-        "SELECT id as district_id, lgd_code, name, geometry FROM districts",
-        engine,
-        geom_col="geometry",
-    )
+def load_district_polygons() -> gpd.GeoDataFrame:
+    """Load district polygons from local GeoJSON joined with DB IDs."""
+    return get_district_polygons()
 
 
 def run(year: int, month: int) -> int:
@@ -137,7 +131,7 @@ def run(year: int, month: int) -> int:
     )
 
     print(f"[IMD Rainfall] Loading district polygons...")
-    districts = get_district_polygons()
+    districts = load_district_polygons()
 
     print(f"[IMD Rainfall] Computing zonal statistics for {len(districts)} districts...")
     district_rainfall = aggregate_raster_to_districts(month_da, districts, "district_id")

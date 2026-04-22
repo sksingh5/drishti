@@ -13,7 +13,7 @@ import calendar
 
 import imdlib as imd
 
-from src.db import get_engine
+from src.db import get_district_polygons
 from src.scoring import percentile_score
 from src.zonal import aggregate_raster_to_districts
 from src.writer import IndicatorRow, write_indicators, update_data_source_status
@@ -28,7 +28,7 @@ def fetch_temperature(year: int) -> xr.Dataset:
     if cache_file.exists():
         return xr.open_dataset(cache_file)
     data = imd.get_data("tmax", year, year, fn_format="yearwise")
-    ds = data.to_xarray()
+    ds = data.get_xarray()
     ds.to_netcdf(cache_file)
     return ds
 
@@ -64,10 +64,7 @@ def run(year: int, month: int) -> int:
     )
 
     print(f"[IMD Temperature] Loading district polygons...")
-    engine = get_engine()
-    districts = gpd.read_postgis(
-        "SELECT id as district_id, geometry FROM districts", engine, geom_col="geometry",
-    )
+    districts = get_district_polygons()
 
     print(f"[IMD Temperature] Computing zonal statistics...")
     district_temp = aggregate_raster_to_districts(heat_da, districts, "district_id")

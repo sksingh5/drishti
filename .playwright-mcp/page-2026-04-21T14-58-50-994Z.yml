@@ -1,0 +1,305 @@
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - link "Back to home page" [ref=e8] [cursor=pointer]:
+      - /url: /
+      - 'img "Dribbble: the community for graphic design" [ref=e9]'
+    - generic [ref=e12]:
+      - combobox "Submit" [ref=e14]:
+        - search [ref=e15]:
+          - searchbox "Submit" [ref=e17]
+      - generic "Change search type" [ref=e18]:
+        - generic:
+          - generic:
+            - button "Shots" [ref=e19] [cursor=pointer]:
+              - generic [ref=e20]: Shots
+            - generic:
+              - generic:
+                - generic:
+                  - generic: Shots
+                  - generic: Designers
+                  - generic: Services
+      - button "Search" [ref=e21] [cursor=pointer]:
+        - img [ref=e22]
+    - navigation [ref=e283]:
+      - list [ref=e285]:
+        - listitem [ref=e286]:
+          - link "Explore" [ref=e287] [cursor=pointer]:
+            - /url: /shots/popular
+        - listitem [ref=e288]:
+          - link "Hire Talent" [ref=e289] [cursor=pointer]:
+            - /url: /designers
+        - listitem [ref=e290]:
+          - link "Get Hired" [ref=e291] [cursor=pointer]:
+            - /url: /browse-project-briefs
+        - listitem [ref=e292]:
+          - link "Community" [ref=e293] [cursor=pointer]:
+            - /url: /stories
+    - generic [ref=e24]:
+      - link "Sign up" [ref=e25] [cursor=pointer]:
+        - /url: /signups/new
+      - link "Log in" [ref=e26] [cursor=pointer]:
+        - /url: /session/new
+  - main [ref=e29]:
+    - generic [ref=e31]:
+      - generic [ref=e33]:
+        - heading "Task Management Dashboard" [level=1] [ref=e36]
+        - generic [ref=e38]:
+          - generic [ref=e39]:
+            - link "Fireart UI/UX" [ref=e40] [cursor=pointer]:
+              - /url: /fireart-uiux
+              - generic [ref=e41]:
+                - img "Fireart UI/UX" [ref=e42]
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: Online
+            - generic [ref=e43]:
+              - generic [ref=e44]:
+                - generic [ref=e46]:
+                  - link "Fireart UI/UX" [ref=e47] [cursor=pointer]:
+                    - /url: /fireart-uiux
+                  - text: for
+                  - link "Fireart Studio" [ref=e48] [cursor=pointer]:
+                    - /url: /Fireart-d
+                - generic [ref=e49]:
+                  - button "Available for work" [ref=e50] [cursor=pointer]
+                  - link "Follow" [ref=e52] [cursor=pointer]:
+                    - /url: /fireart-uiux/followers
+              - generic [ref=e53]:
+                - generic [ref=e54]:
+                  - img [ref=e55]
+                  - button "Copy email to clipboard" [ref=e57] [cursor=pointer]:
+                    - generic [ref=e58]: client@fireart.studio
+                - link "fireart.studio" [ref=e59] [cursor=pointer]:
+                  - /url: https://fireart.studio/dribbble/
+                  - img [ref=e60]
+                  - generic [ref=e63]: fireart.studio
+          - generic [ref=e64]:
+            - button [ref=e66] [cursor=pointer]:
+              - img [ref=e67]
+            - listitem [ref=e69]:
+              - link "Save shot" [ref=e70] [cursor=pointer]:
+                - /url: /signups/new
+                - img [ref=e71]
+            - link "Get in touch" [ref=e73] [cursor=pointer]:
+              - /url: /signups/new
+              - generic [ref=e74]: Get in touch
+        - generic [ref=e75]:
+          - link [active] [ref=e79] [cursor=pointer]:
+            - /url: https://cdn.dribbble.com/userupload/17730954/file/original-1ca571d72aed46b341defcb0bf9a18e1.png?resize=752x&vertical=center
+          - link [ref=e83] [cursor=pointer]:
+            - /url: https://cdn.dribbble.com/userupload/17730955/file/original-a668216f1999565a4310b112e4d7cf94.png?resize=752x&vertical=center
+          - generic [ref=e85]:
+            - paragraph
+            - paragraph [ref=e86]: Follow us on
+            - paragraph [ref=e87]: or
+        - generic [ref=e88]:
+          - link "Fireart Studio" [ref=e91] [cursor=pointer]:
+            - /url: /Fireart-d
+            - generic [ref=e92]:
+              - img "Fireart Studio" [ref=e93]
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: Online
+          - link "Fireart Studio" [ref=e95] [cursor=pointer]:
+            - /url: /Fireart-d
+          - link "Get in touch" [ref=e97] [cursor=pointer]:
+            - /url: /signups/new
+            - generic [ref=e98]: Get in touch
+        - generic [ref=e100]:
+          - generic [ref=e101]:
+            - img [ref=e102]
+            - button "Copy email to clipboard" [ref=e104] [cursor=pointer]:
+              - generic [ref=e105]: client@fireart.studio
+          - link "fireart.studio" [ref=e106] [cursor=pointer]:
+            - /url: https://fireart.studio/dribbble/
+            - img [ref=e107]
+            - generic [ref=e110]: fireart.studio
+        - generic [ref=e111]:
+          - generic [ref=e112]:
+            - heading "More by Fireart Studio" [level=4] [ref=e113]
+            - link "View profile" [ref=e114] [cursor=pointer]:
+              - /url: /Fireart-d
+          - generic [ref=e115]:
+            - listitem [ref=e117]
+            - listitem [ref=e119]
+            - listitem [ref=e121]
+            - listitem [ref=e123]
+      - generic [ref=e129]:
+        - button "View comments 78" [ref=e130] [cursor=pointer]:
+          - img [ref=e131]
+          - generic: View comments
+          - generic [ref=e133]: "78"
+        - button "Share actions" [ref=e134] [cursor=pointer]:
+          - img [ref=e135]
+          - generic: Share actions
+        - button "Detail actions" [ref=e137] [cursor=pointer]:
+          - img [ref=e138]
+          - generic: Detail actions
+  - contentinfo [ref=e141]:
+    - generic [ref=e144]:
+      - link "Illustration Illustration" [ref=e145] [cursor=pointer]:
+        - /url: /shots/popular/illustration
+        - img "Illustration" [ref=e148]
+        - generic [ref=e149]: Illustration
+      - link "Print Print" [ref=e150] [cursor=pointer]:
+        - /url: /shots/popular/print
+        - img "Print" [ref=e153]
+        - generic [ref=e154]: Print
+      - link "Typography Typography" [ref=e155] [cursor=pointer]:
+        - /url: /shots/popular/typography
+        - img "Typography" [ref=e158]
+        - generic [ref=e159]: Typography
+      - link "Product Design Product Design" [ref=e160] [cursor=pointer]:
+        - /url: /shots/popular/product-design
+        - img "Product Design" [ref=e163]
+        - generic [ref=e164]: Product Design
+      - link "Mobile Mobile" [ref=e165] [cursor=pointer]:
+        - /url: /shots/popular/mobile
+        - img "Mobile" [ref=e168]
+        - generic [ref=e169]: Mobile
+      - link "Branding Branding" [ref=e170] [cursor=pointer]:
+        - /url: /shots/popular/branding
+        - img "Branding" [ref=e173]
+        - generic [ref=e174]: Branding
+      - link "Web Design Web Design" [ref=e175] [cursor=pointer]:
+        - /url: /shots/popular/web-design
+        - img "Web Design" [ref=e178]
+        - generic [ref=e179]: Web Design
+      - link "Animation Animation" [ref=e180] [cursor=pointer]:
+        - /url: /shots/popular/animation
+        - img "Animation" [ref=e183]
+        - generic [ref=e184]: Animation
+      - link "Illustration Illustration" [ref=e185] [cursor=pointer]:
+        - /url: /shots/popular/illustration
+        - img "Illustration" [ref=e188]
+        - generic [ref=e189]: Illustration
+      - link "Print Print" [ref=e190] [cursor=pointer]:
+        - /url: /shots/popular/print
+        - img "Print" [ref=e193]
+        - generic [ref=e194]: Print
+      - link "Typography Typography" [ref=e195] [cursor=pointer]:
+        - /url: /shots/popular/typography
+        - img "Typography" [ref=e198]
+        - generic [ref=e199]: Typography
+      - link "Product Design Product Design" [ref=e200] [cursor=pointer]:
+        - /url: /shots/popular/product-design
+        - img "Product Design" [ref=e203]
+        - generic [ref=e204]: Product Design
+      - link "Mobile Mobile" [ref=e205] [cursor=pointer]:
+        - /url: /shots/popular/mobile
+        - img "Mobile" [ref=e208]
+        - generic [ref=e209]: Mobile
+      - link "Branding Branding" [ref=e210] [cursor=pointer]:
+        - /url: /shots/popular/branding
+        - img "Branding" [ref=e213]
+        - generic [ref=e214]: Branding
+      - link "Web Design Web Design" [ref=e215] [cursor=pointer]:
+        - /url: /shots/popular/web-design
+        - img "Web Design" [ref=e218]
+        - generic [ref=e219]: Web Design
+      - link "Animation Animation" [ref=e220] [cursor=pointer]:
+        - /url: /shots/popular/animation
+        - img "Animation" [ref=e223]
+        - generic [ref=e224]: Animation
+    - generic [ref=e225]:
+      - generic [ref=e226]:
+        - 'link "Dribbble: the community for graphic design Back to home page" [ref=e227] [cursor=pointer]':
+          - /url: /
+          - 'img "Dribbble: the community for graphic design" [ref=e228]'
+          - generic: Back to home page
+        - list [ref=e230]:
+          - listitem [ref=e231]:
+            - link "For designers" [ref=e232] [cursor=pointer]:
+              - /url: /for-designers
+          - listitem [ref=e233]:
+            - link "Hire talent" [ref=e234] [cursor=pointer]:
+              - /url: /hiring
+          - listitem [ref=e235]:
+            - link "Inspiration" [ref=e236] [cursor=pointer]:
+              - /url: /shots/popular
+          - listitem [ref=e237]:
+            - link "Advertising" [ref=e238] [cursor=pointer]:
+              - /url: /advertise
+          - listitem [ref=e239]:
+            - link "Blog" [ref=e240] [cursor=pointer]:
+              - /url: /stories
+          - listitem [ref=e241]:
+            - link "About" [ref=e242] [cursor=pointer]:
+              - /url: /about
+          - listitem [ref=e243]:
+            - link "Careers" [ref=e244] [cursor=pointer]:
+              - /url: /careers
+          - listitem [ref=e245]:
+            - link "Support" [ref=e246] [cursor=pointer]:
+              - /url: /contact
+        - generic [ref=e247]:
+          - link "X" [ref=e248] [cursor=pointer]:
+            - /url: http://x.com/dribbble
+            - img [ref=e249]
+            - generic: X
+          - link "Facebook" [ref=e251] [cursor=pointer]:
+            - /url: http://facebook.com/dribbble
+            - img [ref=e252]
+            - generic: Facebook
+          - link "Instagram" [ref=e254] [cursor=pointer]:
+            - /url: http://instagram.com/dribbble
+            - img [ref=e255]
+            - generic: Instagram
+          - link "Pinterest" [ref=e257] [cursor=pointer]:
+            - /url: http://www.pinterest.com/dribbble/
+            - img [ref=e258]
+            - generic: Pinterest
+      - generic [ref=e260]:
+        - list [ref=e261]:
+          - listitem [ref=e262]: © 2026 Dribbble
+          - listitem [ref=e263]:
+            - link "Terms" [ref=e264] [cursor=pointer]:
+              - /url: /terms
+          - listitem [ref=e265]:
+            - link "Privacy" [ref=e266] [cursor=pointer]:
+              - /url: /privacy
+          - listitem [ref=e267]:
+            - link "Cookies" [ref=e268] [cursor=pointer]:
+              - /url: /cookie-policy
+        - list [ref=e269]:
+          - listitem [ref=e270]:
+            - link "Jobs" [ref=e271] [cursor=pointer]:
+              - /url: /directories/jobs
+          - listitem [ref=e272]:
+            - link "Designers" [ref=e273] [cursor=pointer]:
+              - /url: /directories/designers
+          - listitem [ref=e274]:
+            - link "Freelancers" [ref=e275] [cursor=pointer]:
+              - /url: /directories/freelance-designers
+          - listitem [ref=e276]:
+            - link "Tags" [ref=e277] [cursor=pointer]:
+              - /url: /tags
+          - listitem [ref=e278]:
+            - link "Places" [ref=e279] [cursor=pointer]:
+              - /url: /places
+          - listitem [ref=e280]:
+            - link "Resources" [ref=e281] [cursor=pointer]:
+              - /url: /resources
+  - generic:
+    - link "close":
+      - /url: "#"
+      - img
+  - iframe [ref=e282]:
+    
+  - dialog [ref=e294]:
+    - generic [ref=e296]:
+      - generic [ref=e297]:
+        - group [ref=e298]
+        - group [ref=e299]
+        - group [ref=e300]
+      - generic:
+        - generic [ref=e301]:
+          - img
+        - button "Zoom" [ref=e302] [cursor=pointer]:
+          - img
+        - button "Close" [ref=e303] [cursor=pointer]:
+          - img

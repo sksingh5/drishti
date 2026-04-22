@@ -1,8 +1,7 @@
 """Check indicator scores against alert thresholds and create alert events."""
 
 from datetime import date
-from sqlalchemy import text
-from src.db import get_engine
+from src.db import get_supabase
 
 
 def check_threshold(value: int, threshold: int, operator: str) -> bool:
@@ -18,36 +17,44 @@ def check_threshold(value: int, threshold: int, operator: str) -> bool:
 
 
 def run(period_start: date) -> int:
-    engine = get_engine()
+    sb = get_supabase()
 
-    with engine.connect() as conn:
-        thresholds = conn.execute(
-            text("SELECT id, indicator_type, threshold_value, comparison_operator, severity FROM alert_thresholds")
-        ).fetchall()
+    thresholds_result = sb.table("alert_thresholds").select(
+        "id, indicator_type, threshold_value, comparison_operator, severity"
+    ).execute()
+    thresholds = thresholds_result.data
 
-    with engine.connect() as conn:
-        scores = conn.execute(
-            text("""SELECT district_id, indicator_type, score FROM climate_indicators
-                    WHERE period_start = :ps"""),
-            {"ps": period_start.isoformat()},
-        ).fetchall()
+    # Fetch scores for the period (paginated)
+    scores = []
+    offset = 0
+    while True:
+        batch = sb.table("climate_indicators").select(
+            "district_id, indicator_type, score"
+        ).eq("period_start", period_start.isoformat()).range(offset, offset + 999).execute()
+        scores.extend(batch.data)
+        if len(batch.data) < 1000:
+            break
+        offset += 1000
 
-    alerts_created = 0
-    with engine.begin() as conn:
-        for score_row in scores:
-            for threshold in thresholds:
-                if score_row.indicator_type != threshold.indicator_type:
-                    continue
-                if check_threshold(score_row.score, threshold.threshold_value, threshold.comparison_operator):
-                    conn.execute(
-                        text("""INSERT INTO alert_events (district_id, threshold_id, current_value)
-                                VALUES (:did, :tid, :cv)"""),
-                        {"did": score_row.district_id, "tid": threshold.id, "cv": score_row.score},
-                    )
-                    alerts_created += 1
+    alerts = []
+    for score_row in scores:
+        for threshold in thresholds:
+            if score_row["indicator_type"] != threshold["indicator_type"]:
+                continue
+            if check_threshold(score_row["score"], threshold["threshold_value"], threshold["comparison_operator"]):
+                alerts.append({
+                    "district_id": score_row["district_id"],
+                    "threshold_id": threshold["id"],
+                    "current_value": score_row["score"],
+                })
 
-    print(f"[Alerts] Created {alerts_created} alert events for {period_start}.")
-    return alerts_created
+    if alerts:
+        # Batch insert alerts in chunks
+        for i in range(0, len(alerts), 500):
+            sb.table("alert_events").insert(alerts[i : i + 500]).execute()
+
+    print(f"[Alerts] Created {len(alerts)} alert events for {period_start}.")
+    return len(alerts)
 
 
 if __name__ == "__main__":

@@ -12,7 +12,7 @@ import calendar
 
 import cdsapi
 
-from src.db import get_engine
+from src.db import get_district_polygons
 from src.scoring import percentile_score
 from src.zonal import aggregate_raster_to_districts
 from src.writer import IndicatorRow, write_indicators, update_data_source_status
@@ -62,10 +62,7 @@ def run(year: int, month: int) -> int:
     if rename_map:
         sm_data = sm_data.rename(rename_map)
 
-    engine = get_engine()
-    districts = gpd.read_postgis(
-        "SELECT id as district_id, geometry FROM districts", engine, geom_col="geometry",
-    )
+    districts = get_district_polygons()
 
     district_sm = aggregate_raster_to_districts(sm_data, districts, "district_id")
     all_values = district_sm["mean"].dropna().values

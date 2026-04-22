@@ -10,10 +10,9 @@ import numpy as np
 from datetime import date
 import calendar
 from scipy import stats as scipy_stats
-from sqlalchemy import text
 from collections import defaultdict
 
-from src.db import get_engine
+from src.db import get_supabase
 from src.scoring import percentile_score
 from src.writer import IndicatorRow, write_indicators
 
@@ -46,44 +45,53 @@ def spi_to_risk_score(spi: float) -> int:
 
 
 def run(year: int, month: int) -> int:
-    engine = get_engine()
+    sb = get_supabase()
     period_start = date(year, month, 1)
     period_end = date(year, month, calendar.monthrange(year, month)[1])
 
     print(f"[Drought Index] Computing SPI for {year}-{month:02d}...")
 
-    with engine.connect() as conn:
-        current = conn.execute(
-            text("""
-                SELECT district_id, value FROM climate_indicators
-                WHERE indicator_type = 'rainfall_anomaly' AND period_start = :period_start
-            """),
-            {"period_start": period_start.isoformat()},
-        ).fetchall()
+    result = sb.table("climate_indicators").select("district_id, value").eq(
+        "indicator_type", "rainfall_anomaly"
+    ).eq("period_start", period_start.isoformat()).execute()
+    current = result.data
 
     if not current:
         print("[Drought Index] No rainfall data found for this period.")
         return 0
 
-    with engine.connect() as conn:
-        historical = conn.execute(
-            text("""
-                SELECT district_id, value FROM climate_indicators
-                WHERE indicator_type = 'rainfall_anomaly'
-                  AND EXTRACT(MONTH FROM period_start) = :month
-                ORDER BY district_id, period_start
-            """),
-            {"month": month},
-        ).fetchall()
+    # Fetch all historical rainfall for the same month across years
+    historical = []
+    try:
+        result = sb.rpc("get_indicators_by_month", {
+            "p_indicator_type": "rainfall_anomaly", "p_month": month
+        }).execute()
+        historical = result.data if result.data else []
+    except Exception:
+        pass  # RPC doesn't exist, fall back below
+
+    # If RPC doesn't exist or returned nothing, fetch all rainfall data
+    if not historical:
+        all_rainfall = []
+        offset = 0
+        while True:
+            batch = sb.table("climate_indicators").select("district_id, value, period_start").eq(
+                "indicator_type", "rainfall_anomaly"
+            ).range(offset, offset + 999).execute()
+            all_rainfall.extend(batch.data)
+            if len(batch.data) < 1000:
+                break
+            offset += 1000
+        historical = [r for r in all_rainfall if int(r["period_start"].split("-")[1]) == month]
 
     hist_by_district = defaultdict(list)
     for row in historical:
-        hist_by_district[row.district_id].append(row.value)
+        hist_by_district[row["district_id"]].append(row["value"])
 
     rows = []
     for row in current:
-        district_id = row.district_id
-        current_rainfall = row.value
+        district_id = row["district_id"]
+        current_rainfall = row["value"]
         hist_values = np.array(hist_by_district.get(district_id, []))
 
         if len(hist_values) >= 3:

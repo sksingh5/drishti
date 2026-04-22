@@ -1,0 +1,30 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - link "Climate Risk India" [ref=e4] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e5]:
+        - link "Home" [ref=e6] [cursor=pointer]:
+          - /url: /
+        - link "Compare" [ref=e7] [cursor=pointer]:
+          - /url: /compare
+        - link "Alerts" [ref=e8] [cursor=pointer]:
+          - /url: /alerts
+        - link "Weights" [ref=e9] [cursor=pointer]:
+          - /url: /weights
+  - main [ref=e10]:
+    - generic [ref=e11]:
+      - heading "Climate Risk — National Overview" [level=1] [ref=e12]
+      - generic [ref=e13]:
+        - generic [ref=e18]:
+          - generic [ref=e21]: Low (0-25)
+          - generic [ref=e24]: Moderate (26-50)
+          - generic [ref=e27]: High (51-75)
+          - generic [ref=e30]: Critical (76-100)
+        - generic [ref=e32]:
+          - heading "Highest Risk States" [level=3] [ref=e33]
+          - paragraph [ref=e34]: No data available
+  - contentinfo [ref=e35]:
+    - generic [ref=e37]: Climate Risk India v0.1
+  - button "Open Next.js Dev Tools" [ref=e43] [cursor=pointer]:
+    - img [ref=e44]

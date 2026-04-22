@@ -12,10 +12,9 @@ import calendar
 
 import ee
 
-from src.db import get_engine
+from src.db import get_supabase, get_districts_list
 from src.scoring import percentile_score
 from src.writer import IndicatorRow, write_indicators, update_data_source_status
-from sqlalchemy import text
 
 SOURCE_NAME = "modis_ndvi"
 CACHE_DIR = Path(__file__).parent.parent / "data" / "cache" / "gee_ndvi"
@@ -80,15 +79,11 @@ def fetch_ndvi_by_district(year: int, month: int) -> pd.DataFrame:
 
 
 def match_gee_to_lgd(gee_df: pd.DataFrame) -> pd.DataFrame:
-    engine = get_engine()
-    with engine.connect() as conn:
-        db_districts = conn.execute(
-            text("SELECT id, name, lgd_code FROM districts")
-        ).fetchall()
+    db_districts = get_districts_list()
 
     lgd_lookup = {}
     for d in db_districts:
-        lgd_lookup[d.name.lower().strip()] = d.id
+        lgd_lookup[d["name"].lower().strip()] = d["id"]
 
     matched = []
     for _, row in gee_df.iterrows():

@@ -1,40 +1,25 @@
 import pytest
-from sqlalchemy import text
-from src.db import test_connection as check_connection
-
-# These tests require direct DB connection via Supabase pooler.
-# Mark as skip if pooler is unavailable (new project propagation delay).
-pytestmark = pytest.mark.skipif(
-    True,  # Change to False once pooler is available
-    reason="Supabase pooler not yet propagated for this project"
-)
+from src.db import test_connection as check_connection, get_supabase
 
 
-def test_postgis_available():
-    version = check_connection()
-    assert version is not None
-    assert "USE_GEOS" in version
+def test_supabase_connection():
+    result = check_connection()
+    assert "OK" in result
 
 
-def test_states_table_exists(db_engine):
-    with db_engine.connect() as conn:
-        result = conn.execute(
-            text("SELECT COUNT(*) FROM information_schema.tables WHERE table_name = 'states'")
-        )
-        assert result.scalar() == 1
+def test_states_table_exists():
+    sb = get_supabase()
+    result = sb.table("states").select("id").limit(1).execute()
+    assert len(result.data) > 0
 
 
-def test_districts_table_exists(db_engine):
-    with db_engine.connect() as conn:
-        result = conn.execute(
-            text("SELECT COUNT(*) FROM information_schema.tables WHERE table_name = 'districts'")
-        )
-        assert result.scalar() == 1
+def test_districts_table_exists():
+    sb = get_supabase()
+    result = sb.table("districts").select("id").limit(1).execute()
+    assert len(result.data) > 0
 
 
-def test_climate_indicators_table_exists(db_engine):
-    with db_engine.connect() as conn:
-        result = conn.execute(
-            text("SELECT COUNT(*) FROM information_schema.tables WHERE table_name = 'climate_indicators'")
-        )
-        assert result.scalar() == 1
+def test_climate_indicators_table_exists():
+    sb = get_supabase()
+    result = sb.table("climate_indicators").select("id").limit(1).execute()
+    assert len(result.data) > 0
