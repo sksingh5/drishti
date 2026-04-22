@@ -5,13 +5,25 @@ export async function getStatesWithLatestScores() {
   const { data: states } = await supabase.from("states").select("id, lgd_code, name, area_sq_km").order("name");
   if (!states) return [];
 
-  // Get latest indicators per district, aggregate to state level
-  // Paginate to avoid Supabase's default 1000-row limit
+  // Build district→state mapping (no FK on climate_indicators, so we can't join via REST)
+  const districtToState = new Map<number, number>();
+  let dOffset = 0;
+  while (true) {
+    const { data: batch } = await supabase.from("districts")
+      .select("id, state_id")
+      .range(dOffset, dOffset + 999);
+    if (!batch || batch.length === 0) break;
+    for (const d of batch) districtToState.set(d.id, d.state_id);
+    if (batch.length < 1000) break;
+    dOffset += 1000;
+  }
+
+  // Fetch all indicator scores (paginated)
   const scores: any[] = [];
   let offset = 0;
   while (true) {
     const { data: batch } = await supabase.from("climate_indicators")
-      .select("district_id, indicator_type, score, districts!inner(state_id)")
+      .select("district_id, indicator_type, score")
       .order("period_start", { ascending: false })
       .range(offset, offset + 999);
     if (!batch || batch.length === 0) break;
@@ -20,16 +32,15 @@ export async function getStatesWithLatestScores() {
     offset += 1000;
   }
 
+  // Aggregate to state level using the district→state mapping
   const stateScores = new Map<number, Map<string, number[]>>();
-  if (scores.length > 0) {
-    for (const row of scores as any[]) {
-      const stateId = row.districts?.state_id;
-      if (!stateId) continue;
-      if (!stateScores.has(stateId)) stateScores.set(stateId, new Map());
-      const indicators = stateScores.get(stateId)!;
-      if (!indicators.has(row.indicator_type)) indicators.set(row.indicator_type, []);
-      indicators.get(row.indicator_type)!.push(row.score);
-    }
+  for (const row of scores) {
+    const stateId = districtToState.get(row.district_id);
+    if (!stateId) continue;
+    if (!stateScores.has(stateId)) stateScores.set(stateId, new Map());
+    const indicators = stateScores.get(stateId)!;
+    if (!indicators.has(row.indicator_type)) indicators.set(row.indicator_type, []);
+    indicators.get(row.indicator_type)!.push(row.score);
   }
 
   return states.map((s: any) => {
