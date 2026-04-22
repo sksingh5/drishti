@@ -68,6 +68,17 @@ export default function MethodologyPage() {
         </p>
       </div>
 
+      {/* Financial use disclaimer */}
+      <div className="rounded-[var(--dicra-radius-lg)] p-5 mb-6"
+           style={{ background: "var(--dicra-risk-moderate-bg)", border: "1px solid var(--dicra-risk-moderate)" }}>
+        <div className="text-[13px] font-bold mb-1" style={{ color: "var(--dicra-risk-moderate)" }}>
+          Important: Scientific Limitations
+        </div>
+        <div className="text-[12px] leading-relaxed" style={{ color: "var(--dicra-text-secondary)" }}>
+          DiCRA provides relative risk rankings for comparative analysis across districts. Scores represent percentile positions, not absolute thresholds. This platform should complement — not replace — domain expertise, ground-truth validation, and institutional risk frameworks. All methodologies, data sources, and known limitations are documented transparently below.
+        </div>
+      </div>
+
       <div className="flex flex-col gap-4">
         {/* 1. Scoring System */}
         <SectionCard title="Scoring System">
@@ -164,10 +175,10 @@ export default function MethodologyPage() {
         {/* 4. Weight System */}
         <SectionCard title="Weight System">
           <p className="text-[13px] leading-relaxed mb-2" style={{ color: "var(--dicra-text-secondary)" }}>
-            The composite climate risk score is a weighted average of all six indicators. By default, each
-            indicator receives equal weight (16.67%). Adjusting weights lets you emphasize the risks most
-            relevant to your domain — for example, an agriculture-focused analysis might weight vegetation
-            health and drought more heavily.
+            The composite climate risk score is a weighted average of all six indicators. By default, rainfall
+            anomaly and drought index receive 20% weight each, while vegetation health, heat stress, flood
+            risk, and soil moisture receive 15% each. This reflects the higher sensitivity of water-related
+            indicators in India&apos;s climate risk profile. Weights are fully adjustable.
           </p>
           <p className="text-[13px] leading-relaxed mb-2" style={{ color: "var(--dicra-text-secondary)" }}>
             Several presets are available for common use cases. You can also set fully custom weights.
@@ -210,7 +221,19 @@ export default function MethodologyPage() {
             </li>
             <li>
               <strong style={{ color: "var(--dicra-text-primary)" }}>Scores are relative:</strong>{" "}
-              Percentile-based, not absolute thresholds.
+              Percentile-based, not absolute thresholds. A score of 75 means the district ranks in the 75th percentile of risk among all monitored districts — it does not represent a fixed danger level. Small differences (&plusmn;5 points) should not be treated as significant.
+            </li>
+            <li>
+              <strong style={{ color: "var(--dicra-text-primary)" }}>Heat stress limitations:</strong>{" "}
+              Heat stress uses daily maximum temperature only. It does not account for humidity (which amplifies heat impact), nighttime temperatures, or multi-day heat spell duration. For occupational or agricultural heat stress, use WBGT (Wet Bulb Globe Temperature) thresholds.
+            </li>
+            <li>
+              <strong style={{ color: "var(--dicra-text-primary)" }}>SPI timescale:</strong>{" "}
+              SPI drought index uses a 1-month timescale. WMO recommends 3-month or 6-month SPI for agricultural drought assessment. Districts with fewer than 10 months of historical rainfall data may show neutral (50) drought scores.
+            </li>
+            <li>
+              <strong style={{ color: "var(--dicra-text-primary)" }}>Flood risk weights:</strong>{" "}
+              Flood risk composite weights (40/40/20) are initial estimates. Regional validation against observed flood events is recommended before using for resource allocation.
             </li>
           </ul>
         </SectionCard>
