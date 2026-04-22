@@ -19,11 +19,12 @@ export default function ComparePage() {
   const [districts, setDistricts] = useState<DistrictWithScore[]>([]);
   const [district1Id, setDistrict1Id] = useState<string>("");
   const [district2Id, setDistrict2Id] = useState<string>("");
+  const [error, setError] = useState<string | null>(null);
 
-  useEffect(() => { fetch("/api/states").then(r => r.json()).then(setStates); }, []);
+  useEffect(() => { fetch("/api/states").then(r => r.json()).then(setStates).catch(() => setError("Failed to load data")); }, []);
   useEffect(() => {
     if (!selectedState) return;
-    fetch(`/api/states/${selectedState}/districts`).then(r => r.json()).then(setDistricts);
+    fetch(`/api/states/${selectedState}/districts`).then(r => r.json()).then(setDistricts).catch(() => setError("Failed to load data"));
   }, [selectedState]);
 
   const d1 = districts.find(d => String(d.id) === district1Id);
@@ -34,6 +35,13 @@ export default function ComparePage() {
   return (
     <div className="mx-auto max-w-7xl px-4 py-6" style={{ background: "var(--dicra-bg)" }}>
       <h1 className="mb-6 text-2xl font-bold" style={{ color: "var(--dicra-text-primary)" }}>Compare Districts</h1>
+
+      {error && (
+        <div className="text-[13px] p-4 rounded-[var(--dicra-radius-md)]"
+             style={{ color: "var(--dicra-risk-critical)", background: "var(--dicra-risk-critical-bg)" }}>
+          {error}
+        </div>
+      )}
 
       <div className="mb-6 flex flex-wrap gap-4 rounded-[var(--dicra-radius-lg)] border border-[var(--dicra-border)] bg-[var(--dicra-surface)] p-4">
         <Select value={selectedState} onValueChange={(v) => setSelectedState(v ?? "")}>

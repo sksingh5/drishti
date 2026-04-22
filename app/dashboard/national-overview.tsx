@@ -13,7 +13,7 @@ import { IndicatorCard } from "@/components/indicator-card";
 import { RiskDonut } from "@/components/risk-donut";
 import { MethodologyBanner } from "@/components/methodology-banner";
 import { SourceFooter } from "@/components/source-footer";
-import { classifyRisk } from "@/lib/indicators";
+import { classifyRisk, ALL_INDICATOR_KEYS } from "@/lib/indicators";
 import type { IndicatorType } from "@/lib/indicators";
 import type { RiskLevel } from "@/lib/indicators";
 
@@ -137,10 +137,10 @@ export function NationalOverview({ states }: { states: StateWithScore[] }) {
       </div>
 
       {/* Indicator summary row */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-4">
-        <IndicatorCard indicatorType="rainfall_anomaly" score={avgIndicator("rainfall_anomaly")} showExplainer={false} />
-        <IndicatorCard indicatorType="heat_stress" score={avgIndicator("heat_stress")} showExplainer={false} />
-        <IndicatorCard indicatorType="vegetation_health" score={avgIndicator("vegetation_health")} showExplainer={false} />
+      <div className="grid grid-cols-3 gap-3 mb-4">
+        {ALL_INDICATOR_KEYS.map((key) => (
+          <IndicatorCard key={key} indicatorType={key} score={avgIndicator(key)} showExplainer={false} />
+        ))}
       </div>
 
       {/* Methodology banner */}
