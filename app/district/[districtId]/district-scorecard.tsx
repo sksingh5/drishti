@@ -121,8 +121,16 @@ export function DistrictScorecard({ detail, history }: { detail: { district: any
         {/* Right: Metadata Grid */}
         <div className="grid grid-cols-2 gap-3">
           {[
-            { label: "Area", value: district.area_sq_km ? `${district.area_sq_km.toLocaleString()} km²` : "—" },
-            { label: "Period", value: periodLabel },
+            {
+              label: "Area",
+              value: district.area_sq_km ? `${district.area_sq_km.toLocaleString()} km²` : "—",
+              hint: "Total geographic area of this district",
+            },
+            {
+              label: "Analysis Period",
+              value: periodLabel,
+              hint: "Time window for the climate data shown on this page",
+            },
           ].map((item) => (
             <div key={item.label}
                  className="rounded-[var(--dicra-radius-lg)] border border-[var(--dicra-border)] p-4 flex flex-col justify-center"
@@ -134,6 +142,9 @@ export function DistrictScorecard({ detail, history }: { detail: { district: any
               <div className="text-[18px] font-bold tracking-[-0.3px]"
                    style={{ color: "var(--dicra-text-primary)" }}>
                 {item.value}
+              </div>
+              <div className="text-[10px] mt-1" style={{ color: "var(--dicra-text-faint)" }}>
+                {item.hint}
               </div>
             </div>
           ))}
