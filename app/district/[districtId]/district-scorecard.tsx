@@ -5,7 +5,10 @@ import { ActionPanel } from "@/components/action-panel";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { SourceFooter } from "@/components/source-footer";
 import { TrendChart } from "@/components/charts/trend-chart";
-import { Download } from "lucide-react";
+import { DistrictSections } from "@/components/district-sections";
+import { CropAdvisorySection } from "@/components/crop-advisory-section";
+import { getDistrictCropAdvisory, getCropsForDistrict } from "@/lib/crop-data";
+import { Download, ShieldAlert, Sprout, TrendingUp } from "lucide-react";
 import { exportToCsv } from "@/lib/export-csv";
 import { getInsightsForDistrict } from "@/lib/insights";
 import { evaluateActionRules } from "@/lib/action-rules";
@@ -38,6 +41,116 @@ export function DistrictScorecard({ detail, history }: { detail: { district: any
   const periodLabel = latestPeriod
     ? new Date(latestPeriod).toLocaleDateString("en-IN", { month: "short", year: "numeric" })
     : "—";
+
+  const cropAdvisories = getDistrictCropAdvisory(district.id, indicatorScores as Partial<Record<IndicatorType, number>>);
+  const { zoneName } = getCropsForDistrict(district.id);
+
+  /* ── Tab content: Risk Overview ──────────────────────────── */
+  const riskOverviewContent = (
+    <>
+      {/* Recommended Actions (compound rules) */}
+      {(() => {
+        const scores: Record<string, number> = {};
+        for (const [k, v] of Object.entries(indicatorScores)) {
+          if (v !== undefined) scores[k] = v;
+        }
+        const actions = evaluateActionRules(scores);
+        return actions.length > 0 ? (
+          <div className="mb-6">
+            <ActionPanel actions={actions} />
+          </div>
+        ) : null;
+      })()}
+
+      {/* 6 Indicator Insight Cards — 3x2 Grid */}
+      {(() => {
+        const scores: Record<string, number> = {};
+        const values: Record<string, number> = {};
+        for (const [k, v] of Object.entries(indicatorScores)) {
+          if (v !== undefined) scores[k] = v;
+        }
+        for (const [k, v] of Object.entries(indicatorValues)) {
+          if (v !== undefined) values[k] = v;
+        }
+        const insights = getInsightsForDistrict(scores, values);
+        const insightMap = new Map(insights.map(i => [i.indicator, i]));
+
+        return (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
+            {ALL_INDICATOR_KEYS.map((type) => (
+              <InsightCard
+                key={type}
+                indicatorType={type}
+                score={indicatorScores[type] ?? null}
+                value={indicatorValues[type] ?? null}
+                insight={insightMap.get(type) || null}
+              />
+            ))}
+          </div>
+        );
+      })()}
+
+      {/* Data Sources & Reliability */}
+      <div className="rounded-[var(--dicra-radius-lg)] border border-[var(--dicra-border)] p-5 mb-6"
+           style={{ background: "var(--dicra-surface)" }}>
+        <div className="text-[12px] font-bold uppercase tracking-[0.8px] mb-3"
+             style={{ color: "var(--dicra-text-secondary)" }}>
+          Data Sources &amp; Reliability
+        </div>
+        <div className="flex flex-col gap-2">
+          {SOURCE_LIST.map((source) => {
+            const reliabilityStyle = RELIABILITY_STYLES[source.reliability];
+            return (
+              <div key={source.key}
+                   className="flex items-center gap-2.5 p-2.5 rounded-[var(--dicra-radius-md)] border border-[var(--dicra-border)]"
+                   style={{ background: "var(--dicra-surface-muted)" }}>
+                <span className="h-2 w-2 rounded-full flex-shrink-0"
+                      style={{ background: "var(--dicra-accent)" }} />
+                <div className="flex-1 min-w-0">
+                  <div className="text-[11px] font-semibold"
+                       style={{ color: "var(--dicra-text-secondary)" }}>
+                    {source.name}
+                  </div>
+                  <div className="text-[10px]"
+                       style={{ color: "var(--dicra-text-muted)" }}>
+                    {source.resolution} &middot; {source.frequency} &middot; {source.coverage}
+                  </div>
+                </div>
+                <span className="text-[9px] font-bold px-2 py-0.5 rounded-[4px] flex-shrink-0"
+                      style={{ background: reliabilityStyle.bg, color: reliabilityStyle.text }}>
+                  {reliabilityStyle.label}
+                </span>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* Source Footer */}
+      <SourceFooter />
+    </>
+  );
+
+  /* ── Tab content: Crop Advisory ──────────────────────────── */
+  const cropAdvisoryContent = (
+    <CropAdvisorySection
+      advisories={cropAdvisories}
+      zoneName={zoneName}
+      districtName={district.name}
+    />
+  );
+
+  /* ── Tab content: Trends ─────────────────────────────────── */
+  const trendsContent = (
+    <div className="rounded-[var(--dicra-radius-lg)] border border-[var(--dicra-border)] p-5"
+         style={{ background: "var(--dicra-surface)" }}>
+      <div className="text-[12px] font-bold uppercase tracking-[0.8px] mb-3"
+           style={{ color: "var(--dicra-text-secondary)" }}>
+        Historical Trends
+      </div>
+      <TrendChart data={history} />
+    </div>
+  );
 
   return (
     <div style={{ padding: "24px 28px", maxWidth: 1200, margin: "0 auto" }}>
@@ -151,99 +264,30 @@ export function DistrictScorecard({ detail, history }: { detail: { district: any
         </div>
       </div>
 
-      {/* Recommended Actions (compound rules) */}
-      {(() => {
-        const scores: Record<string, number> = {};
-        for (const [k, v] of Object.entries(indicatorScores)) {
-          if (v !== undefined) scores[k] = v;
-        }
-        const actions = evaluateActionRules(scores);
-        return actions.length > 0 ? (
-          <div className="mb-6">
-            <ActionPanel actions={actions} />
-          </div>
-        ) : null;
-      })()}
-
-      {/* 6 Indicator Insight Cards — 3x2 Grid */}
-      {(() => {
-        const scores: Record<string, number> = {};
-        const values: Record<string, number> = {};
-        for (const [k, v] of Object.entries(indicatorScores)) {
-          if (v !== undefined) scores[k] = v;
-        }
-        for (const [k, v] of Object.entries(indicatorValues)) {
-          if (v !== undefined) values[k] = v;
-        }
-        const insights = getInsightsForDistrict(scores, values);
-        const insightMap = new Map(insights.map(i => [i.indicator, i]));
-
-        return (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
-            {ALL_INDICATOR_KEYS.map((type) => (
-              <InsightCard
-                key={type}
-                indicatorType={type}
-                score={indicatorScores[type] ?? null}
-                value={indicatorValues[type] ?? null}
-                insight={insightMap.get(type) || null}
-              />
-            ))}
-          </div>
-        );
-      })()}
-
-      {/* Two-column: Trends + Data Sources */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mb-6">
-        {/* Left: Historical Trends */}
-        <div className="rounded-[var(--dicra-radius-lg)] border border-[var(--dicra-border)] p-5"
-             style={{ background: "var(--dicra-surface)" }}>
-          <div className="text-[12px] font-bold uppercase tracking-[0.8px] mb-3"
-               style={{ color: "var(--dicra-text-secondary)" }}>
-            Historical Trends
-          </div>
-          <TrendChart data={history} />
-        </div>
-
-        {/* Right: Data Sources & Reliability */}
-        <div className="rounded-[var(--dicra-radius-lg)] border border-[var(--dicra-border)] p-5"
-             style={{ background: "var(--dicra-surface)" }}>
-          <div className="text-[12px] font-bold uppercase tracking-[0.8px] mb-3"
-               style={{ color: "var(--dicra-text-secondary)" }}>
-            Data Sources &amp; Reliability
-          </div>
-          <div className="flex flex-col gap-2">
-            {SOURCE_LIST.map((source) => {
-              const reliabilityStyle = RELIABILITY_STYLES[source.reliability];
-              return (
-                <div key={source.key}
-                     className="flex items-center gap-2.5 p-2.5 rounded-[var(--dicra-radius-md)] border border-[var(--dicra-border)]"
-                     style={{ background: "var(--dicra-surface-muted)" }}>
-                  <span className="h-2 w-2 rounded-full flex-shrink-0"
-                        style={{ background: "var(--dicra-accent)" }} />
-                  <div className="flex-1 min-w-0">
-                    <div className="text-[11px] font-semibold"
-                         style={{ color: "var(--dicra-text-secondary)" }}>
-                      {source.name}
-                    </div>
-                    <div className="text-[10px]"
-                         style={{ color: "var(--dicra-text-muted)" }}>
-                      {source.resolution} &middot; {source.frequency} &middot; {source.coverage}
-                    </div>
-                  </div>
-                  <span className="text-[9px] font-bold px-2 py-0.5 rounded-[4px] flex-shrink-0"
-                        style={{ background: reliabilityStyle.bg, color: reliabilityStyle.text }}>
-                    {reliabilityStyle.label}
-                  </span>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </div>
-
-      {/* Source Footer */}
-      <SourceFooter />
+      {/* Tabbed Content */}
+      <DistrictSections
+        defaultSection="risk"
+        sections={[
+          {
+            id: "risk",
+            label: "Risk Overview",
+            icon: <ShieldAlert size={14} />,
+            content: riskOverviewContent,
+          },
+          {
+            id: "crops",
+            label: "Crop Advisory",
+            icon: <Sprout size={14} />,
+            content: cropAdvisoryContent,
+          },
+          {
+            id: "trends",
+            label: "Trends",
+            icon: <TrendingUp size={14} />,
+            content: trendsContent,
+          },
+        ]}
+      />
     </div>
   );
 }
