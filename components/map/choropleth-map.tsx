@@ -4,6 +4,8 @@ import { useRef, useEffect, useState } from "react";
 import maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import { classifyRisk, RISK_HEX_COLORS } from "@/lib/indicators";
+import { PointQueryCard } from "./point-query-card";
+import { Crosshair } from "lucide-react";
 
 interface Feature {
   id: number;
@@ -31,13 +33,25 @@ export function ChoroplethMap({ geojsonUrl, features, onFeatureClick, center = [
   const map = useRef<maplibregl.Map | null>(null);
   const [loaded, setLoaded] = useState(false);
 
+  // Point query state
+  const [pointMode, setPointMode] = useState(false);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const [pointResult, setPointResult] = useState<any>(null);
+  const [pointLoading, setPointLoading] = useState(false);
+  const [pointError, setPointError] = useState<string | null>(null);
+  const markerRef = useRef<maplibregl.Marker | null>(null);
+
+  // Ref to track pointMode inside map click closure
+  const pointModeRef = useRef(false);
+  useEffect(() => { pointModeRef.current = pointMode; }, [pointMode]);
+
   const scoreMap = new Map<number, number | null>();
   features.forEach(f => scoreMap.set(f.lgd_code, f.score));
 
   useEffect(() => {
     if (!mapContainer.current || map.current) return;
     const indiaBounds: [[number, number], [number, number]] = [[67, 5], [98, 38]];
-    map.current = new maplibregl.Map({
+    const m = new maplibregl.Map({
       container: mapContainer.current,
       style: {
         version: 8,
@@ -52,10 +66,39 @@ export function ChoroplethMap({ geojsonUrl, features, onFeatureClick, center = [
       minZoom: 3.5,
       maxZoom: 10,
     });
-    map.current.on("load", () => {
+    map.current = m;
+
+    m.on("load", () => {
       setLoaded(true);
       if (fitBounds && map.current) map.current.fitBounds(fitBounds, { padding: 40 });
     });
+
+    // General map click handler for point query mode
+    m.on("click", (e) => {
+      if (!pointModeRef.current) return;
+      const { lat, lng: lon } = e.lngLat;
+
+      // Place/move marker
+      if (markerRef.current) markerRef.current.remove();
+      markerRef.current = new maplibregl.Marker({ color: "#34D399" })
+        .setLngLat([lon, lat])
+        .addTo(m);
+
+      // Fetch
+      setPointLoading(true);
+      setPointError(null);
+      setPointResult(null);
+
+      fetch(`/api/point-query?lat=${lat}&lon=${lon}`)
+        .then(r => r.json())
+        .then(data => {
+          if (data.error) throw new Error(data.error);
+          setPointResult(data);
+        })
+        .catch(err => setPointError(err.message))
+        .finally(() => setPointLoading(false));
+    });
+
     return () => { map.current?.remove(); map.current = null; };
   }, []);
 
@@ -92,6 +135,7 @@ export function ChoroplethMap({ geojsonUrl, features, onFeatureClick, center = [
       m.on("mouseleave", "regions-fill", () => { popup.remove(); m.getCanvas().style.cursor = ""; });
 
       m.on("click", "regions-fill", e => {
+        if (pointModeRef.current) return;
         if (!e.features?.[0] || !onFeatureClick) return;
         const props = e.features[0].properties!;
         const feature = features.find(f => f.lgd_code === props.lgd_code);
@@ -100,5 +144,55 @@ export function ChoroplethMap({ geojsonUrl, features, onFeatureClick, center = [
     });
   }, [loaded, features, geojsonUrl]);
 
-  return <div ref={mapContainer} className="h-full w-full rounded-lg" />;
+  // Cursor management for point mode
+  useEffect(() => {
+    if (!map.current) return;
+    map.current.getCanvas().style.cursor = pointMode ? "crosshair" : "";
+  }, [pointMode]);
+
+  return (
+    <div className="relative h-full w-full">
+      <div ref={mapContainer} className="h-full w-full rounded-lg" />
+
+      {/* Point query toggle button */}
+      <button
+        onClick={() => {
+          const next = !pointMode;
+          setPointMode(next);
+          if (!next) {
+            markerRef.current?.remove();
+            markerRef.current = null;
+            setPointResult(null);
+            setPointError(null);
+          }
+        }}
+        className="absolute top-4 left-4 z-10 flex items-center gap-1.5 px-3 py-2 rounded-lg text-[11px] font-semibold transition-all"
+        style={{
+          background: pointMode ? "var(--dicra-accent)" : "var(--dicra-surface)",
+          color: pointMode ? "var(--dicra-brand)" : "var(--dicra-text-secondary)",
+          border: `1px solid ${pointMode ? "var(--dicra-accent)" : "var(--dicra-border)"}`,
+          boxShadow: "0 2px 8px rgba(0,0,0,0.1)",
+        }}
+        title={pointMode ? "Exit point query mode" : "Click any location for plot-level data"}
+      >
+        <Crosshair size={14} />
+        {pointMode ? "Exit Query Mode" : "Query Point"}
+      </button>
+
+      {/* Point query results */}
+      {(pointResult || pointLoading || pointError) && (
+        <PointQueryCard
+          result={pointResult}
+          loading={pointLoading}
+          error={pointError}
+          onClose={() => {
+            setPointResult(null);
+            setPointError(null);
+            markerRef.current?.remove();
+            markerRef.current = null;
+          }}
+        />
+      )}
+    </div>
+  );
 }
