@@ -82,6 +82,19 @@ export function DistrictScorecard({ detail, history }: { detail: { district: any
             )}
           </div>
 
+          {compositeScore !== null && risk && (
+            <p className="mt-3 text-[12px] leading-relaxed max-w-[360px]"
+               style={{ color: "var(--dicra-text-secondary)" }}>
+              {risk === "critical"
+                ? "This district faces severe climate stress across multiple indicators. Immediate monitoring and preparedness measures are recommended."
+                : risk === "high"
+                ? "This district shows significant climate risk. Key indicators are elevated and should be actively monitored."
+                : risk === "moderate"
+                ? "Some climate indicators are elevated in this district. Conditions warrant attention but are not yet critical."
+                : "This district currently shows minimal climate risk. Conditions are within normal ranges across most indicators."}
+            </p>
+          )}
+
           <button
             onClick={() => {
               const rows = ALL_INDICATOR_KEYS.map((type) => ({
