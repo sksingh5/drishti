@@ -10,7 +10,6 @@ import { ThemeToggle } from "@/components/theme-toggle";
 const NAV_ITEMS = [
   { href: "/dashboard", label: "Overview", icon: Home },
   { href: "/alerts", label: "Alerts", icon: Bell },
-  { href: "/methodology", label: "Methodology", icon: BookOpen },
 ];
 
 export function Sidebar() {
@@ -54,6 +53,11 @@ export function Sidebar() {
             </Link>
           );
         })}
+
+        <Link href="/methodology" title="Methodology"
+              className="flex h-10 w-10 items-center justify-center rounded-[var(--dicra-radius-md)] text-white/20 hover:text-white/50 transition-colors">
+          <BookOpen size={18} />
+        </Link>
 
         <Link href="/portfolio" title="CR Analysis"
               className="relative flex h-10 w-10 items-center justify-center rounded-[var(--dicra-radius-md)] text-white/35 hover:text-white/70 transition-colors">

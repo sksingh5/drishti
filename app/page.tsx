@@ -49,11 +49,11 @@ export default async function LandingPage() {
           </Link>
           <div className="flex items-center gap-5">
             <Link
-              href="/methodology"
+              href="/about"
               className="text-[13px] font-medium transition-opacity hover:opacity-70"
               style={{ color: "var(--dicra-text-muted)" }}
             >
-              Methodology
+              About
             </Link>
             <Link
               href="/portfolio"
