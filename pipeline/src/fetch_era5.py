@@ -1,16 +1,21 @@
 """Fetch ERA5-Land soil moisture data from Copernicus CDS.
 
-Requires: CDS account + ~/.cdsapirc configured with API key.
+Requires: CDS_URL and CDS_KEY in pipeline/.env.
 """
 
+import os
+import zipfile
 import numpy as np
 import xarray as xr
 import geopandas as gpd
 from datetime import date
 from pathlib import Path
 import calendar
+from dotenv import load_dotenv
 
 import cdsapi
+
+load_dotenv(Path(__file__).parent.parent / ".env")
 
 from src.db import get_district_polygons
 from src.scoring import percentile_score
@@ -24,10 +29,14 @@ SOURCE_NAME = "era5_land"
 def fetch_soil_moisture(year: int, month: int) -> xr.Dataset:
     CACHE_DIR.mkdir(parents=True, exist_ok=True)
     cache_file = CACHE_DIR / f"era5_sm_{year}_{month:02d}.nc"
-    if cache_file.exists():
+    if cache_file.exists() and not zipfile.is_zipfile(cache_file):
         return xr.open_dataset(cache_file)
 
-    c = cdsapi.Client()
+    download_file = CACHE_DIR / f"era5_sm_{year}_{month:02d}_download"
+    c = cdsapi.Client(
+        url=os.environ.get("CDS_URL", "https://cds.climate.copernicus.eu/api"),
+        key=os.environ["CDS_KEY"],
+    )
     c.retrieve(
         "reanalysis-era5-land-monthly-means",
         {
@@ -39,8 +48,25 @@ def fetch_soil_moisture(year: int, month: int) -> xr.Dataset:
             "area": [35, 68, 8, 97],
             "format": "netcdf",
         },
-        str(cache_file),
+        str(download_file),
     )
+
+    # CDS may return a zip; extract if so
+    if zipfile.is_zipfile(download_file):
+        with zipfile.ZipFile(download_file, "r") as zf:
+            nc_names = [n for n in zf.namelist() if n.endswith(".nc")]
+            if nc_names:
+                extracted = zf.extract(nc_names[0], CACHE_DIR)
+                Path(extracted).rename(cache_file)
+            else:
+                # Single file zip — extract first file
+                name = zf.namelist()[0]
+                extracted = zf.extract(name, CACHE_DIR)
+                Path(extracted).rename(cache_file)
+        download_file.unlink(missing_ok=True)
+    else:
+        download_file.rename(cache_file)
+
     return xr.open_dataset(cache_file)
 
 
@@ -50,8 +76,11 @@ def run(year: int, month: int) -> int:
 
     var_name = "swvl1" if "swvl1" in ds else list(ds.data_vars)[0]
     sm_data = ds[var_name]
-    if "time" in sm_data.dims:
-        sm_data = sm_data.isel(time=0)
+
+    # Squeeze all singleton dimensions (time, valid_time, expver, number)
+    for dim in list(sm_data.dims):
+        if dim not in ("latitude", "longitude", "lat", "lon") and sm_data.sizes[dim] == 1:
+            sm_data = sm_data.isel({dim: 0})
 
     rename_map = {}
     for dim in sm_data.dims:

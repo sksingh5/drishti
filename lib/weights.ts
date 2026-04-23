@@ -1,12 +1,13 @@
 import { IndicatorType } from "./indicators";
 
 export const DEFAULT_WEIGHTS: Record<IndicatorType, number> = {
-  rainfall_anomaly: 0.2,
-  drought_index: 0.2,
-  vegetation_health: 0.15,
-  heat_stress: 0.15,
-  flood_risk: 0.15,
-  soil_moisture: 0.15,
+  rainfall_anomaly: 0.18,
+  drought_index: 0.18,
+  vegetation_health: 0.13,
+  heat_stress: 0.13,
+  flood_risk: 0.13,
+  soil_moisture: 0.13,
+  vulnerability: 0.12,
 };
 
 const STORAGE_KEY = "dicrav2_weights";

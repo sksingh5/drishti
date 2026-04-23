@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Rounded square background -->
+  <rect width="64" height="64" rx="14" fill="#142B21"/>
+  <!-- CIQ monogram -->
+  <text x="32" y="40" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="22" fill="white" letter-spacing="1">CIQ</text>
+  <!-- Accent bar at bottom -->
+  <rect x="16" y="50" width="32" height="3" rx="1.5" fill="#34D399"/>
+</svg>

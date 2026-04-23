@@ -41,6 +41,7 @@
   --dicra-ind-vegetation: #22C55E;
   --dicra-ind-flood: #8B5CF6;
   --dicra-ind-moisture: #06B6D4;
+  --dicra-ind-vulnerability: #E11D48;
 
   /* Radii */
   --dicra-radius-sm: 6px;
@@ -146,37 +147,69 @@
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  /* DiCRA Dark Identity */
+  --dicra-brand: #0D1F16;
+  --dicra-brand-mid: #142B21;
+  --dicra-accent: #34D399;
+  --dicra-accent-subtle: rgba(52, 211, 153, 0.12);
+
+  /* Dark Surfaces */
+  --dicra-bg: #0C1410;
+  --dicra-surface: #141E18;
+  --dicra-surface-muted: #111A14;
+  --dicra-border: #1E2D24;
+  --dicra-border-subtle: #172319;
+
+  /* Dark Text */
+  --dicra-text-primary: #E8E6E1;
+  --dicra-text-secondary: #B5B0A6;
+  --dicra-text-muted: #6B6660;
+  --dicra-text-faint: #4A4640;
+
+  /* Risk levels stay vivid */
+  --dicra-risk-critical: #EF4444;
+  --dicra-risk-high: #F97316;
+  --dicra-risk-moderate: #EAB308;
+  --dicra-risk-low: #22C55E;
+  --dicra-risk-critical-bg: rgba(239,68,68,0.12);
+  --dicra-risk-high-bg: rgba(249,115,22,0.12);
+  --dicra-risk-moderate-bg: rgba(234,179,8,0.12);
+  --dicra-risk-low-bg: rgba(34,197,94,0.12);
+
+  /* Map shadcn tokens */
+  --background: var(--dicra-bg);
+  --foreground: var(--dicra-text-primary);
+  --card: var(--dicra-surface);
+  --card-foreground: var(--dicra-text-primary);
+  --popover: var(--dicra-surface);
+  --popover-foreground: var(--dicra-text-primary);
+  --primary: var(--dicra-accent);
+  --primary-foreground: var(--dicra-brand);
+  --secondary: var(--dicra-surface-muted);
+  --secondary-foreground: var(--dicra-text-secondary);
+  --muted: var(--dicra-surface-muted);
+  --muted-foreground: var(--dicra-text-muted);
+  --accent: var(--dicra-accent-subtle);
+  --accent-foreground: var(--dicra-accent);
+  --destructive: var(--dicra-risk-critical);
+  --border: var(--dicra-border);
+  --input: var(--dicra-border);
+  --ring: var(--dicra-accent);
+
+  --chart-1: var(--dicra-ind-rainfall);
+  --chart-2: var(--dicra-ind-heat);
+  --chart-3: var(--dicra-ind-drought);
+  --chart-4: var(--dicra-ind-vegetation);
+  --chart-5: var(--dicra-ind-flood);
+
+  --sidebar: var(--dicra-brand);
+  --sidebar-foreground: rgba(255,255,255,0.7);
+  --sidebar-primary: var(--dicra-accent);
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: var(--dicra-accent-subtle);
+  --sidebar-accent-foreground: var(--dicra-accent);
+  --sidebar-border: rgba(255,255,255,0.08);
+  --sidebar-ring: var(--dicra-accent);
 }
 
 @layer base {

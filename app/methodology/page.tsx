@@ -64,7 +64,7 @@ export default function MethodologyPage() {
           Methodology
         </h1>
         <p className="text-[13px] mt-1" style={{ color: "var(--dicra-text-muted)" }}>
-          How DiCRA computes climate risk scores — data sources, scoring, and limitations
+          How DRISHTI computes climate risk scores — data sources, scoring, and limitations
         </p>
       </div>
 
@@ -75,7 +75,7 @@ export default function MethodologyPage() {
           Important: Scientific Limitations
         </div>
         <div className="text-[12px] leading-relaxed" style={{ color: "var(--dicra-text-secondary)" }}>
-          DiCRA provides relative risk rankings for comparative analysis across districts. Scores represent percentile positions, not absolute thresholds. This platform should complement — not replace — domain expertise, ground-truth validation, and institutional risk frameworks. All methodologies, data sources, and known limitations are documented transparently below.
+          DRISHTI provides relative risk rankings for comparative analysis across districts. Scores represent percentile positions, not absolute thresholds. This platform should complement — not replace — domain expertise, ground-truth validation, and institutional risk frameworks. All methodologies, data sources, and known limitations are documented transparently below.
         </div>
       </div>
 
@@ -97,7 +97,7 @@ export default function MethodologyPage() {
         {/* 2. Indicator Definitions */}
         <SectionCard title="Indicator Definitions">
           <p className="text-[13px] leading-relaxed mb-4" style={{ color: "var(--dicra-text-secondary)" }}>
-            DiCRA tracks six climate risk indicators. Each is independently scored and can be combined into
+            DRISHTI tracks six climate risk indicators. Each is independently scored and can be combined into
             a weighted composite.
           </p>
           <div className="grid gap-3">
@@ -133,7 +133,7 @@ export default function MethodologyPage() {
         {/* 3. Data Sources */}
         <SectionCard title="Data Sources">
           <p className="text-[13px] leading-relaxed mb-4" style={{ color: "var(--dicra-text-secondary)" }}>
-            Underlying datasets powering DiCRA indicators, with their spatial and temporal characteristics.
+            Underlying datasets powering DRISHTI indicators, with their spatial and temporal characteristics.
           </p>
           <div className="overflow-x-auto">
             <table className="w-full text-[13px]">

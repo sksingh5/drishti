@@ -175,7 +175,7 @@ def run(year: int, month: int) -> int:
             score = percentile_score(deviation, all_deviations)
 
         rows.append(IndicatorRow(
-            district_id=int(row["district_id"]),
+            district_id=district_id,
             indicator_type="rainfall_anomaly",
             value=round(float(rainfall_value), 2),
             score=score,

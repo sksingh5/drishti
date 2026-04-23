@@ -1,7 +1,9 @@
 "use client";
 
 import { useRouter } from "next/navigation";
+import { Suspense } from "react";
 import { AlertTriangle, TrendingUp, Minus, Check } from "lucide-react";
+import { PeriodSelector } from "@/components/period-selector";
 import { StateWithScore } from "@/lib/types";
 import { ChoroplethMap } from "@/components/map/choropleth-map";
 import { MapLegend } from "@/components/map/map-legend";
@@ -64,25 +66,23 @@ export function NationalOverview({ states }: { states: StateWithScore[] }) {
             National Overview
           </h1>
           <p className="text-[13px] mt-1.5" style={{ color: "var(--dicra-text-muted)" }}>
-            {totalClassified} districts across {states.length} states &amp; UTs
+            Composite risk across {states.length} states &amp; UTs — click any state to see districts
           </p>
         </div>
-        <span
-          className="text-[10px] font-bold uppercase tracking-[0.8px] px-3 py-1.5 rounded-[var(--dicra-radius-sm)]"
-          style={{
-            background: "var(--dicra-surface-muted)",
-            color: "var(--dicra-text-secondary)",
-            border: "1px solid var(--dicra-border)",
-          }}
-        >
-          Latest Period
-        </span>
+        <Suspense fallback={
+          <span className="text-[10px] font-bold uppercase tracking-[0.8px] px-3 py-1.5 rounded-[var(--dicra-radius-sm)]"
+                style={{ background: "var(--dicra-surface-muted)", color: "var(--dicra-text-secondary)", border: "1px solid var(--dicra-border)" }}>
+            Latest Period
+          </span>
+        }>
+          <PeriodSelector />
+        </Suspense>
       </div>
 
-      {/* Stat cards row */}
+      {/* Stat cards row — States classified by composite risk */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 mb-6">
         <StatCard
-          label="Critical Risk Districts"
+          label="Critical Risk States"
           value={riskCounts.critical}
           accentColor="var(--dicra-risk-critical)"
           iconBg="var(--dicra-risk-critical-bg)"
@@ -90,7 +90,7 @@ export function NationalOverview({ states }: { states: StateWithScore[] }) {
           total={totalClassified}
         />
         <StatCard
-          label="High Risk Districts"
+          label="High Risk States"
           value={riskCounts.high}
           accentColor="var(--dicra-risk-high)"
           iconBg="var(--dicra-risk-high-bg)"
@@ -98,7 +98,7 @@ export function NationalOverview({ states }: { states: StateWithScore[] }) {
           total={totalClassified}
         />
         <StatCard
-          label="Moderate Risk Districts"
+          label="Moderate Risk States"
           value={riskCounts.moderate}
           accentColor="var(--dicra-risk-moderate)"
           iconBg="var(--dicra-risk-moderate-bg)"
@@ -106,7 +106,7 @@ export function NationalOverview({ states }: { states: StateWithScore[] }) {
           total={totalClassified}
         />
         <StatCard
-          label="Low Risk Districts"
+          label="Low Risk States"
           value={riskCounts.low}
           accentColor="var(--dicra-risk-low)"
           iconBg="var(--dicra-risk-low-bg)"
@@ -116,8 +116,8 @@ export function NationalOverview({ states }: { states: StateWithScore[] }) {
       </div>
 
       {/* Content grid: Map + Right panel */}
-      <div className="flex gap-4 mb-6" style={{ minHeight: 520 }}>
-        <div className="flex-1 relative overflow-hidden rounded-[var(--dicra-radius-lg)] border border-[var(--dicra-border)] bg-[var(--dicra-surface)]">
+      <div className="flex flex-col lg:flex-row gap-4 mb-6" style={{ minHeight: 420 }}>
+        <div className="flex-1 relative overflow-hidden rounded-[var(--dicra-radius-lg)] border border-[var(--dicra-border)] bg-[var(--dicra-surface)]" style={{ minHeight: 380 }}>
           <ChoroplethMap
             geojsonUrl="/geo/states.json"
             features={mapFeatures}
@@ -128,7 +128,7 @@ export function NationalOverview({ states }: { states: StateWithScore[] }) {
             <MapLegend />
           </div>
         </div>
-        <div className="flex flex-col gap-3" style={{ width: 320, flexShrink: 0 }}>
+        <div className="flex flex-col gap-3 w-full lg:w-[320px] lg:flex-shrink-0">
           <RiskDonut counts={riskCounts} total={totalClassified} />
           <div className="flex-1 overflow-auto rounded-[var(--dicra-radius-lg)] border border-[var(--dicra-border)] bg-[var(--dicra-surface)] p-4">
             <StateRanking states={states} />
@@ -136,8 +136,17 @@ export function NationalOverview({ states }: { states: StateWithScore[] }) {
         </div>
       </div>
 
-      {/* Indicator summary row */}
-      <div className="grid grid-cols-3 gap-3 mb-4">
+      {/* Indicator summary — national averages across all states */}
+      <div className="mb-3 mt-2">
+        <h2 className="text-[14px] font-bold uppercase tracking-[0.8px]"
+            style={{ color: "var(--dicra-text-secondary)" }}>
+          National Indicator Averages
+        </h2>
+        <p className="text-[12px] mt-0.5" style={{ color: "var(--dicra-text-muted)" }}>
+          Mean risk score across all {states.length} states — higher score indicates greater risk (0–100 scale)
+        </p>
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-4">
         {ALL_INDICATOR_KEYS.map((key) => (
           <IndicatorCard key={key} indicatorType={key} score={avgIndicator(key)} showExplainer={false} />
         ))}

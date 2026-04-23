@@ -1,6 +1,6 @@
 import { createClient } from "@/lib/supabase/server";
 
-export async function getStatesWithLatestScores() {
+export async function getStatesWithLatestScores(period?: string) {
   const supabase = await createClient();
   const { data: states } = await supabase.from("states").select("id, lgd_code, name, area_sq_km").order("name");
   if (!states) return [];
@@ -18,14 +18,18 @@ export async function getStatesWithLatestScores() {
     dOffset += 1000;
   }
 
-  // Fetch all indicator scores (paginated)
+  // Fetch indicator scores (paginated), optionally filtered by period
   const scores: any[] = [];
   let offset = 0;
   while (true) {
-    const { data: batch } = await supabase.from("climate_indicators")
+    let query = supabase.from("climate_indicators")
       .select("district_id, indicator_type, score")
       .order("period_start", { ascending: false })
       .range(offset, offset + 999);
+    if (period) {
+      query = query.eq("period_start", period);
+    }
+    const { data: batch } = await query;
     if (!batch || batch.length === 0) break;
     scores.push(...batch);
     if (batch.length < 1000) break;

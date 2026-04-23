@@ -1,9 +1,14 @@
 "use client";
 
-import { IndicatorCard } from "@/components/indicator-card";
+import { InsightCard } from "@/components/insight-card";
+import { ActionPanel } from "@/components/action-panel";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { SourceFooter } from "@/components/source-footer";
 import { TrendChart } from "@/components/charts/trend-chart";
+import { Download } from "lucide-react";
+import { exportToCsv } from "@/lib/export-csv";
+import { getInsightsForDistrict } from "@/lib/insights";
+import { evaluateActionRules } from "@/lib/action-rules";
 import { classifyRisk, RISK_COLORS, RISK_BG_COLORS, RISK_LABELS, ALL_INDICATOR_KEYS } from "@/lib/indicators";
 import type { IndicatorType } from "@/lib/indicators";
 import { SOURCE_LIST, RELIABILITY_STYLES } from "@/lib/sources";
@@ -76,12 +81,33 @@ export function DistrictScorecard({ detail, history }: { detail: { district: any
               </span>
             )}
           </div>
+
+          <button
+            onClick={() => {
+              const rows = ALL_INDICATOR_KEYS.map((type) => ({
+                district: district.name,
+                state: stateName,
+                indicator: type,
+                score: indicatorScores[type] ?? "N/A",
+                value: indicatorValues[type] ?? "N/A",
+                period: periodLabel,
+              }));
+              exportToCsv(
+                `${district.name.replace(/\s+/g, "_")}_climate_risk.csv`,
+                rows
+              );
+            }}
+            className="mt-4 flex items-center gap-1.5 text-[11px] font-semibold px-3 py-1.5 rounded-[var(--dicra-radius-sm)] border border-[var(--dicra-border)] hover:border-[var(--dicra-accent)] transition-colors"
+            style={{ color: "var(--dicra-text-secondary)" }}
+          >
+            <Download size={13} />
+            Download CSV
+          </button>
         </div>
 
-        {/* Right: 2x2 Metadata Grid */}
-        <div className="grid grid-cols-3 gap-3">
+        {/* Right: Metadata Grid */}
+        <div className="grid grid-cols-2 gap-3">
           {[
-            { label: "LGD Code", value: district.lgd_code ?? "—" },
             { label: "Area", value: district.area_sq_km ? `${district.area_sq_km.toLocaleString()} km²` : "—" },
             { label: "Period", value: periodLabel },
           ].map((item) => (
@@ -101,18 +127,47 @@ export function DistrictScorecard({ detail, history }: { detail: { district: any
         </div>
       </div>
 
-      {/* 6 Indicator Gauge Cards — 3x2 Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
-        {ALL_INDICATOR_KEYS.map((type) => (
-          <IndicatorCard
-            key={type}
-            indicatorType={type}
-            score={indicatorScores[type] ?? null}
-            value={indicatorValues[type] ?? null}
-            showExplainer={true}
-          />
-        ))}
-      </div>
+      {/* Recommended Actions (compound rules) */}
+      {(() => {
+        const scores: Record<string, number> = {};
+        for (const [k, v] of Object.entries(indicatorScores)) {
+          if (v !== undefined) scores[k] = v;
+        }
+        const actions = evaluateActionRules(scores);
+        return actions.length > 0 ? (
+          <div className="mb-6">
+            <ActionPanel actions={actions} />
+          </div>
+        ) : null;
+      })()}
+
+      {/* 6 Indicator Insight Cards — 3x2 Grid */}
+      {(() => {
+        const scores: Record<string, number> = {};
+        const values: Record<string, number> = {};
+        for (const [k, v] of Object.entries(indicatorScores)) {
+          if (v !== undefined) scores[k] = v;
+        }
+        for (const [k, v] of Object.entries(indicatorValues)) {
+          if (v !== undefined) values[k] = v;
+        }
+        const insights = getInsightsForDistrict(scores, values);
+        const insightMap = new Map(insights.map(i => [i.indicator, i]));
+
+        return (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
+            {ALL_INDICATOR_KEYS.map((type) => (
+              <InsightCard
+                key={type}
+                indicatorType={type}
+                score={indicatorScores[type] ?? null}
+                value={indicatorValues[type] ?? null}
+                insight={insightMap.get(type) || null}
+              />
+            ))}
+          </div>
+        );
+      })()}
 
       {/* Two-column: Trends + Data Sources */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mb-6">

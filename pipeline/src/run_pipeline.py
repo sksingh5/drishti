@@ -36,25 +36,35 @@ def run_all(year: int, month: int) -> dict:
         update_data_source_status("imd_temperature", "error")
         results["heat_stress"] = 0
 
-    # Stage 3: ERA5 Soil Moisture
+    # Stage 3: ERA5 Soil Moisture (fallback to rainfall proxy)
     try:
         from src.fetch_era5 import run as run_era5
         results["soil_moisture"] = run_era5(year, month)
     except Exception as e:
-        print(f"[Pipeline] ERA5 FAILED: {e}")
-        traceback.print_exc()
-        update_data_source_status("era5_land", "error")
-        results["soil_moisture"] = 0
+        print(f"[Pipeline] ERA5 FAILED ({e}), falling back to rainfall proxy...")
+        try:
+            from src.fetch_soil_moisture_proxy import run as run_sm_proxy
+            results["soil_moisture"] = run_sm_proxy(year, month)
+        except Exception as e2:
+            print(f"[Pipeline] Soil Moisture Proxy also FAILED: {e2}")
+            traceback.print_exc()
+            update_data_source_status("era5_land", "error")
+            results["soil_moisture"] = 0
 
-    # Stage 4: MODIS NDVI
+    # Stage 4: MODIS NDVI (fallback to open/proxy)
     try:
         from src.fetch_gee_ndvi import run as run_ndvi
         results["vegetation_health"] = run_ndvi(year, month)
     except Exception as e:
-        print(f"[Pipeline] MODIS NDVI FAILED: {e}")
-        traceback.print_exc()
-        update_data_source_status("modis_ndvi", "error")
-        results["vegetation_health"] = 0
+        print(f"[Pipeline] MODIS NDVI FAILED ({e}), falling back to open source...")
+        try:
+            from src.fetch_ndvi_open import run as run_ndvi_open
+            results["vegetation_health"] = run_ndvi_open(year, month)
+        except Exception as e2:
+            print(f"[Pipeline] NDVI Open also FAILED: {e2}")
+            traceback.print_exc()
+            update_data_source_status("modis_ndvi", "error")
+            results["vegetation_health"] = 0
 
     # Stage 5: Drought Index (depends on rainfall history)
     try:
@@ -74,7 +84,16 @@ def run_all(year: int, month: int) -> dict:
         traceback.print_exc()
         results["flood_risk"] = 0
 
-    # Stage 7: Alert Check
+    # Stage 7: Vulnerability Index (depends on rainfall + NDVI)
+    try:
+        from src.compute_vulnerability import run as run_vulnerability
+        results["vulnerability"] = run_vulnerability(year, month)
+    except Exception as e:
+        print(f"[Pipeline] Vulnerability FAILED: {e}")
+        traceback.print_exc()
+        results["vulnerability"] = 0
+
+    # Stage 8: Alert Check
     try:
         from src.check_alerts import run as run_alerts
         results["alerts"] = run_alerts(period_start)

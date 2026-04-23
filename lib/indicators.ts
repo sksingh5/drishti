@@ -4,7 +4,8 @@ export type IndicatorType =
   | "vegetation_health"
   | "heat_stress"
   | "flood_risk"
-  | "soil_moisture";
+  | "soil_moisture"
+  | "vulnerability";
 
 export type RiskLevel = "critical" | "high" | "moderate" | "low";
 
@@ -51,24 +52,24 @@ export const INDICATORS: Record<IndicatorType, IndicatorMeta> = {
     label: "Drought Index",
     shortLabel: "Drought",
     color: "var(--dicra-ind-drought)",
-    source: "Computed SPI",
+    source: "Computed SPI / IMD",
     resolution: "District",
     frequency: "Monthly",
     reliability: "derived",
-    explainer: "Standardized Precipitation Index (SPI) computed from gamma-fitted rainfall distribution. Negative SPI indicates drought conditions. Score maps SPI to 0–100 risk scale.",
-    methodology: "Gamma distribution fit to historical same-month rainfall per district. CDF transformed to standard normal deviate. SPI mapped to risk: -3→100, 0→50, +3→0.",
+    explainer: "Drought risk derived from rainfall deficit analysis. Currently uses cross-district percentile ranking of 3-month accumulated rainfall (low rainfall = high drought risk). Will upgrade to full SPI-3 (gamma-fitted) when 10+ years of monthly data are available.",
+    methodology: "3-month accumulated rainfall from IMD, percentile-ranked across all districts. Inverted scoring: lowest rainfall districts score highest. Upgrade path: gamma distribution SPI-3 requires 10+ years of same-month history per district (WMO guideline).",
   },
   vegetation_health: {
     key: "vegetation_health",
     label: "Vegetation Health",
     shortLabel: "Vegetation",
     color: "var(--dicra-ind-vegetation)",
-    source: "Rainfall Proxy (MODIS pending)",
-    resolution: "District",
+    source: "MODIS MOD13A3",
+    resolution: "1km",
     frequency: "Monthly",
-    reliability: "derived",
-    explainer: "Currently uses rainfall anomaly as a vegetation stress proxy. Rainfall-NDVI correlation is well-established in semi-arid tropics (r > 0.85). Will be upgraded to satellite MODIS NDVI when GEE access is available.",
-    methodology: "Proxy: uses current month rainfall anomaly score as vegetation stress indicator. Scientific basis: Nicholson et al. (1990) established strong NDVI-rainfall correlation in tropical regions. Upgrade to MOD13A3 1km NDVI planned.",
+    reliability: "high",
+    explainer: "Satellite-derived NDVI from MODIS MOD13A3 at 1km resolution. Low NDVI indicates vegetation stress — a leading indicator of crop failure, drought impact, or land degradation.",
+    methodology: "MOD13A3 monthly 1km NDVI via Google Earth Engine. Scaled by 0.0001, aggregated to district-level zonal means using FAO GAUL boundaries. Inverted percentile scoring: low NDVI = high risk.",
   },
   flood_risk: {
     key: "flood_risk",
@@ -87,12 +88,24 @@ export const INDICATORS: Record<IndicatorType, IndicatorMeta> = {
     label: "Soil Moisture",
     shortLabel: "Moisture",
     color: "var(--dicra-ind-moisture)",
-    source: "Rainfall Proxy (ERA5 pending)",
+    source: "ERA5-Land",
+    resolution: "0.1°",
+    frequency: "Monthly",
+    reliability: "high",
+    explainer: "Volumetric soil water content from ERA5-Land reanalysis at 0.1° resolution. Low soil moisture indicates drought stress for agriculture and increased wildfire risk.",
+    methodology: "ERA5-Land monthly averaged volumetric soil water layer 1 (swvl1) from Copernicus CDS. Zonal statistics per district. Inverted percentile scoring: low moisture = high risk.",
+  },
+  vulnerability: {
+    key: "vulnerability",
+    label: "Vulnerability Index",
+    shortLabel: "Vulnerability",
+    color: "#E11D48",
+    source: "Computed",
     resolution: "District",
     frequency: "Monthly",
     reliability: "derived",
-    explainer: "Currently uses rainfall as a soil moisture proxy — higher rainfall indicates higher soil moisture, lower drought risk. Will be upgraded to ERA5-Land volumetric soil water when CDS access is available.",
-    methodology: "Proxy: rainfall values percentile-scored and inverted (low rainfall → high risk). Scientific basis: antecedent precipitation index (API) is an established soil moisture proxy (Crow et al., 2012). Upgrade to ERA5-Land swvl1 at 0.1° resolution planned.",
+    explainer: "Composite vulnerability score combining rainfall anomaly and vegetation health divergence. Districts where climate stress is high but vegetation is also stressed indicate systemic agricultural vulnerability.",
+    methodology: "Vulnerability = mean(rainfall_anomaly_score, vegetation_health_score). Captures NDVI-rainfall divergence — districts with both high rainfall anomaly and vegetation stress are flagged. Scale: 0-100 (mapped to 1-10 for display).",
   },
 };
 
@@ -101,6 +114,7 @@ export const INDICATOR_LIST = Object.values(INDICATORS);
 export const ALL_INDICATOR_KEYS: IndicatorType[] = [
   "rainfall_anomaly", "heat_stress", "drought_index",
   "vegetation_health", "flood_risk", "soil_moisture",
+  "vulnerability",
 ];
 
 export function classifyRisk(score: number): RiskLevel {

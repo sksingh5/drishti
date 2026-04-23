@@ -59,6 +59,18 @@ dist/
 .venv/
 venv/
 
+# Pipeline env and credentials
+pipeline/.env
+
+# GEE credentials (if copied into repo)
+**/credentials.json
+**/service-account*.json
+
+# Raw data files (large, fetched by pipeline)
+pipeline/rain/*.grd
+pipeline/**/*.nc
+pipeline/**/*.tif
+
 # Brainstorming sessions
 .superpowers/
 

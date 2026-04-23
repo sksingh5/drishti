@@ -2,15 +2,20 @@
 
 Uses MOD13A3 monthly 1km NDVI. Low NDVI = stressed vegetation = high risk.
 Requires: GEE account authenticated via `earthengine authenticate`.
+         GEE_PROJECT in pipeline/.env.
 """
 
+import os
 import numpy as np
 import pandas as pd
 from datetime import date
 from pathlib import Path
 import calendar
+from dotenv import load_dotenv
 
 import ee
+
+load_dotenv(Path(__file__).parent.parent / ".env")
 
 from src.db import get_supabase, get_districts_list
 from src.scoring import percentile_score
@@ -21,11 +26,12 @@ CACHE_DIR = Path(__file__).parent.parent / "data" / "cache" / "gee_ndvi"
 
 
 def initialize_gee():
+    project = os.environ.get("GEE_PROJECT", "climaterisk-494201")
     try:
-        ee.Initialize()
+        ee.Initialize(project=project)
     except Exception:
         ee.Authenticate()
-        ee.Initialize()
+        ee.Initialize(project=project)
 
 
 def fetch_ndvi_by_district(year: int, month: int) -> pd.DataFrame:

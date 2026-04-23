@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 48" fill="none">
+  <!-- ClimateIQ Wordmark -->
+  <text x="0" y="36" font-family="system-ui, -apple-system, sans-serif" font-size="36" fill="#142B21">
+    <tspan font-weight="400">Climate</tspan><tspan font-weight="900">IQ</tspan>
+  </text>
+  <!-- Accent dot -->
+  <circle cx="192" cy="10" r="5" fill="#34D399"/>
+</svg>

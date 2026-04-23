@@ -13,6 +13,7 @@ VALID_INDICATOR_TYPES = {
     "heat_stress",
     "flood_risk",
     "soil_moisture",
+    "vulnerability",
 }
 
 
@@ -41,8 +42,11 @@ def write_indicators(rows: Sequence[IndicatorRow]) -> int:
         return 0
     sb = get_supabase()
     # Batch insert in chunks of 500
-    records = [
-        {
+    # Deduplicate: keep last row per (district_id, indicator_type, period_start)
+    seen = {}
+    for r in rows:
+        key = (r.district_id, r.indicator_type, r.period_start.isoformat())
+        seen[key] = {
             "district_id": r.district_id,
             "indicator_type": r.indicator_type,
             "value": r.value,
@@ -52,12 +56,13 @@ def write_indicators(rows: Sequence[IndicatorRow]) -> int:
             "source": r.source,
             "methodology_version": r.methodology_version,
         }
-        for r in rows
-    ]
+    records = list(seen.values())
     written = 0
     for i in range(0, len(records), 500):
         batch = records[i : i + 500]
-        sb.table("climate_indicators").insert(batch).execute()
+        sb.table("climate_indicators").upsert(
+            batch, on_conflict="district_id,indicator_type,period_start"
+        ).execute()
         written += len(batch)
     return written
 

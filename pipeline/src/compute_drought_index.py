@@ -118,6 +118,7 @@ def run(year: int, month: int) -> int:
         all_years.add(int(r["period_start"][:4]))
 
     rows = []
+    pending = []  # (district_id, value, score, is_fallback)
     for district_id in current_districts:
         # Current 3-month accumulated rainfall
         current_3m = get_3month_sum(district_id, year, month)
@@ -131,30 +132,47 @@ def run(year: int, month: int) -> int:
         # Historical 3-month values for the same ending month across all years
         hist_values = []
         for hist_year in sorted(all_years):
-            if hist_year == year and month == month:
-                continue  # skip current period
+            if hist_year == year:
+                continue  # skip current year
             val = get_3month_sum(district_id, hist_year, month)
             if val is not None:
                 hist_values.append(val)
 
         hist_array = np.array(hist_values) if hist_values else np.array([])
 
-        if len(hist_array) >= 3:
+        if len(hist_array) >= 10:
             spi = compute_spi(current_3m, hist_array)
+            score = spi_to_risk_score(spi)
+            pending.append((district_id, round(spi, 3), score, False))
         else:
-            # Not enough history for SPI — use cross-district percentile as fallback
-            spi = 0.0
+            # Not enough history for proper SPI — store rainfall for cross-district ranking
+            pending.append((district_id, round(current_3m, 2), 0, True))
 
-        score = spi_to_risk_score(spi)
+    # For districts without enough history, use cross-district percentile ranking
+    fallback_values = np.array([v for _, v, _, is_fb in pending if is_fb and v > 0])
+    if len(fallback_values) == 0:
+        fallback_values = np.array([0.0])
+
+    fallback_count = 0
+    for district_id, value, score, is_fallback in pending:
+        if is_fallback:
+            # Lower rainfall = higher drought risk (inverted percentile)
+            pct = percentile_score(value, fallback_values)
+            score = 100 - pct
+            fallback_count += 1
+
         rows.append(IndicatorRow(
             district_id=district_id,
             indicator_type="drought_index",
-            value=round(spi, 3),
+            value=value,
             score=score,
             period_start=period_start,
             period_end=period_end,
             source="computed_spi3",
         ))
+
+    if fallback_count > 0:
+        print(f"[Drought Index] Used cross-district percentile for {fallback_count} districts (insufficient multi-year history for SPI).")
 
     written = write_indicators(rows)
     print(f"[Drought Index] Wrote {written} SPI-3 rows.")
