@@ -1,4 +1,5 @@
-import ee from "@google/earthengine";
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+const ee = require("@google/earthengine");
 
 let initialized = false;
 
@@ -9,25 +10,33 @@ function initializeGEE(): Promise<void> {
     const email = process.env.GEE_SERVICE_ACCOUNT_EMAIL;
     const keyRaw = process.env.GEE_PRIVATE_KEY;
 
-    if (email && keyRaw) {
-      const key = keyRaw.replace(/\\n/g, "\n");
-      const credentials = { client_email: email, private_key: key };
-      ee.data.authenticateViaPrivateKey(
-        credentials,
-        () => {
-          ee.initialize(null, null, () => {
-            initialized = true;
-            resolve();
-          }, reject);
-        },
-        reject
-      );
-    } else {
-      ee.initialize(null, null, () => {
-        initialized = true;
-        resolve();
-      }, reject);
+    if (!email || !keyRaw) {
+      console.error("[GEE] Missing GEE_SERVICE_ACCOUNT_EMAIL or GEE_PRIVATE_KEY");
+      return reject(new Error("GEE credentials not configured"));
     }
+
+    // .env.local stores \\n literals; replace with real newlines for the PEM
+    const key = keyRaw.replace(/\\n/g, "\n");
+    const credentials = { client_email: email, private_key: key };
+
+    console.log("[GEE] Authenticating as", email);
+    ee.data.authenticateViaPrivateKey(
+      credentials,
+      () => {
+        ee.initialize(null, null, () => {
+          initialized = true;
+          console.log("[GEE] Initialized successfully");
+          resolve();
+        }, (err: any) => {
+          console.error("[GEE] ee.initialize failed:", err);
+          reject(err);
+        });
+      },
+      (err: any) => {
+        console.error("[GEE] authenticateViaPrivateKey failed:", err);
+        reject(err);
+      }
+    );
   });
 }
 
