@@ -6,9 +6,10 @@ interface StatCardProps {
   iconBg: string;
   icon: React.ReactNode;
   total?: number;
+  description?: string;
 }
 
-export function StatCard({ label, value, change, accentColor, iconBg, icon, total }: StatCardProps) {
+export function StatCard({ label, value, change, accentColor, iconBg, icon, total, description }: StatCardProps) {
   const proportion = total ? (value / total) * 100 : 0;
 
   return (
@@ -30,6 +31,11 @@ export function StatCard({ label, value, change, accentColor, iconBg, icon, tota
       </div>
       <div className="text-[32px] font-black tracking-[-1.5px] leading-none" style={{ color: "var(--dicra-text-primary)" }}>{value}</div>
       <div className="text-[11px] font-medium mt-1" style={{ color: "var(--dicra-text-muted)" }}>{label}</div>
+      {description && (
+        <div className="text-[10px] mt-1 leading-relaxed" style={{ color: "var(--dicra-text-faint)" }}>
+          {description}
+        </div>
+      )}
       {total ? (
         <div className="mt-2.5 h-[3px] rounded-full overflow-hidden" style={{ background: "var(--dicra-border-subtle)" }}>
           <div className="h-full rounded-full" style={{ width: `${proportion}%`, background: accentColor }} />

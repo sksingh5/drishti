@@ -2,7 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import { Suspense } from "react";
-import { AlertTriangle, TrendingUp, Minus, Check } from "lucide-react";
+import { AlertTriangle, TrendingUp, Minus, Shield } from "lucide-react";
 import { PeriodSelector } from "@/components/period-selector";
 import { StateWithScore } from "@/lib/types";
 import { ChoroplethMap } from "@/components/map/choropleth-map";
@@ -88,6 +88,7 @@ export function NationalOverview({ states }: { states: StateWithScore[] }) {
           iconBg="var(--dicra-risk-critical-bg)"
           icon={<AlertTriangle size={16} style={{ color: "var(--dicra-risk-critical)" }} />}
           total={totalClassified}
+          description="States facing severe climate conditions requiring immediate action"
         />
         <StatCard
           label="High Risk States"
@@ -96,6 +97,7 @@ export function NationalOverview({ states }: { states: StateWithScore[] }) {
           iconBg="var(--dicra-risk-high-bg)"
           icon={<TrendingUp size={16} style={{ color: "var(--dicra-risk-high)" }} />}
           total={totalClassified}
+          description="States with significant risk that needs active monitoring"
         />
         <StatCard
           label="Moderate Risk States"
@@ -104,14 +106,20 @@ export function NationalOverview({ states }: { states: StateWithScore[] }) {
           iconBg="var(--dicra-risk-moderate-bg)"
           icon={<Minus size={16} style={{ color: "var(--dicra-risk-moderate)" }} />}
           total={totalClassified}
+          description="States with some elevated indicators — watch for escalation"
         />
         <StatCard
           label="Low Risk States"
           value={riskCounts.low}
-          accentColor="var(--dicra-risk-low)"
-          iconBg="var(--dicra-risk-low-bg)"
-          icon={<Check size={16} style={{ color: "var(--dicra-risk-low)" }} />}
+          accentColor={riskCounts.low === 0 ? "var(--dicra-risk-moderate)" : "var(--dicra-risk-low)"}
+          iconBg={riskCounts.low === 0 ? "var(--dicra-risk-moderate-bg)" : "var(--dicra-risk-low-bg)"}
+          icon={riskCounts.low === 0
+            ? <AlertTriangle size={16} style={{ color: "var(--dicra-risk-moderate)" }} />
+            : <Shield size={16} style={{ color: "var(--dicra-risk-low)" }} />}
           total={totalClassified}
+          description={riskCounts.low === 0
+            ? "No state is in the safe zone — all states show elevated climate risk"
+            : "States with minimal climate risk across all indicators"}
         />
       </div>
 
