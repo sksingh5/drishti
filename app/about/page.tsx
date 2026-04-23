@@ -427,7 +427,7 @@ export default function AboutPage() {
               className="flex items-center gap-2 hover:opacity-70 transition-opacity"
             >
               <img
-                src="https://www.intellecap.com/wp-content/uploads/2020/05/Intellecap-Logo.png"
+                src="/images/intellecap-logo.png"
                 alt="Intellecap"
                 className="h-5 object-contain"
               />
