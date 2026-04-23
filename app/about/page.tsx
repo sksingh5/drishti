@@ -16,26 +16,26 @@ export const metadata = { title: "About — DRISHTI" };
 const KEY_MESSAGES = [
   {
     icon: Eye,
-    heading: "Climate intelligence at every scale — from district to plot",
-    body: "DRISHTI tracks climate risk across all 784 districts in India, updated automatically every month from satellite and ground-station data. But it doesn't stop at district averages — farmers can click any point on the map to get plot-level readings of vegetation health, soil moisture, land surface temperature, and rainfall, powered by real-time queries to Google Earth Engine at 250-metre resolution.",
+    heading: "Climate risk is hyper-local — your tools should be too",
+    body: "A district that receives normal rainfall on average may still lose an entire rabi crop if that rain arrives three weeks late. National aggregates hide the risks that destroy livelihoods. DRISHTI brings climate intelligence down to the district and plot level — seven indicators scored for every district, and satellite data queryable at any point on the map down to 250-metre resolution. Because the farmer in Vidarbha and the farmer in Varanasi face completely different risks.",
     delay: 0,
   },
   {
     icon: Globe,
-    heading: "Seven indicators, one composite score, zero black boxes",
-    body: "Rainfall anomaly, heat stress, drought severity, vegetation health, flood exposure, soil moisture, and vulnerability — each scored 0 to 100 against a five-year climatological baseline using data from IMD Pune, Copernicus ERA5, and NASA MODIS. The weighted composite gives every district a single risk score that's fully transparent: every step is documented, peer-reviewable, and traceable to a published dataset.",
+    heading: "Transparent scoring from authoritative public data",
+    body: "Rainfall anomaly, heat stress, drought severity, vegetation health, flood exposure, soil moisture, and vulnerability — each scored 0 to 100 against a five-year climatological baseline using data from IMD Pune, Copernicus ERA5, and NASA MODIS. The weighted composite gives every district a single risk score. Every step is documented, peer-reviewable, and traceable to a published dataset. No proprietary models, no black boxes.",
     delay: 100,
   },
   {
     icon: BarChart3,
-    heading: "Crop-specific advisory rooted in agricultural science",
-    body: "DRISHTI maps each district to its agro-climatic zone and identifies the major crops grown there — rice, wheat, cotton, soybean, and dozens more across 15 zones. When climate indicators cross crop-specific thresholds, the platform generates targeted alerts and actionable guidance drawn from ICAR and KVK recommendations. A cotton grower in Vidarbha and a rice farmer in the Gangetic plains each see advice relevant to their crop and their conditions.",
+    heading: "Crop-specific advisories rooted in agricultural science",
+    body: "DRISHTI maps each district to its agro-climatic zone and identifies the major crops grown there — rice, wheat, cotton, soybean, and dozens more across 15 zones. When climate indicators cross crop-specific thresholds, the platform generates targeted alerts and actionable guidance drawn from ICAR and KVK recommendations. A cotton grower facing heat stress sees advice about boll development; a rice farmer facing drought sees SRI water-saving techniques.",
     delay: 200,
   },
   {
     icon: Users,
-    heading: "Built for farmers, lenders, planners — and kept current automatically",
-    body: "The data pipeline runs automatically every month — fetching the latest satellite imagery, computing scores, and updating the dashboard without manual intervention. State planners use DRISHTI to prioritise pre-monsoon resource allocation. Agricultural lenders stress-test portfolio exposure by district. And farmers use the crop advisory and plot-level queries to make informed decisions about sowing, irrigation, and risk preparedness.",
+    heading: "One platform, many missions",
+    body: "State disaster management authorities use DRISHTI to prioritise pre-monsoon resource allocation across districts. Agricultural lenders stress-test portfolio exposure before rabi and kharif seasons. Researchers use it as a validated, transparent baseline for climate attribution studies. And farmers use the crop advisory and plot-level queries to make informed decisions about sowing timing, irrigation planning, and risk preparedness — in language they understand, for the crops they grow.",
     delay: 300,
   },
 ];
