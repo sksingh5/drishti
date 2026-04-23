@@ -5,6 +5,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ScrollReveal } from "@/components/scroll-reveal";
+import { Logo } from "@/components/logo";
 import { Eye, Globe, BarChart3, Users, ArrowRight } from "lucide-react";
 
 export const metadata = { title: "About — DRISHTI" };
@@ -55,15 +56,7 @@ export default function AboutPage() {
       >
         <div className="max-w-[1200px] mx-auto px-8 flex items-center justify-between h-14">
           <Link href="/" className="flex items-center gap-2.5">
-            <span
-              className="flex h-8 w-8 items-center justify-center rounded-lg font-black text-sm text-white"
-              style={{
-                background: "linear-gradient(135deg, var(--dicra-accent), #059669)",
-                boxShadow: "0 4px 12px rgba(5,150,105,0.3)",
-              }}
-            >
-              D
-            </span>
+            <Logo size={32} />
             <span
               className="text-[15px] font-bold tracking-wide"
               style={{ color: "var(--dicra-text-primary)" }}
@@ -398,14 +391,7 @@ export default function AboutPage() {
           style={{ color: "var(--dicra-text-muted)" }}
         >
           <div className="flex items-center gap-2">
-            <span
-              className="flex h-6 w-6 items-center justify-center rounded font-black text-[10px] text-white"
-              style={{
-                background: "linear-gradient(135deg, var(--dicra-accent), #059669)",
-              }}
-            >
-              D
-            </span>
+            <Logo size={24} />
             <span>
               <span className="font-bold tracking-wide">DRISHTI</span> · District
               Risk Intelligence System for Hazard Tracking in India
