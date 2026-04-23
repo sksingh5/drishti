@@ -95,7 +95,7 @@ export async function getDistrictsForState(stateId: number) {
 export async function getDistrictDetail(districtId: number) {
   const supabase = await createClient();
   const { data: district } = await supabase.from("districts").select("id, lgd_code, name, area_sq_km, state_id, states(name)").eq("id", districtId).single();
-  const { data: scores } = await supabase.from("climate_indicators").select("indicator_type, value, score, period_start, period_end, source").eq("district_id", districtId).order("period_start", { ascending: false }).limit(6);
+  const { data: scores } = await supabase.from("climate_indicators").select("indicator_type, value, score, period_start, period_end, source").eq("district_id", districtId).order("period_start", { ascending: false }).limit(70);
   return { district, latest_scores: scores || [] };
 }
 
