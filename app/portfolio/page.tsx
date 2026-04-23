@@ -325,7 +325,7 @@ export default function PortfolioPage() {
               Interested in early access?
             </span>
             <a
-              href="mailto:contact@climateiq.in"
+              href="mailto:climate@intellecap.com"
               className="inline-flex items-center gap-1.5 px-5 py-2 rounded-full text-[12px] font-bold transition-all hover:scale-105"
               style={{ background: "var(--dicra-accent)", color: "var(--dicra-brand)" }}
             >
