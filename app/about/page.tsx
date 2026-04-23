@@ -16,26 +16,26 @@ export const metadata = { title: "About — DRISHTI" };
 const KEY_MESSAGES = [
   {
     icon: Eye,
-    heading: "Every district deserves transparent climate intelligence",
-    body: "India's 784 districts face wildly different climate futures — yet most planning decisions are made with coarse, national-level data that masks hyper-local risk. DRISHTI was built on the belief that every district administrator, every agricultural lender, and every community leader deserves access to the same quality of climate intelligence that global institutions take for granted.",
+    heading: "Climate intelligence at every scale — from district to plot",
+    body: "DRISHTI tracks climate risk across all 784 districts in India, updated automatically every month from satellite and ground-station data. But it doesn't stop at district averages — farmers can click any point on the map to get plot-level readings of vegetation health, soil moisture, land surface temperature, and rainfall, powered by real-time queries to Google Earth Engine at 250-metre resolution.",
     delay: 0,
   },
   {
     icon: Globe,
-    heading: "Climate risk is hyper-local, but data has been fragmented",
-    body: "A district that receives average rainfall may still face catastrophic drought if that rain arrives in a single week. Soil moisture, vegetation health, heat stress, and flood exposure all interact in ways that aggregate statistics miss entirely. For decades, this data existed — scattered across satellite archives, government observatories, and reanalysis models — but was never unified into a single, district-level picture. DRISHTI changes that.",
+    heading: "Seven indicators, one composite score, zero black boxes",
+    body: "Rainfall anomaly, heat stress, drought severity, vegetation health, flood exposure, soil moisture, and vulnerability — each scored 0 to 100 against a five-year climatological baseline using data from IMD Pune, Copernicus ERA5, and NASA MODIS. The weighted composite gives every district a single risk score that's fully transparent: every step is documented, peer-reviewable, and traceable to a published dataset.",
     delay: 100,
   },
   {
     icon: BarChart3,
-    heading: "Satellite + ground station + reanalysis = one defensible risk score",
-    body: "Seven indicators — rainfall anomaly, heat stress, drought severity, vegetation health, flood exposure, soil moisture, and social vulnerability — are computed from authoritative public sources: IMD Pune, Copernicus ERA5, and NASA MODIS. Each indicator is normalised to a 0–100 scale against a five-year climatological baseline, then combined into a single composite risk score. Every step is documented, peer-reviewable, and traceable to a published dataset. No black boxes.",
+    heading: "Crop-specific advisory rooted in agricultural science",
+    body: "DRISHTI maps each district to its agro-climatic zone and identifies the major crops grown there — rice, wheat, cotton, soybean, and dozens more across 15 zones. When climate indicators cross crop-specific thresholds, the platform generates targeted alerts and actionable guidance drawn from ICAR and KVK recommendations. A cotton grower in Vidarbha and a rice farmer in the Gangetic plains each see advice relevant to their crop and their conditions.",
     delay: 200,
   },
   {
     icon: Users,
-    heading: "Built for planners, lenders, researchers — and communities",
-    body: "State disaster management authorities use DRISHTI to prioritise pre-monsoon resource allocation. Agricultural lenders use it to stress-test portfolio exposure before rabi season. Researchers use it as a validated baseline for climate attribution studies. And through open API access, civil society organisations can bring the same intelligence directly to the farming communities most exposed to risk. One platform, many missions.",
+    heading: "Built for farmers, lenders, planners — and kept current automatically",
+    body: "The data pipeline runs automatically every month — fetching the latest satellite imagery, computing scores, and updating the dashboard without manual intervention. State planners use DRISHTI to prioritise pre-monsoon resource allocation. Agricultural lenders stress-test portfolio exposure by district. And farmers use the crop advisory and plot-level queries to make informed decisions about sowing, irrigation, and risk preparedness.",
     delay: 300,
   },
 ];
@@ -127,8 +127,8 @@ export default function AboutPage() {
             className="mt-5 text-[16px] max-w-[520px] leading-relaxed"
             style={{ color: "rgba(255,255,255,0.55)" }}
           >
-            A public-interest platform delivering open, peer-reviewable climate
-            risk intelligence for every district in India.
+            Climate risk scores, crop-specific advisories, and plot-level
+            satellite intelligence — open, transparent, and updated automatically.
           </p>
         </div>
       </section>
@@ -218,7 +218,7 @@ export default function AboutPage() {
               { value: "784", label: "Districts covered" },
               { value: "36", label: "States & Union Territories" },
               { value: "7", label: "Climate indicators" },
-              { value: "5-yr", label: "Climatological baseline" },
+              { value: "15", label: "Agro-climatic zones" },
             ].map((stat) => (
               <div key={stat.label}>
                 <p
@@ -292,14 +292,14 @@ export default function AboutPage() {
               },
               {
                 name: "NASA MODIS",
-                provides: "Vegetation Health (NDVI)",
-                resolution: "1 km monthly composite",
+                provides: "Vegetation & Land Cover",
+                resolution: "250m NDVI + 500m land cover",
                 delay: 200,
               },
               {
                 name: "Google Earth Engine",
-                provides: "Satellite Processing",
-                resolution: "Public compute API",
+                provides: "Real-Time Point Queries",
+                resolution: "On-demand plot-level data",
                 delay: 300,
               },
             ].map((src) => (
@@ -365,8 +365,8 @@ export default function AboutPage() {
               className="mt-4 text-[16px] leading-relaxed"
               style={{ color: "var(--dicra-text-secondary)" }}
             >
-              Explore district-level climate risk scores, trend charts, and
-              indicator breakdowns across all 784 districts.
+              Explore district-level climate risk, crop-specific advisories,
+              plot-level satellite queries, and historical trends across all 784 districts.
             </p>
             <Link
               href="/dashboard"
