@@ -13,80 +13,114 @@ export function Logo({ size = 32, className }: LogoProps) {
       xmlns="http://www.w3.org/2000/svg"
       className={className}
     >
-      {/* Eye outer shape — almond/leaf form */}
+      {/* Retina — fundoscopic view of the back of the eye */}
+
+      {/* Outer circle — retina boundary */}
+      <circle cx="16" cy="16" r="14.5" fill="#142B21" stroke="#34D399" strokeWidth="0.8" opacity="0.95" />
+
+      {/* Retinal background glow — subtle radial warmth */}
+      <circle cx="16" cy="16" r="13" fill="#1A3D2C" />
+      <circle cx="16" cy="16" r="10" fill="#1E4D35" opacity="0.5" />
+
+      {/* Optic disc — the bright spot where the optic nerve enters (slightly off-center) */}
+      <circle cx="12.5" cy="16" r="3.2" fill="#059669" opacity="0.9" />
+      <circle cx="12.5" cy="16" r="2" fill="#34D399" opacity="0.7" />
+      <circle cx="12.5" cy="16" r="0.8" fill="#6EE7B7" opacity="0.5" />
+
+      {/* Major blood vessels radiating from optic disc */}
+      {/* Superior temporal arcade */}
       <path
-        d="M2 16C2 16 8 6 16 6C24 6 30 16 30 16C30 16 24 26 16 26C8 26 2 16 2 16Z"
-        fill="#142B21"
+        d="M14 14.5C16 12 19 10.5 22 10C24 9.8 26 10.5 28 11"
         stroke="#34D399"
-        strokeWidth="1.2"
-      />
-
-      {/* Earth — iris circle */}
-      <circle cx="16" cy="16" r="7" fill="#059669" />
-
-      {/* Simplified continent / landmass shapes */}
-      <path
-        d="M13.5 12C14.2 11.5 15.5 11.2 16.5 12C17.2 12.6 17 13.8 16 14.2C15.2 14.5 14 14 13.5 13C13.2 12.5 13.2 12.2 13.5 12Z"
-        fill="#34D399"
+        strokeWidth="1.1"
+        strokeLinecap="round"
         opacity="0.7"
+        fill="none"
       />
+      {/* Inferior temporal arcade */}
       <path
-        d="M17.5 15.5C18.3 15.2 19.5 15.5 19.8 16.5C20 17.2 19.5 18.2 18.5 18.5C17.8 18.7 17 18.3 16.8 17.5C16.6 16.8 17 15.7 17.5 15.5Z"
-        fill="#34D399"
+        d="M14 17.5C16 20 19 21.5 22 22C24 22.2 26 21.5 28 21"
+        stroke="#34D399"
+        strokeWidth="1.1"
+        strokeLinecap="round"
         opacity="0.7"
+        fill="none"
       />
+      {/* Superior nasal vessel */}
       <path
-        d="M12.5 16C13 15.6 13.8 16 14 16.8C14.2 17.4 13.8 18 13.2 18.2C12.6 18.3 12 17.8 12 17.2C12 16.7 12.2 16.2 12.5 16Z"
-        fill="#34D399"
-        opacity="0.6"
+        d="M11 14C9 12.5 7 11.5 5 11"
+        stroke="#059669"
+        strokeWidth="0.7"
+        strokeLinecap="round"
+        opacity="0.5"
+        fill="none"
+      />
+      {/* Inferior nasal vessel */}
+      <path
+        d="M11 18C9 19.5 7 20.5 5 21"
+        stroke="#059669"
+        strokeWidth="0.7"
+        strokeLinecap="round"
+        opacity="0.5"
+        fill="none"
       />
 
-      {/* Meridian lines on the globe */}
+      {/* Smaller branching vessels — superior */}
       <path
-        d="M16 9C16 9 13 12 13 16C13 20 16 23 16 23"
+        d="M17 12C18.5 10.5 20 9.5 22 9"
         stroke="#34D399"
         strokeWidth="0.5"
-        opacity="0.3"
+        strokeLinecap="round"
+        opacity="0.4"
         fill="none"
       />
       <path
-        d="M16 9C16 9 19 12 19 16C19 20 16 23 16 23"
+        d="M19 11C20 10 21.5 9.8 23 10.2"
         stroke="#34D399"
-        strokeWidth="0.5"
-        opacity="0.3"
+        strokeWidth="0.4"
+        strokeLinecap="round"
+        opacity="0.35"
         fill="none"
       />
-      {/* Equator line */}
+      {/* Smaller branching vessels — inferior */}
+      <path
+        d="M17 20C18.5 21.5 20 22.5 22 23"
+        stroke="#34D399"
+        strokeWidth="0.5"
+        strokeLinecap="round"
+        opacity="0.4"
+        fill="none"
+      />
+      <path
+        d="M19 21C20 22 21.5 22.2 23 21.8"
+        stroke="#34D399"
+        strokeWidth="0.4"
+        strokeLinecap="round"
+        opacity="0.35"
+        fill="none"
+      />
+
+      {/* Macula / fovea — the dark central region for sharp vision */}
+      <circle cx="20" cy="16" r="3.5" fill="#142B21" opacity="0.4" />
+      <circle cx="20" cy="16" r="1.8" fill="#142B21" opacity="0.3" />
+
+      {/* Satellite orbit arc — thin ring suggesting earth observation */}
       <ellipse
         cx="16"
         cy="16"
-        rx="7"
-        ry="2.5"
+        rx="12"
+        ry="4.5"
         stroke="#34D399"
-        strokeWidth="0.5"
-        opacity="0.25"
+        strokeWidth="0.6"
+        strokeDasharray="2 3"
+        opacity="0.35"
         fill="none"
+        transform="rotate(-20 16 16)"
       />
 
-      {/* Pupil — dark center */}
-      <circle cx="16" cy="16" r="2.5" fill="#142B21" />
-      {/* Pupil highlight — gives life to the eye */}
-      <circle cx="17.2" cy="14.8" r="0.9" fill="white" opacity="0.7" />
-
-      {/* Satellite orbit arc — sweeping around the upper-right */}
-      <path
-        d="M22 7C25.5 9.5 27.5 13 27.5 16"
-        stroke="#34D399"
-        strokeWidth="1"
-        strokeLinecap="round"
-        opacity="0.8"
-        fill="none"
-      />
-      {/* Satellite dot */}
-      <circle cx="22" cy="7" r="1.3" fill="#34D399" />
-      {/* Satellite body hint — tiny cross */}
-      <line x1="20.5" y1="7" x2="23.5" y2="7" stroke="white" strokeWidth="0.5" opacity="0.6" />
-      <line x1="22" y1="5.8" x2="22" y2="8.2" stroke="white" strokeWidth="0.5" opacity="0.6" />
+      {/* Satellite dot on the orbit */}
+      <circle cx="27" cy="12.5" r="1" fill="#34D399" opacity="0.8" />
+      <line x1="26" y1="12.5" x2="28" y2="12.5" stroke="#6EE7B7" strokeWidth="0.4" opacity="0.6" />
     </svg>
   );
 }
