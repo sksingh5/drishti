@@ -65,13 +65,24 @@ interface CropAdvisoryCardProps {
   advisory: CropAdvisory;
 }
 
+const ALL_INDICATOR_KEYS = [
+  "rainfall_anomaly", "heat_stress", "drought_index",
+  "vegetation_health", "flood_risk", "soil_moisture",
+];
+
 export function CropAdvisoryCard({ advisory }: CropAdvisoryCardProps) {
   const { crop, zone, alerts, guidance } = advisory;
   const hasAlerts = alerts.length > 0;
 
+  // Find indicators that are NOT in alert — combine into one "normal" line
+  const alertedIndicators = new Set(alerts.map((a) => a.indicator));
+  const normalIndicators = ALL_INDICATOR_KEYS
+    .filter((k) => !alertedIndicators.has(k))
+    .map((k) => getIndicatorShortLabel(k));
+
   return (
     <div
-      className="rounded-[var(--dicra-radius-lg)] border border-[var(--dicra-border)] bg-[var(--dicra-surface)] p-4 flex flex-col gap-4"
+      className="rounded-[var(--dicra-radius-lg)] border border-[var(--dicra-border)] bg-[var(--dicra-surface)] p-4 flex flex-col gap-3"
     >
       {/* Header */}
       <div className="flex items-center gap-2.5">
@@ -95,19 +106,12 @@ export function CropAdvisoryCard({ advisory }: CropAdvisoryCardProps) {
         </div>
       </div>
 
-      {/* Alerts section */}
-      <div className="flex flex-col gap-2">
-        <div
-          className="text-[10px] font-bold uppercase tracking-[0.8px]"
-          style={{ color: "var(--dicra-text-secondary)" }}
-        >
-          Alerts
-        </div>
-
-        {hasAlerts ? (
-          <ul className="flex flex-col gap-2">
+      {hasAlerts ? (
+        <>
+          {/* Alert cards — only for indicators that crossed thresholds */}
+          <div className="flex flex-col gap-2">
             {alerts.map((alert, idx) => (
-              <li
+              <div
                 key={idx}
                 className="flex items-start gap-2 rounded-lg px-3 py-2 border border-[var(--dicra-border)]"
                 style={{ background: "var(--dicra-surface-muted)" }}
@@ -139,55 +143,64 @@ export function CropAdvisoryCard({ advisory }: CropAdvisoryCardProps) {
                     {alert.alert}
                   </span>
                 </div>
-              </li>
+              </div>
             ))}
-          </ul>
-        ) : (
-          <div
-            className="flex items-center gap-2 rounded-lg px-3 py-2 border border-[var(--dicra-border)]"
-            style={{ background: "var(--dicra-surface-muted)" }}
-          >
-            <CheckCircle
-              size={13}
-              className="shrink-0"
-              style={{ color: "var(--dicra-risk-low)" }}
-            />
-            <span
-              className="text-[11px]"
-              style={{ color: "var(--dicra-text-secondary)" }}
-            >
-              No active alerts for {crop}
-            </span>
-          </div>
-        )}
-      </div>
 
-      {/* General Guidance section */}
-      {guidance.length > 0 && (
-        <div className="flex flex-col gap-2">
-          <div
-            className="text-[10px] font-bold uppercase tracking-[0.8px]"
-            style={{ color: "var(--dicra-text-secondary)" }}
-          >
-            General Guidance
-          </div>
-          <ul className="flex flex-col gap-2">
-            {guidance.map((item, idx) => (
-              <li key={idx} className="flex items-start gap-2">
-                <Lightbulb
-                  size={13}
-                  className="mt-[1px] shrink-0"
-                  style={{ color: "var(--dicra-accent)" }}
+            {/* Combined normal indicators — single line */}
+            {normalIndicators.length > 0 && (
+              <div className="flex items-center gap-2 text-[11px] px-1 mt-0.5">
+                <CheckCircle
+                  size={12}
+                  className="shrink-0"
+                  style={{ color: "var(--dicra-risk-low)" }}
                 />
-                <span
-                  className="text-[11px] leading-snug"
-                  style={{ color: "var(--dicra-text-secondary)" }}
-                >
-                  {item}
+                <span style={{ color: "var(--dicra-text-faint)" }}>
+                  {normalIndicators.join(", ")} — within normal range
                 </span>
-              </li>
-            ))}
-          </ul>
+              </div>
+            )}
+          </div>
+
+          {/* What you can do — only shown when there are alerts + guidance */}
+          {guidance.length > 0 && (
+            <div className="flex flex-col gap-2">
+              <div
+                className="text-[10px] font-bold uppercase tracking-[0.8px]"
+                style={{ color: "var(--dicra-text-secondary)" }}
+              >
+                What You Can Do
+              </div>
+              <ul className="flex flex-col gap-2">
+                {guidance.map((item, idx) => (
+                  <li key={idx} className="flex items-start gap-2">
+                    <Lightbulb
+                      size={13}
+                      className="mt-[1px] shrink-0"
+                      style={{ color: "var(--dicra-accent)" }}
+                    />
+                    <span
+                      className="text-[11px] leading-snug"
+                      style={{ color: "var(--dicra-text-secondary)" }}
+                    >
+                      {item}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </>
+      ) : (
+        /* Zero alerts — compact single line */
+        <div className="flex items-center gap-2 text-[11px]">
+          <CheckCircle
+            size={13}
+            className="shrink-0"
+            style={{ color: "var(--dicra-risk-low)" }}
+          />
+          <span style={{ color: "var(--dicra-text-secondary)" }}>
+            All indicators within normal range for {crop.toLowerCase()} this period
+          </span>
         </div>
       )}
     </div>
