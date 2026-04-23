@@ -18,18 +18,26 @@ export async function getStatesWithLatestScores(period?: string) {
     dOffset += 1000;
   }
 
-  // Fetch indicator scores (paginated), optionally filtered by period
+  // If no period specified, find the latest available period first
+  if (!period) {
+    const { data: latestRow } = await supabase
+      .from("climate_indicators")
+      .select("period_start")
+      .order("period_start", { ascending: false })
+      .limit(1);
+    if (latestRow && latestRow.length > 0) {
+      period = latestRow[0].period_start;
+    }
+  }
+
+  // Fetch indicator scores for the target period only (paginated)
   const scores: any[] = [];
   let offset = 0;
   while (true) {
-    let query = supabase.from("climate_indicators")
+    const { data: batch } = await supabase.from("climate_indicators")
       .select("district_id, indicator_type, score")
-      .order("period_start", { ascending: false })
+      .eq("period_start", period!)
       .range(offset, offset + 999);
-    if (period) {
-      query = query.eq("period_start", period);
-    }
-    const { data: batch } = await query;
     if (!batch || batch.length === 0) break;
     scores.push(...batch);
     if (batch.length < 1000) break;
@@ -128,38 +136,44 @@ export async function getIndicatorStatus(): Promise<
 > {
   const supabase = await createClient();
 
-  // Fetch indicator data — paginate to handle large datasets
-  const allRows: { indicator_type: string; district_id: number; period_start: string }[] = [];
-  let offset = 0;
-  while (true) {
-    const { data } = await supabase
+  // Use RPC or a direct aggregate query instead of downloading all rows.
+  // GROUP BY indicator_type with COUNT(DISTINCT district_id) and MAX(period_start)
+  const { data } = await supabase
+    .rpc("get_indicator_status");
+
+  if (data && data.length > 0) return data;
+
+  // Fallback: manual aggregation with a single query per indicator type
+  // (much faster than paginating the entire table)
+  const indicators = [
+    "rainfall_anomaly", "heat_stress", "drought_index",
+    "vegetation_health", "flood_risk", "soil_moisture",
+  ];
+
+  const results: { indicator_type: string; district_count: number; latest_period: string }[] = [];
+
+  for (const ind of indicators) {
+    const { data: rows } = await supabase
       .from("climate_indicators")
-      .select("indicator_type, district_id, period_start")
+      .select("district_id, period_start")
+      .eq("indicator_type", ind)
       .order("period_start", { ascending: false })
-      .range(offset, offset + 999);
-    if (!data || data.length === 0) break;
-    allRows.push(...(data as any[]));
-    if (data.length < 1000) break;
-    offset += 1000;
-  }
+      .limit(1);
 
-  if (allRows.length === 0) return [];
+    if (rows && rows.length > 0) {
+      const { count } = await supabase
+        .from("climate_indicators")
+        .select("district_id", { count: "exact", head: true })
+        .eq("indicator_type", ind)
+        .eq("period_start", rows[0].period_start);
 
-  // Group by indicator_type — count distinct districts, find latest period
-  const statusMap = new Map<string, { districts: Set<number>; latest: string }>();
-  for (const row of allRows) {
-    const key = row.indicator_type;
-    if (!statusMap.has(key)) {
-      statusMap.set(key, { districts: new Set(), latest: row.period_start });
+      results.push({
+        indicator_type: ind,
+        district_count: count ?? 0,
+        latest_period: rows[0].period_start,
+      });
     }
-    const entry = statusMap.get(key)!;
-    entry.districts.add(row.district_id);
-    if (row.period_start > entry.latest) entry.latest = row.period_start;
   }
 
-  return Array.from(statusMap.entries()).map(([type, info]) => ({
-    indicator_type: type,
-    district_count: info.districts.size,
-    latest_period: info.latest,
-  }));
+  return results;
 }

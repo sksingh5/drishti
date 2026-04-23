@@ -1,6 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
 import { createClient } from "@/lib/supabase/server";
+
+// Revalidate landing page every hour (data only changes monthly)
+export const revalidate = 3600;
 import { INDICATOR_LIST } from "@/lib/indicators";
 import { getIndicatorStatus } from "@/lib/queries";
 import { ScrollReveal } from "@/components/scroll-reveal";
