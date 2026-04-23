@@ -97,7 +97,7 @@ export default function MethodologyPage() {
         {/* 2. Indicator Definitions */}
         <SectionCard title="Indicator Definitions">
           <p className="text-[13px] leading-relaxed mb-4" style={{ color: "var(--dicra-text-secondary)" }}>
-            DRISHTI tracks six climate risk indicators. Each is independently scored and can be combined into
+            DRISHTI tracks seven climate risk indicators. Each is independently scored and can be combined into
             a weighted composite.
           </p>
           <div className="grid gap-3">
@@ -175,10 +175,10 @@ export default function MethodologyPage() {
         {/* 4. Weight System */}
         <SectionCard title="Weight System">
           <p className="text-[13px] leading-relaxed mb-2" style={{ color: "var(--dicra-text-secondary)" }}>
-            The composite climate risk score is a weighted average of all six indicators. By default, rainfall
-            anomaly and drought index receive 20% weight each, while vegetation health, heat stress, flood
-            risk, and soil moisture receive 15% each. This reflects the higher sensitivity of water-related
-            indicators in India&apos;s climate risk profile. Weights are fully adjustable.
+            The composite climate risk score is a weighted average of all seven indicators. By default,
+            rainfall anomaly and drought index each receive 18% weight (water-related stress dominates
+            India&apos;s risk profile), vegetation health, heat stress, flood risk, and soil moisture each
+            receive 13%, and the vulnerability index receives 12%. Weights are fully adjustable.
           </p>
           <p className="text-[13px] leading-relaxed mb-2" style={{ color: "var(--dicra-text-secondary)" }}>
             Several presets are available for common use cases. You can also set fully custom weights.
@@ -200,40 +200,50 @@ export default function MethodologyPage() {
         <SectionCard title="Limitations">
           <ul className="list-disc pl-5 flex flex-col gap-2 text-[13px] leading-relaxed" style={{ color: "var(--dicra-text-secondary)" }}>
             <li>
-              <strong style={{ color: "var(--dicra-text-primary)" }}>Data freshness:</strong> Pipeline
-              updates are monthly; real-time conditions may differ.
+              <strong style={{ color: "var(--dicra-text-primary)" }}>Data freshness varies by source:</strong>{" "}
+              IMD data typically lags ~1 month; ERA5-Land ~2 months; MODIS NDVI ~1 month. Displayed scores
+              reflect the most recently ingested data, which may not represent current conditions.
             </li>
             <li>
-              <strong style={{ color: "var(--dicra-text-primary)" }}>Spatial resolution:</strong> IMD 0.25°
-              (~25 km); sub-district variation is not captured.
+              <strong style={{ color: "var(--dicra-text-primary)" }}>Spatial resolution:</strong> IMD rainfall
+              is at 0.25° (~25 km); temperature at 1°; ERA5 at 0.1°. Sub-district variation is not captured
+              for any indicator.
             </li>
             <li>
-              <strong style={{ color: "var(--dicra-text-primary)" }}>SPI drought index:</strong> Requires
-              multi-year rainfall history for reliable gamma fitting.
+              <strong style={{ color: "var(--dicra-text-primary)" }}>Short climatological baseline:</strong>{" "}
+              Rainfall anomaly uses a 5-year baseline (2019–2023). WMO recommends 30-year normals for
+              climatological comparisons. The short baseline means anomaly scores may be dominated by recent
+              weather rather than true long-run patterns.
+            </li>
+            <li>
+              <strong style={{ color: "var(--dicra-text-primary)" }}>Drought index method:</strong>{" "}
+              Drought index uses 3-month accumulated rainfall ranked as a cross-district percentile, not a
+              gamma-fitted SPI. Proper gamma SPI requires 10+ years of same-month history per district (WMO
+              guideline). The current method can conflate inter-district differences with actual drought
+              severity.
             </li>
             <li>
               <strong style={{ color: "var(--dicra-text-primary)" }}>MODIS NDVI:</strong> Affected by cloud
-              contamination in monsoon months.
+              contamination in monsoon months; compositing reduces but does not eliminate this artefact.
             </li>
             <li>
-              <strong style={{ color: "var(--dicra-text-primary)" }}>Flood risk:</strong> Uses placeholder
-              elevation factor (no DEM integrated yet).
+              <strong style={{ color: "var(--dicra-text-primary)" }}>Flood risk:</strong> Uses a placeholder
+              elevation factor (fixed at 50 — neutral). Real topographic data from SRTM DEM will replace this
+              in a future update, and composite weights (40/40/20) need validation against observed flood
+              events before use in resource allocation.
             </li>
             <li>
               <strong style={{ color: "var(--dicra-text-primary)" }}>Scores are relative:</strong>{" "}
-              Percentile-based, not absolute thresholds. A score of 75 means the district ranks in the 75th percentile of risk among all monitored districts — it does not represent a fixed danger level. Small differences (&plusmn;5 points) should not be treated as significant.
+              Percentile-based, not absolute thresholds. A score of 75 means the district ranks in the 75th
+              percentile of risk among all monitored districts — it does not represent a fixed danger level.
+              Small differences (&plusmn;5 points) should not be treated as significant.
             </li>
             <li>
-              <strong style={{ color: "var(--dicra-text-primary)" }}>Heat stress limitations:</strong>{" "}
-              Heat stress uses daily maximum temperature only. It does not account for humidity (which amplifies heat impact), nighttime temperatures, or multi-day heat spell duration. For occupational or agricultural heat stress, use WBGT (Wet Bulb Globe Temperature) thresholds.
-            </li>
-            <li>
-              <strong style={{ color: "var(--dicra-text-primary)" }}>SPI timescale:</strong>{" "}
-              SPI drought index uses a 1-month timescale. WMO recommends 3-month or 6-month SPI for agricultural drought assessment. Districts with fewer than 10 months of historical rainfall data may show neutral (50) drought scores.
-            </li>
-            <li>
-              <strong style={{ color: "var(--dicra-text-primary)" }}>Flood risk weights:</strong>{" "}
-              Flood risk composite weights (40/40/20) are initial estimates. Regional validation against observed flood events is recommended before using for resource allocation.
+              <strong style={{ color: "var(--dicra-text-primary)" }}>Heat stress:</strong>{" "}
+              Uses daily maximum temperature only. Does not account for humidity (which amplifies heat
+              impact), nighttime temperatures, or multi-day heat spell duration. For occupational or
+              agricultural heat stress assessment, WBGT (Wet Bulb Globe Temperature) thresholds are
+              preferred.
             </li>
           </ul>
         </SectionCard>

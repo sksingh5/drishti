@@ -68,7 +68,7 @@ export const DATA_SOURCES: Record<string, DataSourceMeta> = {
     coverage: "Depends on rainfall history",
     reliability: "derived",
     indicators: ["drought_index"],
-    description: "SPI computed from gamma-fitted historical rainfall per district.",
+    description: "3-month accumulated rainfall from IMD, percentile-ranked across all districts. Gamma-fitted SPI pending sufficient historical data.",
   },
   computed_flood: {
     key: "computed_flood",
