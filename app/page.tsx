@@ -443,7 +443,7 @@ export default async function LandingPage() {
             </h2>
           </ScrollReveal>
 
-          <div className="mt-14 flex flex-col gap-4">
+          <div className="mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {INDICATOR_LIST.map((ind, i) => {
               const status = indicatorStatus.find(
                 (s) => s.indicator_type === ind.key,
@@ -452,52 +452,45 @@ export default async function LandingPage() {
               return (
                 <ScrollReveal key={ind.key} delay={i * 50}>
                   <div
-                    className="flex items-center gap-5 p-5 rounded-2xl transition-all hover:-translate-y-0.5"
+                    className="flex items-start gap-3 p-5 rounded-2xl transition-all hover:-translate-y-0.5"
                     style={{
                       background: "var(--dicra-surface)",
                       boxShadow: "0 1px 8px rgba(0,0,0,0.03)",
                     }}
                   >
-                    {isLive ? (
-                      <CheckCircle
-                        size={20}
-                        className="flex-shrink-0"
-                        style={{ color: "var(--dicra-risk-low)" }}
-                      />
-                    ) : (
-                      <Clock
-                        size={20}
-                        className="flex-shrink-0"
-                        style={{ color: "var(--dicra-text-faint)" }}
-                      />
-                    )}
+                    <span
+                      className="w-3 h-3 rounded-full flex-shrink-0 mt-1"
+                      style={{ background: ind.color }}
+                    />
                     <div className="flex-1 min-w-0">
-                      <span
-                        className="font-semibold text-[14px]"
-                        style={{ color: "var(--dicra-text-primary)" }}
-                      >
-                        {ind.label}
-                      </span>
-                    </div>
-                    {isLive ? (
-                      <span
-                        className="text-[12px] font-medium"
-                        style={{ color: "var(--dicra-text-secondary)" }}
-                      >
-                        {status.district_count} districts ·{" "}
-                        {new Date(status.latest_period).toLocaleDateString(
-                          "en-IN",
-                          { month: "short", year: "numeric" },
+                      <div className="flex items-center gap-2">
+                        <span
+                          className="font-bold text-[14px]"
+                          style={{ color: "var(--dicra-text-primary)" }}
+                        >
+                          {ind.label}
+                        </span>
+                        {isLive ? (
+                          <CheckCircle
+                            size={14}
+                            className="flex-shrink-0"
+                            style={{ color: "var(--dicra-risk-low)" }}
+                          />
+                        ) : (
+                          <Clock
+                            size={14}
+                            className="flex-shrink-0"
+                            style={{ color: "var(--dicra-text-faint)" }}
+                          />
                         )}
-                      </span>
-                    ) : (
-                      <span
-                        className="text-[12px]"
-                        style={{ color: "var(--dicra-text-faint)" }}
+                      </div>
+                      <div
+                        className="text-[12px] mt-1"
+                        style={{ color: "var(--dicra-text-muted)" }}
                       >
-                        Coming Soon
-                      </span>
-                    )}
+                        {ind.source} · {ind.resolution} · {ind.frequency}
+                      </div>
+                    </div>
                   </div>
                 </ScrollReveal>
               );
