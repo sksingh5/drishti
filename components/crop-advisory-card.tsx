@@ -14,6 +14,7 @@ export interface CropAlert {
 export interface CropAdvisory {
   crop: string;
   zone: string;
+  area_1000ha?: number;
   alerts: CropAlert[];
   guidance: string[];
 }
@@ -23,17 +24,32 @@ const CROP_EMOJI: Record<string, string> = {
   Wheat: "🌾",
   "Pearl Millet": "🌾",
   Sorghum: "🌾",
+  "Kharif Sorghum": "🌾",
+  "Rabi Sorghum": "🌾",
+  "Finger Millet": "🌾",
+  Barley: "🌾",
   Cotton: "🏵️",
   Sugarcane: "🎋",
   Soybean: "🫘",
+  Soyabean: "🫘",
   "Pigeon Pea": "🫘",
+  Pigeonpea: "🫘",
+  Chickpea: "🫘",
   Groundnut: "🥜",
   Maize: "🌽",
   Potato: "🥔",
+  Potatoes: "🥔",
+  Onion: "🧅",
   Tea: "🍵",
   Coconut: "🥥",
   Mustard: "🌼",
+  "Rapeseed And Mustard": "🌼",
   Apple: "🍎",
+  Sesamum: "🌻",
+  Sunflower: "🌻",
+  Safflower: "🌻",
+  Castor: "🌿",
+  Linseed: "🌿",
 };
 
 function getCropEmoji(crop: string): string {
@@ -74,6 +90,7 @@ export function CropAdvisoryCard({ advisory }: CropAdvisoryCardProps) {
             style={{ color: "var(--dicra-text-muted)" }}
           >
             {zone}
+            {advisory.area_1000ha ? ` · ${advisory.area_1000ha}k ha` : ""}
           </span>
         </div>
       </div>

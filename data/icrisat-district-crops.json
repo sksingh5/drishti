@@ -1,0 +1,9451 @@
+[
+  {
+    "state": "Maharashtra",
+    "district": "Wardha",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Cotton",
+        "area_1000ha": 251.1
+      },
+      {
+        "name": "Soyabean",
+        "area_1000ha": 116.1
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 88.5
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 31.4
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 14.8
+      },
+      {
+        "name": "Sorghum",
+        "area_1000ha": 6.5
+      }
+    ]
+  },
+  {
+    "state": "Jharkhand",
+    "district": "Singhbhum",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 386.9
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 37.1
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 30.0
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 28.4
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 27.1
+      },
+      {
+        "name": "Linseed",
+        "area_1000ha": 20.1
+      }
+    ]
+  },
+  {
+    "state": "Jharkhand",
+    "district": "Palamau",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 121.9
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 74.4
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 66.3
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 49.1
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 40.0
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 8.4
+      }
+    ]
+  },
+  {
+    "state": "Rajasthan",
+    "district": "Sirohi",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Castor",
+        "area_1000ha": 34.9
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 24.1
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 22.2
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 20.4
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 17.6
+      },
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 16.6
+      }
+    ]
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Sitapur",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 210.9
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 163.9
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 153.5
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 26.6
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 10.1
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 10.0
+      }
+    ]
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Rae-Bareily",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 188.2
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 140.3
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 7.9
+      },
+      {
+        "name": "Kharif Sorghum",
+        "area_1000ha": 7.8
+      },
+      {
+        "name": "Sorghum",
+        "area_1000ha": 7.8
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 6.7
+      }
+    ]
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Yeotmal",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Cotton",
+        "area_1000ha": 470.3
+      },
+      {
+        "name": "Soyabean",
+        "area_1000ha": 254.5
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 134.6
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 94.1
+      },
+      {
+        "name": "Sorghum",
+        "area_1000ha": 23.9
+      },
+      {
+        "name": "Kharif Sorghum",
+        "area_1000ha": 22.6
+      }
+    ]
+  },
+  {
+    "state": "Chhattisgarh",
+    "district": "Bastar",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 660.4
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 41.9
+      },
+      {
+        "name": "Finger Millet",
+        "area_1000ha": 6.3
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 2.8
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 2.7
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 1.6
+      }
+    ]
+  },
+  {
+    "state": "Chhattisgarh",
+    "district": "Durg",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 841.1
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 258.5
+      },
+      {
+        "name": "Soyabean",
+        "area_1000ha": 77.4
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 43.5
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 26.2
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 19.9
+      }
+    ]
+  },
+  {
+    "state": "Jharkhand",
+    "district": "Dhanbad",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 53.3
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 11.1
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 7.0
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 5.4
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 5.0
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 0.5
+      }
+    ]
+  },
+  {
+    "state": "Telangana",
+    "district": "Hyderabad",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Cotton",
+        "area_1000ha": 121.8
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 76.7
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 56.8
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 50.3
+      },
+      {
+        "name": "Sorghum",
+        "area_1000ha": 10.9
+      },
+      {
+        "name": "Kharif Sorghum",
+        "area_1000ha": 8.9
+      }
+    ]
+  },
+  {
+    "state": "Andhra Pradesh",
+    "district": "Chittoor",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Groundnut",
+        "area_1000ha": 129.5
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 64.8
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 18.2
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 8.0
+      },
+      {
+        "name": "Finger Millet",
+        "area_1000ha": 6.7
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 2.5
+      }
+    ]
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Hardoi",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 314.4
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 149.8
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 37.3
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 36.2
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 17.7
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 13.4
+      }
+    ]
+  },
+  {
+    "state": "Tamil Nadu",
+    "district": "Madurai",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Sorghum",
+        "area_1000ha": 72.8
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 42.9
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 36.8
+      },
+      {
+        "name": "Rabi Sorghum",
+        "area_1000ha": 36.5
+      },
+      {
+        "name": "Kharif Sorghum",
+        "area_1000ha": 36.3
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 19.7
+      }
+    ]
+  },
+  {
+    "state": "Tamil Nadu",
+    "district": "Thanjavur",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 520.2
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 20.1
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 10.2
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 8.5
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 7.7
+      },
+      {
+        "name": "Sorghum",
+        "area_1000ha": 6.4
+      }
+    ]
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Unnao",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 244.4
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 95.0
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 29.2
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 17.3
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 11.2
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 7.7
+      }
+    ]
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Kheri",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 248.1
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 188.6
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 181.8
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 27.1
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 8.4
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 6.5
+      }
+    ]
+  },
+  {
+    "state": "Rajasthan",
+    "district": "Sikar",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 271.3
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 86.1
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 35.8
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 33.0
+      },
+      {
+        "name": "Barley",
+        "area_1000ha": 25.7
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 22.5
+      }
+    ]
+  },
+  {
+    "state": "Andhra Pradesh",
+    "district": "Kadapa YSR",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Chickpea",
+        "area_1000ha": 97.1
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 55.0
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 44.4
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 24.8
+      },
+      {
+        "name": "Sorghum",
+        "area_1000ha": 12.2
+      },
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 9.8
+      }
+    ]
+  },
+  {
+    "state": "Telangana",
+    "district": "Nizamabad",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 267.2
+      },
+      {
+        "name": "Soyabean",
+        "area_1000ha": 73.7
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 71.5
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 30.4
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 19.2
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 7.2
+      }
+    ]
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Gonda",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 237.0
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 232.6
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 123.7
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 51.0
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 25.7
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 14.6
+      }
+    ]
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Faizabad",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 227.1
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 220.2
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 31.9
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 7.7
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 7.6
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 4.5
+      }
+    ]
+  },
+  {
+    "state": "Jharkhand",
+    "district": "Hazaribagh",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 266.0
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 64.3
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 64.3
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 61.8
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 41.8
+      },
+      {
+        "name": "Linseed",
+        "area_1000ha": 7.5
+      }
+    ]
+  },
+  {
+    "state": "Rajasthan",
+    "district": "Swami Madhopur",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 194.3
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 170.4
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 139.7
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 40.1
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 39.8
+      },
+      {
+        "name": "Soyabean",
+        "area_1000ha": 5.0
+      }
+    ]
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Lucknow",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 81.6
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 51.6
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 4.4
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 4.1
+      },
+      {
+        "name": "Kharif Sorghum",
+        "area_1000ha": 2.1
+      },
+      {
+        "name": "Sorghum",
+        "area_1000ha": 2.1
+      }
+    ]
+  },
+  {
+    "state": "Rajasthan",
+    "district": "Tonk",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 186.6
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 101.4
+      },
+      {
+        "name": "Kharif Sorghum",
+        "area_1000ha": 52.4
+      },
+      {
+        "name": "Sorghum",
+        "area_1000ha": 52.4
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 45.8
+      },
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 41.8
+      }
+    ]
+  },
+  {
+    "state": "Andhra Pradesh",
+    "district": "Ananthapur",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Groundnut",
+        "area_1000ha": 423.1
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 74.4
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 72.8
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 45.5
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 30.9
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 23.3
+      }
+    ]
+  },
+  {
+    "state": "Tamil Nadu",
+    "district": "Ramananthapuram",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 217.3
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 24.8
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 20.0
+      },
+      {
+        "name": "Sorghum",
+        "area_1000ha": 16.9
+      },
+      {
+        "name": "Rabi Sorghum",
+        "area_1000ha": 11.8
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 11.2
+      }
+    ]
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Bahraich",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 239.9
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 236.4
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 92.4
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 30.6
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 10.6
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 5.3
+      }
+    ]
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Sultanpur",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 187.5
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 160.5
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 10.3
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 7.8
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 7.3
+      },
+      {
+        "name": "Kharif Sorghum",
+        "area_1000ha": 6.5
+      }
+    ]
+  },
+  {
+    "state": "Andhra Pradesh",
+    "district": "Kurnool",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Cotton",
+        "area_1000ha": 264.9
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 212.0
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 109.7
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 100.8
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 79.4
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 55.5
+      }
+    ]
+  },
+  {
+    "state": "Rajasthan",
+    "district": "Pali",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Chickpea",
+        "area_1000ha": 100.0
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 82.1
+      },
+      {
+        "name": "Kharif Sorghum",
+        "area_1000ha": 69.7
+      },
+      {
+        "name": "Sorghum",
+        "area_1000ha": 69.7
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 64.2
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 47.8
+      }
+    ]
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Pratapgarh",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 148.3
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 96.4
+      },
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 9.4
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 6.1
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 5.6
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 3.4
+      }
+    ]
+  },
+  {
+    "state": "Rajasthan",
+    "district": "Nagaur",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 307.5
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 53.7
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 53.7
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 45.0
+      },
+      {
+        "name": "Kharif Sorghum",
+        "area_1000ha": 27.7
+      },
+      {
+        "name": "Sorghum",
+        "area_1000ha": 27.7
+      }
+    ]
+  },
+  {
+    "state": "Rajasthan",
+    "district": "Udaipur",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Maize",
+        "area_1000ha": 240.9
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 137.2
+      },
+      {
+        "name": "Soyabean",
+        "area_1000ha": 63.6
+      },
+      {
+        "name": "Barley",
+        "area_1000ha": 17.4
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 16.7
+      },
+      {
+        "name": "Kharif Sorghum",
+        "area_1000ha": 15.8
+      }
+    ]
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Azamgarh",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 330.5
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 307.4
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 25.6
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 6.9
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 6.4
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 6.1
+      }
+    ]
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Nagpur",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Soyabean",
+        "area_1000ha": 151.1
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 145.2
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 135.2
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 97.3
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 66.0
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 64.4
+      }
+    ]
+  },
+  {
+    "state": "Haryana",
+    "district": "Rohtak",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 360.9
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 197.1
+      },
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 69.6
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 51.3
+      },
+      {
+        "name": "Sorghum",
+        "area_1000ha": 27.4
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 26.7
+      }
+    ]
+  },
+  {
+    "state": "Andhra Pradesh",
+    "district": "S.P.S. Nellore",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 242.5
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 51.0
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 34.1
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 18.3
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 13.7
+      },
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 8.6
+      }
+    ]
+  },
+  {
+    "state": "Tamil Nadu",
+    "district": "Thirunelveli",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 77.0
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 44.8
+      },
+      {
+        "name": "Sorghum",
+        "area_1000ha": 11.0
+      },
+      {
+        "name": "Rabi Sorghum",
+        "area_1000ha": 10.7
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 10.1
+      },
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 9.8
+      }
+    ]
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Barabanki",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 181.6
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 168.3
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 20.6
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 15.0
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 9.2
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 4.5
+      }
+    ]
+  },
+  {
+    "state": "Rajasthan",
+    "district": "Kota",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Soyabean",
+        "area_1000ha": 275.1
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 236.2
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 122.4
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 101.2
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 39.0
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 24.3
+      }
+    ]
+  },
+  {
+    "state": "Uttarakhand",
+    "district": "Nainital",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 132.4
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 127.2
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 17.8
+      },
+      {
+        "name": "Soyabean",
+        "area_1000ha": 6.1
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 4.2
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 4.0
+      }
+    ]
+  },
+  {
+    "state": "Andhra Pradesh",
+    "district": "Guntur",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 224.3
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 200.1
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 81.6
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 68.2
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 66.4
+      },
+      {
+        "name": "Sorghum",
+        "area_1000ha": 40.1
+      }
+    ]
+  },
+  {
+    "state": "Telangana",
+    "district": "Medak",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 180.8
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 180.0
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 102.9
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 30.8
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 17.4
+      },
+      {
+        "name": "Soyabean",
+        "area_1000ha": 16.2
+      }
+    ]
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Basti",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 370.9
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 368.4
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 46.0
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 8.3
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 8.3
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 6.5
+      }
+    ]
+  },
+  {
+    "state": "Uttarakhand",
+    "district": "Pithorgarh",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 27.4
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 26.3
+      },
+      {
+        "name": "Finger Millet",
+        "area_1000ha": 11.9
+      },
+      {
+        "name": "Barley",
+        "area_1000ha": 4.4
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 2.8
+      },
+      {
+        "name": "Soyabean",
+        "area_1000ha": 2.1
+      }
+    ]
+  },
+  {
+    "state": "Uttarakhand",
+    "district": "Almorah",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 45.2
+      },
+      {
+        "name": "Finger Millet",
+        "area_1000ha": 36.9
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 28.8
+      },
+      {
+        "name": "Barley",
+        "area_1000ha": 4.0
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 2.2
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 1.4
+      }
+    ]
+  },
+  {
+    "state": "Tamil Nadu",
+    "district": "Tiruchirapalli / Trichy",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 99.6
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 88.7
+      },
+      {
+        "name": "Sorghum",
+        "area_1000ha": 67.3
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 59.9
+      },
+      {
+        "name": "Kharif Sorghum",
+        "area_1000ha": 45.7
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 41.2
+      }
+    ]
+  },
+  {
+    "state": "Telangana",
+    "district": "Mahabubnagar",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Cotton",
+        "area_1000ha": 275.1
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 170.8
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 143.0
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 138.1
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 120.0
+      },
+      {
+        "name": "Castor",
+        "area_1000ha": 26.7
+      }
+    ]
+  },
+  {
+    "state": "Uttarakhand",
+    "district": "Chamoli",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 24.3
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 19.6
+      },
+      {
+        "name": "Finger Millet",
+        "area_1000ha": 16.2
+      },
+      {
+        "name": "Barley",
+        "area_1000ha": 3.2
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 2.1
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 0.8
+      }
+    ]
+  },
+  {
+    "state": "Andhra Pradesh",
+    "district": "Krishna",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 258.7
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 48.4
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 28.8
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 10.3
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 2.3
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 2.3
+      }
+    ]
+  },
+  {
+    "state": "Bihar",
+    "district": "Gaya",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 433.2
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 222.3
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 16.6
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 13.0
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 5.2
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 4.0
+      }
+    ]
+  },
+  {
+    "state": "Chhattisgarh",
+    "district": "Raipur",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 959.0
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 31.4
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 14.6
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 6.1
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 4.9
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 3.9
+      }
+    ]
+  },
+  {
+    "state": "Rajasthan",
+    "district": "Jodhpur",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 421.9
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 149.4
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 129.4
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 66.1
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 46.7
+      },
+      {
+        "name": "Kharif Sorghum",
+        "area_1000ha": 34.5
+      }
+    ]
+  },
+  {
+    "state": "Tamil Nadu",
+    "district": "The Nilgiris",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Potatoes",
+        "area_1000ha": 0.9
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 0.2
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 0.0
+      }
+    ]
+  },
+  {
+    "state": "Andhra Pradesh",
+    "district": "West Godavari",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 393.2
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 59.4
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 8.0
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 4.5
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 2.6
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 0.4
+      }
+    ]
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Deoria",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 271.1
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 255.1
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 79.1
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 15.9
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 11.8
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 5.3
+      }
+    ]
+  },
+  {
+    "state": "Rajasthan",
+    "district": "Jhunjhunu",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 219.3
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 86.0
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 58.6
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 58.1
+      },
+      {
+        "name": "Barley",
+        "area_1000ha": 8.9
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 8.7
+      }
+    ]
+  },
+  {
+    "state": "Uttarakhand",
+    "district": "Uttar Kashi",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 10.7
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 10.2
+      },
+      {
+        "name": "Finger Millet",
+        "area_1000ha": 5.2
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 2.9
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 1.0
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 0.7
+      }
+    ]
+  },
+  {
+    "state": "Punjab",
+    "district": "Gurdaspur",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 226.0
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 204.0
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 26.0
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 9.0
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 2.8
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 0.5
+      }
+    ]
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Gorakhpur",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 337.7
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 319.7
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 20.0
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 7.1
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 7.1
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 4.2
+      }
+    ]
+  },
+  {
+    "state": "Uttarakhand",
+    "district": "Tehri Garhwal",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 20.7
+      },
+      {
+        "name": "Finger Millet",
+        "area_1000ha": 11.1
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 10.4
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 2.1
+      },
+      {
+        "name": "Barley",
+        "area_1000ha": 2.1
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 1.5
+      }
+    ]
+  },
+  {
+    "state": "Tamil Nadu",
+    "district": "Kanyakumari",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 9.6
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 0.0
+      }
+    ]
+  },
+  {
+    "state": "Andhra Pradesh",
+    "district": "East Godavari",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 386.5
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 16.4
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 11.8
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 10.3
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 2.5
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 2.3
+      }
+    ]
+  },
+  {
+    "state": "Andhra Pradesh",
+    "district": "Visakhapatnam",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 173.4
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 38.4
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 25.8
+      },
+      {
+        "name": "Finger Millet",
+        "area_1000ha": 18.2
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 9.7
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 8.3
+      }
+    ]
+  },
+  {
+    "state": "Uttarakhand",
+    "district": "Garhwal",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Finger Millet",
+        "area_1000ha": 17.1
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 13.4
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 10.0
+      },
+      {
+        "name": "Barley",
+        "area_1000ha": 3.9
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 2.2
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 2.0
+      }
+    ]
+  },
+  {
+    "state": "Rajasthan",
+    "district": "Jhalawar",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Soyabean",
+        "area_1000ha": 209.4
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 102.2
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 57.9
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 46.0
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 39.8
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 4.5
+      }
+    ]
+  },
+  {
+    "state": "Uttarakhand",
+    "district": "Dehradun",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 16.9
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 9.3
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 6.8
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 3.9
+      },
+      {
+        "name": "Finger Millet",
+        "area_1000ha": 1.2
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 0.8
+      }
+    ]
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Bhandara",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 315.9
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 18.7
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 15.4
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 13.2
+      },
+      {
+        "name": "Linseed",
+        "area_1000ha": 5.5
+      },
+      {
+        "name": "Soyabean",
+        "area_1000ha": 5.3
+      }
+    ]
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Amarawati",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Soyabean",
+        "area_1000ha": 287.1
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 207.5
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 112.3
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 103.9
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 39.3
+      },
+      {
+        "name": "Kharif Sorghum",
+        "area_1000ha": 18.3
+      }
+    ]
+  },
+  {
+    "state": "Bihar",
+    "district": "Shahabad (now part of Bhojpur district)",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 492.7
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 359.5
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 13.7
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 10.7
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 7.0
+      },
+      {
+        "name": "Barley",
+        "area_1000ha": 6.2
+      }
+    ]
+  },
+  {
+    "state": "Punjab",
+    "district": "Amritsar",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 375.0
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 362.0
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 7.0
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 2.3
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 2.0
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 1.2
+      }
+    ]
+  },
+  {
+    "state": "Tamil Nadu",
+    "district": "Coimbatore",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 90.2
+      },
+      {
+        "name": "Sorghum",
+        "area_1000ha": 46.6
+      },
+      {
+        "name": "Kharif Sorghum",
+        "area_1000ha": 27.7
+      },
+      {
+        "name": "Rabi Sorghum",
+        "area_1000ha": 18.9
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 18.3
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 18.1
+      }
+    ]
+  },
+  {
+    "state": "Telangana",
+    "district": "Nalgonda",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 415.2
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 351.3
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 26.9
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 12.8
+      },
+      {
+        "name": "Sorghum",
+        "area_1000ha": 2.1
+      },
+      {
+        "name": "Kharif Sorghum",
+        "area_1000ha": 1.7
+      }
+    ]
+  },
+  {
+    "state": "Assam",
+    "district": "Cachar",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 220.5
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 5.2
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 2.1
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 0.5
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 0.3
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 0.2
+      }
+    ]
+  },
+  {
+    "state": "Rajasthan",
+    "district": "Jalore",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 314.1
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 83.2
+      },
+      {
+        "name": "Castor",
+        "area_1000ha": 49.3
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 46.9
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 27.2
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 20.6
+      }
+    ]
+  },
+  {
+    "state": "Andhra Pradesh",
+    "district": "Srikakulam",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 279.1
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 51.9
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 14.3
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 12.7
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 11.6
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 8.7
+      }
+    ]
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Ballia",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 136.9
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 115.9
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 31.8
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 8.3
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 6.7
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 6.5
+      }
+    ]
+  },
+  {
+    "state": "Telangana",
+    "district": "Warangal",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Cotton",
+        "area_1000ha": 290.5
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 269.3
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 103.1
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 17.9
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 9.2
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 2.0
+      }
+    ]
+  },
+  {
+    "state": "Assam",
+    "district": "Darrang",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 325.7
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 42.4
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 21.3
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 7.4
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 3.9
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 1.7
+      }
+    ]
+  },
+  {
+    "state": "Rajasthan",
+    "district": "Jaisalmer",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Chickpea",
+        "area_1000ha": 159.1
+      },
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 105.1
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 41.7
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 25.7
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 9.0
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 6.0
+      }
+    ]
+  },
+  {
+    "state": "Assam",
+    "district": "Dibrugarh",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 141.5
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 10.8
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 4.4
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 1.3
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 0.4
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 0.1
+      }
+    ]
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Hoshangabad",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 349.5
+      },
+      {
+        "name": "Soyabean",
+        "area_1000ha": 138.0
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 136.8
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 134.1
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 35.2
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 18.0
+      }
+    ]
+  },
+  {
+    "state": "Chhattisgarh",
+    "district": "Bilaspur",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 727.9
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 39.1
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 15.8
+      },
+      {
+        "name": "Soyabean",
+        "area_1000ha": 13.9
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 7.6
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 7.6
+      }
+    ]
+  },
+  {
+    "state": "Haryana",
+    "district": "Karnal",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 515.5
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 508.4
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 5.9
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 4.7
+      },
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 2.5
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 0.2
+      }
+    ]
+  },
+  {
+    "state": "Karnataka",
+    "district": "Bidar",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Soyabean",
+        "area_1000ha": 149.0
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 78.7
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 65.4
+      },
+      {
+        "name": "Sorghum",
+        "area_1000ha": 42.7
+      },
+      {
+        "name": "Rabi Sorghum",
+        "area_1000ha": 22.4
+      },
+      {
+        "name": "Kharif Sorghum",
+        "area_1000ha": 20.3
+      }
+    ]
+  },
+  {
+    "state": "Assam",
+    "district": "Goalpara",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 348.1
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 63.0
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 16.7
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 5.7
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 5.2
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 2.1
+      }
+    ]
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Thane",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 132.7
+      },
+      {
+        "name": "Finger Millet",
+        "area_1000ha": 13.9
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 3.3
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 2.5
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 0.6
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 0.1
+      }
+    ]
+  },
+  {
+    "state": "Assam",
+    "district": "Kamrup",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 427.4
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 51.5
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 22.6
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 5.9
+      },
+      {
+        "name": "Onion",
+        "area_1000ha": 2.3
+      },
+      {
+        "name": "Linseed",
+        "area_1000ha": 2.2
+      }
+    ]
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Ghazipur",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 166.2
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 154.8
+      },
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 14.8
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 10.9
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 7.3
+      },
+      {
+        "name": "Barley",
+        "area_1000ha": 6.9
+      }
+    ]
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Jaunpur",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 207.7
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 157.3
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 43.4
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 19.5
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 9.5
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 7.3
+      }
+    ]
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Shajapur",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Soyabean",
+        "area_1000ha": 350.0
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 136.4
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 125.8
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 22.4
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 14.1
+      },
+      {
+        "name": "Onion",
+        "area_1000ha": 10.5
+      }
+    ]
+  },
+  {
+    "state": "Rajasthan",
+    "district": "Jaipur",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 449.2
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 231.4
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 116.2
+      },
+      {
+        "name": "Barley",
+        "area_1000ha": 57.3
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 41.3
+      },
+      {
+        "name": "Kharif Sorghum",
+        "area_1000ha": 37.1
+      }
+    ]
+  },
+  {
+    "state": "Assam",
+    "district": "Karbi Anglong",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 132.9
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 23.7
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 10.5
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 7.9
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 3.3
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 1.2
+      }
+    ]
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Rajgarh",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Soyabean",
+        "area_1000ha": 309.4
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 152.0
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 112.6
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 63.9
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 9.0
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 6.2
+      }
+    ]
+  },
+  {
+    "state": "Punjab",
+    "district": "Kapurthala",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 118.0
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 108.0
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 4.0
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 2.0
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 0.5
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 0.1
+      }
+    ]
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Mirzpur",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 148.8
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 123.6
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 25.1
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 22.6
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 15.3
+      },
+      {
+        "name": "Barley",
+        "area_1000ha": 11.2
+      }
+    ]
+  },
+  {
+    "state": "Telangana",
+    "district": "Khammam",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 161.3
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 143.2
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 41.0
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 5.1
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 4.8
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 4.8
+      }
+    ]
+  },
+  {
+    "state": "Assam",
+    "district": "North Cachar Hil / Dima hasao",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 13.8
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 4.2
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 3.5
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 3.0
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 1.9
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 1.0
+      }
+    ]
+  },
+  {
+    "state": "Assam",
+    "district": "Lakhimpur",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 190.7
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 40.8
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 13.5
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 0.6
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 0.5
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 0.4
+      }
+    ]
+  },
+  {
+    "state": "Rajasthan",
+    "district": "Ganganagar",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 506.6
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 315.6
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 302.9
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 196.5
+      },
+      {
+        "name": "Barley",
+        "area_1000ha": 71.7
+      },
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 46.0
+      }
+    ]
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Saharanpur",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 212.7
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 156.6
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 70.5
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 8.2
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 4.4
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 2.4
+      }
+    ]
+  },
+  {
+    "state": "Tamil Nadu",
+    "district": "Salem",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Sorghum",
+        "area_1000ha": 157.4
+      },
+      {
+        "name": "Kharif Sorghum",
+        "area_1000ha": 117.1
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 73.1
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 66.6
+      },
+      {
+        "name": "Finger Millet",
+        "area_1000ha": 65.8
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 52.0
+      }
+    ]
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Varanasi",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 230.3
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 194.5
+      },
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 18.9
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 11.1
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 5.1
+      },
+      {
+        "name": "Kharif Sorghum",
+        "area_1000ha": 4.7
+      }
+    ]
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Betul",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Soyabean",
+        "area_1000ha": 223.0
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 104.4
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 80.0
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 45.0
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 41.1
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 28.2
+      }
+    ]
+  },
+  {
+    "state": "Rajasthan",
+    "district": "Dungarpur",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Maize",
+        "area_1000ha": 61.5
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 47.7
+      },
+      {
+        "name": "Soyabean",
+        "area_1000ha": 32.8
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 17.2
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 11.7
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 1.3
+      }
+    ]
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Raigad",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 114.2
+      },
+      {
+        "name": "Finger Millet",
+        "area_1000ha": 6.7
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 0.3
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 0.1
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 0.0
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 0.0
+      }
+    ]
+  },
+  {
+    "state": "Assam",
+    "district": "Nagaon",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 286.2
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 25.2
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 9.5
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 7.0
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 3.4
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 1.2
+      }
+    ]
+  },
+  {
+    "state": "Assam",
+    "district": "Sibsagar",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 330.5
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 22.1
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 5.2
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 3.3
+      },
+      {
+        "name": "Onion",
+        "area_1000ha": 0.5
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 0.4
+      }
+    ]
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Vidisha",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Soyabean",
+        "area_1000ha": 277.5
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 263.0
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 207.0
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 10.5
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 7.3
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 6.6
+      }
+    ]
+  },
+  {
+    "state": "Telangana",
+    "district": "Karimnagar",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 353.7
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 175.0
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 65.4
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 7.1
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 4.7
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 3.2
+      }
+    ]
+  },
+  {
+    "state": "Rajasthan",
+    "district": "Churu",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 266.1
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 107.1
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 72.9
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 63.5
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 33.5
+      },
+      {
+        "name": "Barley",
+        "area_1000ha": 7.7
+      }
+    ]
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Raisen",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 197.6
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 167.2
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 112.0
+      },
+      {
+        "name": "Soyabean",
+        "area_1000ha": 84.7
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 33.7
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 6.9
+      }
+    ]
+  },
+  {
+    "state": "Himachal Pradesh",
+    "district": "Bilashpur",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Maize",
+        "area_1000ha": 24.5
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 23.8
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 1.4
+      },
+      {
+        "name": "Barley",
+        "area_1000ha": 0.1
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 0.1
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 0.1
+      }
+    ]
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Ratnagiri",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 139.2
+      },
+      {
+        "name": "Finger Millet",
+        "area_1000ha": 16.0
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 1.4
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 1.1
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 0.0
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 0.0
+      }
+    ]
+  },
+  {
+    "state": "Jharkhand",
+    "district": "Santhal Paragana / Dumka",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 351.0
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 92.4
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 80.8
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 50.6
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 40.5
+      },
+      {
+        "name": "Linseed",
+        "area_1000ha": 10.9
+      }
+    ]
+  },
+  {
+    "state": "Bihar",
+    "district": "Bhagalpur",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 125.5
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 80.6
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 49.0
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 8.2
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 5.2
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 2.6
+      }
+    ]
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Chandrapur",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 284.4
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 170.7
+      },
+      {
+        "name": "Soyabean",
+        "area_1000ha": 66.1
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 45.7
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 37.6
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 18.7
+      }
+    ]
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Muzaffarnagar",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 239.2
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 135.3
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 32.9
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 5.4
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 1.8
+      },
+      {
+        "name": "Barley",
+        "area_1000ha": 0.2
+      }
+    ]
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Banda",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 208.7
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 142.5
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 60.7
+      },
+      {
+        "name": "Kharif Sorghum",
+        "area_1000ha": 40.5
+      },
+      {
+        "name": "Sorghum",
+        "area_1000ha": 40.5
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 33.9
+      }
+    ]
+  },
+  {
+    "state": "Punjab",
+    "district": "Jalandhar",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 217.0
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 207.6
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 14.7
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 10.9
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 1.8
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 0.3
+      }
+    ]
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Sehore",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Soyabean",
+        "area_1000ha": 365.2
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 278.4
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 165.9
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 36.5
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 17.1
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 14.7
+      }
+    ]
+  },
+  {
+    "state": "Himachal Pradesh",
+    "district": "Chamba",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Maize",
+        "area_1000ha": 26.8
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 18.7
+      },
+      {
+        "name": "Barley",
+        "area_1000ha": 3.6
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 2.5
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 1.6
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 0.5
+      }
+    ]
+  },
+  {
+    "state": "Rajasthan",
+    "district": "Chittorgarh",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 174.9
+      },
+      {
+        "name": "Soyabean",
+        "area_1000ha": 159.4
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 120.8
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 38.6
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 22.9
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 18.8
+      }
+    ]
+  },
+  {
+    "state": "Himachal Pradesh",
+    "district": "Kangra",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 147.3
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 115.8
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 37.0
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 3.6
+      },
+      {
+        "name": "Barley",
+        "area_1000ha": 2.6
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 1.8
+      }
+    ]
+  },
+  {
+    "state": "Himachal Pradesh",
+    "district": "Kullu",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 21.9
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 15.1
+      },
+      {
+        "name": "Barley",
+        "area_1000ha": 2.4
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 1.3
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 0.9
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 0.8
+      }
+    ]
+  },
+  {
+    "state": "Himachal Pradesh",
+    "district": "Kinnaur",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Barley",
+        "area_1000ha": 1.0
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 0.2
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 0.2
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 0.1
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 0.0
+      },
+      {
+        "name": "Finger Millet",
+        "area_1000ha": 0.0
+      }
+    ]
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Hamirpur",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 161.5
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 119.8
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 53.3
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 23.2
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 18.3
+      },
+      {
+        "name": "Kharif Sorghum",
+        "area_1000ha": 18.0
+      }
+    ]
+  },
+  {
+    "state": "Telangana",
+    "district": "Adilabad",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Cotton",
+        "area_1000ha": 341.0
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 93.7
+      },
+      {
+        "name": "Soyabean",
+        "area_1000ha": 58.3
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 47.0
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 30.2
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 27.3
+      }
+    ]
+  },
+  {
+    "state": "Punjab",
+    "district": "Hoshiarpur",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 173.0
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 98.4
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 59.1
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 25.3
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 4.5
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 1.2
+      }
+    ]
+  },
+  {
+    "state": "Himachal Pradesh",
+    "district": "Lahul & Spiti",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Potatoes",
+        "area_1000ha": 0.7
+      },
+      {
+        "name": "Barley",
+        "area_1000ha": 0.4
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 0.1
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 0.1
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 0.0
+      }
+    ]
+  },
+  {
+    "state": "Chhattisgarh",
+    "district": "Raigarh",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 411.1
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 10.2
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 6.8
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 6.3
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 5.0
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 3.9
+      }
+    ]
+  },
+  {
+    "state": "Haryana",
+    "district": "Ambala",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 194.2
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 170.6
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 5.3
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 5.2
+      },
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 1.1
+      },
+      {
+        "name": "Barley",
+        "area_1000ha": 0.1
+      }
+    ]
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Khandwa / East Nimar",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Soyabean",
+        "area_1000ha": 173.6
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 163.5
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 105.1
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 69.5
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 53.9
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 21.8
+      }
+    ]
+  },
+  {
+    "state": "Rajasthan",
+    "district": "Bundi",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 146.8
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 50.6
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 47.0
+      },
+      {
+        "name": "Soyabean",
+        "area_1000ha": 23.9
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 22.9
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 20.6
+      }
+    ]
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Nasik",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Maize",
+        "area_1000ha": 163.6
+      },
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 136.5
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 112.5
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 72.5
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 72.5
+      },
+      {
+        "name": "Soyabean",
+        "area_1000ha": 67.5
+      }
+    ]
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Khargone / West Nimar",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Cotton",
+        "area_1000ha": 282.0
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 185.6
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 124.8
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 123.8
+      },
+      {
+        "name": "Soyabean",
+        "area_1000ha": 97.9
+      },
+      {
+        "name": "Kharif Sorghum",
+        "area_1000ha": 51.9
+      }
+    ]
+  },
+  {
+    "state": "Tamil Nadu",
+    "district": "North Arcot / Vellore",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 216.7
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 93.7
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 25.3
+      },
+      {
+        "name": "Finger Millet",
+        "area_1000ha": 11.6
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 11.1
+      },
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 7.4
+      }
+    ]
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Jalaun",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 160.4
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 30.4
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 15.6
+      },
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 15.0
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 13.7
+      },
+      {
+        "name": "Barley",
+        "area_1000ha": 7.5
+      }
+    ]
+  },
+  {
+    "state": "Himachal Pradesh",
+    "district": "Solan",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 27.5
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 20.9
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 3.9
+      },
+      {
+        "name": "Barley",
+        "area_1000ha": 1.6
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 0.3
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 0.1
+      }
+    ]
+  },
+  {
+    "state": "Rajasthan",
+    "district": "Bikaner",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Chickpea",
+        "area_1000ha": 255.8
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 220.6
+      },
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 124.4
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 108.3
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 101.3
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 12.3
+      }
+    ]
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Dhule",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Cotton",
+        "area_1000ha": 297.0
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 123.9
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 96.2
+      },
+      {
+        "name": "Sorghum",
+        "area_1000ha": 87.0
+      },
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 82.8
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 75.7
+      }
+    ]
+  },
+  {
+    "state": "Himachal Pradesh",
+    "district": "Mandi",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 61.0
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 46.6
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 18.9
+      },
+      {
+        "name": "Barley",
+        "area_1000ha": 2.3
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 2.2
+      },
+      {
+        "name": "Finger Millet",
+        "area_1000ha": 0.7
+      }
+    ]
+  },
+  {
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Finger Millet",
+        "area_1000ha": 125.5
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 12.8
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 5.3
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 5.2
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 2.3
+      },
+      {
+        "name": "Castor",
+        "area_1000ha": 2.3
+      }
+    ]
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Jhabua",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Maize",
+        "area_1000ha": 115.2
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 85.0
+      },
+      {
+        "name": "Soyabean",
+        "area_1000ha": 80.1
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 37.1
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 34.0
+      },
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 17.0
+      }
+    ]
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Dhar",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Soyabean",
+        "area_1000ha": 279.4
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 198.9
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 149.7
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 98.0
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 83.9
+      },
+      {
+        "name": "Barley",
+        "area_1000ha": 27.2
+      }
+    ]
+  },
+  {
+    "state": "Himachal Pradesh",
+    "district": "Shimla",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 14.1
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 10.2
+      },
+      {
+        "name": "Barley",
+        "area_1000ha": 3.1
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 3.0
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 1.1
+      },
+      {
+        "name": "Finger Millet",
+        "area_1000ha": 0.6
+      }
+    ]
+  },
+  {
+    "state": "Bihar",
+    "district": "Mungair",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 194.2
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 192.9
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 114.7
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 16.4
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 9.9
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 8.0
+      }
+    ]
+  },
+  {
+    "state": "Rajasthan",
+    "district": "Bhilwara",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Maize",
+        "area_1000ha": 158.9
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 102.8
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 41.5
+      },
+      {
+        "name": "Kharif Sorghum",
+        "area_1000ha": 40.4
+      },
+      {
+        "name": "Sorghum",
+        "area_1000ha": 40.4
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 34.0
+      }
+    ]
+  },
+  {
+    "state": "Himachal Pradesh",
+    "district": "Sirmaur",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 28.1
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 20.8
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 5.4
+      },
+      {
+        "name": "Barley",
+        "area_1000ha": 1.9
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 1.0
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 0.9
+      }
+    ]
+  },
+  {
+    "state": "Punjab",
+    "district": "Roopnagar / Ropar",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 92.0
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 55.5
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 25.0
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 3.5
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 2.5
+      },
+      {
+        "name": "Sunflower",
+        "area_1000ha": 0.3
+      }
+    ]
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Jhansi",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 302.3
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 83.3
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 42.9
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 31.2
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 20.7
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 17.7
+      }
+    ]
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Allahabad",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 283.1
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 215.9
+      },
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 29.6
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 23.3
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 17.6
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 17.5
+      }
+    ]
+  },
+  {
+    "state": "Kerala",
+    "district": "Alappuzha",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 36.3
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 0.1
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 0.0
+      }
+    ]
+  },
+  {
+    "state": "Rajasthan",
+    "district": "Bharatpur",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 260.9
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 217.7
+      },
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 211.3
+      },
+      {
+        "name": "Kharif Sorghum",
+        "area_1000ha": 50.6
+      },
+      {
+        "name": "Sorghum",
+        "area_1000ha": 50.6
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 12.1
+      }
+    ]
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Dewas",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Soyabean",
+        "area_1000ha": 321.4
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 219.5
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 171.0
+      },
+      {
+        "name": "Linseed",
+        "area_1000ha": 21.6
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 13.3
+      },
+      {
+        "name": "Onion",
+        "area_1000ha": 11.8
+      }
+    ]
+  },
+  {
+    "state": "Punjab",
+    "district": "Ludhiana",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 270.9
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 264.8
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 3.5
+      },
+      {
+        "name": "Sunflower",
+        "area_1000ha": 1.6
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 1.5
+      },
+      {
+        "name": "Barley",
+        "area_1000ha": 1.4
+      }
+    ]
+  },
+  {
+    "state": "Karnataka",
+    "district": "Kolar",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Finger Millet",
+        "area_1000ha": 115.1
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 59.6
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 24.2
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 13.0
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 4.8
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 1.7
+      }
+    ]
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Jalgaon",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Cotton",
+        "area_1000ha": 514.3
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 202.7
+      },
+      {
+        "name": "Sorghum",
+        "area_1000ha": 91.1
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 72.3
+      },
+      {
+        "name": "Kharif Sorghum",
+        "area_1000ha": 55.7
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 51.0
+      }
+    ]
+  },
+  {
+    "state": "Kerala",
+    "district": "Kannur",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 10.1
+      }
+    ]
+  },
+  {
+    "state": "Rajasthan",
+    "district": "Barmer",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 901.1
+      },
+      {
+        "name": "Castor",
+        "area_1000ha": 23.8
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 14.5
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 10.1
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 4.7
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 4.4
+      }
+    ]
+  },
+  {
+    "state": "Kerala",
+    "district": "Eranakulam",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 5.6
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 0.2
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 0.1
+      },
+      {
+        "name": "Finger Millet",
+        "area_1000ha": 0.0
+      }
+    ]
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Mandsaur",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Soyabean",
+        "area_1000ha": 383.5
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 125.7
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 103.2
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 73.1
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 58.6
+      },
+      {
+        "name": "Linseed",
+        "area_1000ha": 9.9
+      }
+    ]
+  },
+  {
+    "state": "Karnataka",
+    "district": "Bijapur / Vijayapura",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Chickpea",
+        "area_1000ha": 354.6
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 285.6
+      },
+      {
+        "name": "Sorghum",
+        "area_1000ha": 256.9
+      },
+      {
+        "name": "Rabi Sorghum",
+        "area_1000ha": 256.6
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 113.4
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 104.1
+      }
+    ]
+  },
+  {
+    "state": "Chhattisgarh",
+    "district": "Surguja",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 377.1
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 48.4
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 23.2
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 20.7
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 19.2
+      },
+      {
+        "name": "Linseed",
+        "area_1000ha": 9.8
+      }
+    ]
+  },
+  {
+    "state": "Gujarat",
+    "district": "Ahmedabad",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Cotton",
+        "area_1000ha": 177.8
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 169.6
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 157.8
+      },
+      {
+        "name": "Castor",
+        "area_1000ha": 66.8
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 44.2
+      },
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 7.1
+      }
+    ]
+  },
+  {
+    "state": "Kerala",
+    "district": "Kottayam",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 18.1
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 0.8
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 0.4
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 0.0
+      },
+      {
+        "name": "Finger Millet",
+        "area_1000ha": 0.0
+      }
+    ]
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Fatehpur",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 170.2
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 82.1
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 42.1
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 17.5
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 15.2
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 9.4
+      }
+    ]
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Ahmednagar",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Sorghum",
+        "area_1000ha": 550.5
+      },
+      {
+        "name": "Rabi Sorghum",
+        "area_1000ha": 548.9
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 208.0
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 132.8
+      },
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 119.5
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 104.4
+      }
+    ]
+  },
+  {
+    "state": "Kerala",
+    "district": "Kozhikode",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 7.7
+      }
+    ]
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Ujjain",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Soyabean",
+        "area_1000ha": 446.9
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 220.6
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 195.2
+      },
+      {
+        "name": "Onion",
+        "area_1000ha": 14.4
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 12.4
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 6.5
+      }
+    ]
+  },
+  {
+    "state": "Rajasthan",
+    "district": "Banswara",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Maize",
+        "area_1000ha": 125.1
+      },
+      {
+        "name": "Soyabean",
+        "area_1000ha": 111.9
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 108.7
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 28.9
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 17.8
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 10.9
+      }
+    ]
+  },
+  {
+    "state": "Kerala",
+    "district": "Malappuram",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 7.8
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 0.1
+      }
+    ]
+  },
+  {
+    "state": "Tamil Nadu",
+    "district": "South Arcot / Cuddalore",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 294.9
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 68.4
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 47.1
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 37.7
+      },
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 34.3
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 19.4
+      }
+    ]
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Ratlam",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Soyabean",
+        "area_1000ha": 205.0
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 110.4
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 91.4
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 55.5
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 29.4
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 9.3
+      }
+    ]
+  },
+  {
+    "state": "Karnataka",
+    "district": "Tumkur",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Finger Millet",
+        "area_1000ha": 144.6
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 55.3
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 20.1
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 11.0
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 4.9
+      },
+      {
+        "name": "Castor",
+        "area_1000ha": 1.5
+      }
+    ]
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Kanpur",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 226.8
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 74.0
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 38.4
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 36.8
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 34.2
+      },
+      {
+        "name": "Kharif Sorghum",
+        "area_1000ha": 23.4
+      }
+    ]
+  },
+  {
+    "state": "Kerala",
+    "district": "Kollam",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 5.0
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 0.0
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 0.0
+      }
+    ]
+  },
+  {
+    "state": "Kerala",
+    "district": "Palakkad",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 75.3
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 0.3
+      },
+      {
+        "name": "Sorghum",
+        "area_1000ha": 0.2
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 0.2
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 0.1
+      },
+      {
+        "name": "Finger Millet",
+        "area_1000ha": 0.1
+      }
+    ]
+  },
+  {
+    "state": "Rajasthan",
+    "district": "Alwar",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 275.8
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 229.0
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 203.8
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 46.2
+      },
+      {
+        "name": "Kharif Sorghum",
+        "area_1000ha": 23.8
+      },
+      {
+        "name": "Sorghum",
+        "area_1000ha": 23.8
+      }
+    ]
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Akola",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Soyabean",
+        "area_1000ha": 504.5
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 183.8
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 124.9
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 113.7
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 25.5
+      },
+      {
+        "name": "Sorghum",
+        "area_1000ha": 19.6
+      }
+    ]
+  },
+  {
+    "state": "Bihar",
+    "district": "Patna",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 191.9
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 148.7
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 14.1
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 12.5
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 10.1
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 6.3
+      }
+    ]
+  },
+  {
+    "state": "Punjab",
+    "district": "Ferozpur",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 768.5
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 641.1
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 112.1
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 7.0
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 2.0
+      },
+      {
+        "name": "Barley",
+        "area_1000ha": 1.8
+      }
+    ]
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Indore",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Soyabean",
+        "area_1000ha": 216.9
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 110.4
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 94.4
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 44.2
+      },
+      {
+        "name": "Onion",
+        "area_1000ha": 14.1
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 12.2
+      }
+    ]
+  },
+  {
+    "state": "Rajasthan",
+    "district": "Ajmer",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Kharif Sorghum",
+        "area_1000ha": 126.8
+      },
+      {
+        "name": "Sorghum",
+        "area_1000ha": 126.8
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 66.2
+      },
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 58.5
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 40.3
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 23.8
+      }
+    ]
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Pune",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Sorghum",
+        "area_1000ha": 225.1
+      },
+      {
+        "name": "Rabi Sorghum",
+        "area_1000ha": 223.4
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 113.1
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 90.3
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 72.4
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 52.0
+      }
+    ]
+  },
+  {
+    "state": "Kerala",
+    "district": "Thrissur",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 21.5
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 0.0
+      }
+    ]
+  },
+  {
+    "state": "Kerala",
+    "district": "Thiruvananthapuram",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 1.7
+      }
+    ]
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Bhind",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 167.9
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 110.4
+      },
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 61.9
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 35.6
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 25.0
+      },
+      {
+        "name": "Kharif Sorghum",
+        "area_1000ha": 11.3
+      }
+    ]
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Etawah",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 198.2
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 101.3
+      },
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 69.7
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 30.0
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 23.9
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 14.6
+      }
+    ]
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Farrukhabad",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 150.7
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 85.5
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 85.3
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 34.6
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 17.1
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 8.4
+      }
+    ]
+  },
+  {
+    "state": "Karnataka",
+    "district": "Mysore",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Maize",
+        "area_1000ha": 78.6
+      },
+      {
+        "name": "Finger Millet",
+        "area_1000ha": 76.1
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 68.1
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 58.0
+      },
+      {
+        "name": "Sorghum",
+        "area_1000ha": 29.5
+      },
+      {
+        "name": "Kharif Sorghum",
+        "area_1000ha": 29.2
+      }
+    ]
+  },
+  {
+    "state": "Gujarat",
+    "district": "Surendranagar",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Cotton",
+        "area_1000ha": 447.8
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 41.7
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 38.7
+      },
+      {
+        "name": "Castor",
+        "area_1000ha": 28.3
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 17.4
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 14.1
+      }
+    ]
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Morena",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 183.0
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 162.7
+      },
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 148.5
+      },
+      {
+        "name": "Soyabean",
+        "area_1000ha": 40.2
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 38.9
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 29.4
+      }
+    ]
+  },
+  {
+    "state": "Orissa",
+    "district": "Balasore",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 370.1
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 10.9
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 6.0
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 1.4
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 1.4
+      },
+      {
+        "name": "Onion",
+        "area_1000ha": 1.2
+      }
+    ]
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Satara",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Sorghum",
+        "area_1000ha": 160.7
+      },
+      {
+        "name": "Rabi Sorghum",
+        "area_1000ha": 136.6
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 80.6
+      },
+      {
+        "name": "Soyabean",
+        "area_1000ha": 69.7
+      },
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 67.4
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 45.8
+      }
+    ]
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Meerut",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 257.4
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 219.4
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 52.4
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 11.3
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 9.1
+      },
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 8.4
+      }
+    ]
+  },
+  {
+    "state": "Bihar",
+    "district": "Saran",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 242.4
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 236.6
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 60.8
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 27.7
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 13.1
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 7.9
+      }
+    ]
+  },
+  {
+    "state": "Tamil Nadu",
+    "district": "Chengalpattu MGR / Kanchipuram",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 193.2
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 18.2
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 7.4
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 1.7
+      },
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 0.8
+      },
+      {
+        "name": "Finger Millet",
+        "area_1000ha": 0.5
+      }
+    ]
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Bijnor",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 201.6
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 157.3
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 50.9
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 4.1
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 0.9
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 0.7
+      }
+    ]
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Datia",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 120.8
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 54.4
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 29.5
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 16.6
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 16.4
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 6.9
+      }
+    ]
+  },
+  {
+    "state": "Orissa",
+    "district": "Bolangir",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 284.7
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 43.6
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 13.7
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 13.3
+      },
+      {
+        "name": "Onion",
+        "area_1000ha": 9.9
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 8.0
+      }
+    ]
+  },
+  {
+    "state": "Gujarat",
+    "district": "Surat",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 110.7
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 105.8
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 30.1
+      },
+      {
+        "name": "Soyabean",
+        "area_1000ha": 27.7
+      },
+      {
+        "name": "Sorghum",
+        "area_1000ha": 24.5
+      },
+      {
+        "name": "Kharif Sorghum",
+        "area_1000ha": 20.2
+      }
+    ]
+  },
+  {
+    "state": "Orissa",
+    "district": "Cuttack",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 417.2
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 40.0
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 8.9
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 6.1
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 5.6
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 3.4
+      }
+    ]
+  },
+  {
+    "state": "Orissa",
+    "district": "Ganjam",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 243.2
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 30.9
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 26.7
+      },
+      {
+        "name": "Finger Millet",
+        "area_1000ha": 21.5
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 16.2
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 15.0
+      }
+    ]
+  },
+  {
+    "state": "Orissa",
+    "district": "Dhenkanal",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 154.3
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 55.6
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 24.4
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 13.0
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 8.2
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 7.0
+      }
+    ]
+  },
+  {
+    "state": "Karnataka",
+    "district": "Mandya",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Finger Millet",
+        "area_1000ha": 83.8
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 33.9
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 20.9
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 10.3
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 6.8
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 1.1
+      }
+    ]
+  },
+  {
+    "state": "Orissa",
+    "district": "Kalahandi",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 288.8
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 62.5
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 32.5
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 19.0
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 15.9
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 12.1
+      }
+    ]
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Guna",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Soyabean",
+        "area_1000ha": 323.3
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 255.8
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 164.6
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 33.1
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 15.5
+      },
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 7.6
+      }
+    ]
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Rampur",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 149.2
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 138.7
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 21.9
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 3.8
+      },
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 2.7
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 1.8
+      }
+    ]
+  },
+  {
+    "state": "Punjab",
+    "district": "Bhatinda",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 556.5
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 388.9
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 168.9
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 3.9
+      },
+      {
+        "name": "Barley",
+        "area_1000ha": 1.6
+      },
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 0.6
+      }
+    ]
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Jabalpur",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 300.7
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 210.2
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 121.3
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 21.4
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 17.9
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 13.9
+      }
+    ]
+  },
+  {
+    "state": "Karnataka",
+    "district": "Gulbarga / Kalaburagi",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 386.8
+      },
+      {
+        "name": "Sorghum",
+        "area_1000ha": 251.5
+      },
+      {
+        "name": "Rabi Sorghum",
+        "area_1000ha": 250.7
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 226.7
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 123.8
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 113.3
+      }
+    ]
+  },
+  {
+    "state": "Gujarat",
+    "district": "Sabarkantha",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 154.2
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 119.7
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 94.7
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 56.1
+      },
+      {
+        "name": "Castor",
+        "area_1000ha": 46.6
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 28.5
+      }
+    ]
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Sangli",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Sorghum",
+        "area_1000ha": 193.1
+      },
+      {
+        "name": "Rabi Sorghum",
+        "area_1000ha": 139.3
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 80.2
+      },
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 58.8
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 58.8
+      },
+      {
+        "name": "Kharif Sorghum",
+        "area_1000ha": 53.8
+      }
+    ]
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Shivpuri",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Groundnut",
+        "area_1000ha": 104.3
+      },
+      {
+        "name": "Soyabean",
+        "area_1000ha": 83.6
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 76.9
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 54.7
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 32.0
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 12.5
+      }
+    ]
+  },
+  {
+    "state": "Orissa",
+    "district": "Keonjhar",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 188.4
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 24.4
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 8.2
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 7.5
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 6.8
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 2.9
+      }
+    ]
+  },
+  {
+    "state": "Gujarat",
+    "district": "Rajkot",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Cotton",
+        "area_1000ha": 385.4
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 320.6
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 71.2
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 19.6
+      },
+      {
+        "name": "Castor",
+        "area_1000ha": 12.8
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 5.7
+      }
+    ]
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Solapur",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rabi Sorghum",
+        "area_1000ha": 656.9
+      },
+      {
+        "name": "Sorghum",
+        "area_1000ha": 656.9
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 100.5
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 75.8
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 68.7
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 68.2
+      }
+    ]
+  },
+  {
+    "state": "Orissa",
+    "district": "Koraput",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 401.5
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 112.7
+      },
+      {
+        "name": "Finger Millet",
+        "area_1000ha": 81.6
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 35.0
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 34.0
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 24.0
+      }
+    ]
+  },
+  {
+    "state": "Punjab",
+    "district": "Sangrur",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 408.8
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 403.9
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 9.0
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 5.2
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 2.1
+      },
+      {
+        "name": "Barley",
+        "area_1000ha": 1.9
+      }
+    ]
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Pilibhit",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 140.7
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 132.0
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 79.3
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 10.8
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 1.0
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 0.6
+      }
+    ]
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Gwalior",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 65.0
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 40.8
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 26.5
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 26.0
+      },
+      {
+        "name": "Kharif Sorghum",
+        "area_1000ha": 13.4
+      },
+      {
+        "name": "Sorghum",
+        "area_1000ha": 13.4
+      }
+    ]
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Shahdol",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 240.3
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 87.3
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 45.5
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 39.8
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 38.8
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 23.5
+      }
+    ]
+  },
+  {
+    "state": "Orissa",
+    "district": "Mayurbhanja",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 324.1
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 8.4
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 7.0
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 5.5
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 4.2
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 3.8
+      }
+    ]
+  },
+  {
+    "state": "Gujarat",
+    "district": "Panchmahal",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Maize",
+        "area_1000ha": 256.8
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 128.0
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 72.7
+      },
+      {
+        "name": "Soyabean",
+        "area_1000ha": 61.4
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 43.7
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 34.3
+      }
+    ]
+  },
+  {
+    "state": "Orissa",
+    "district": "Phulbani ( Kandhamal )",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 89.0
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 16.7
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 14.0
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 9.7
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 6.4
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 4.2
+      }
+    ]
+  },
+  {
+    "state": "Karnataka",
+    "district": "Hassan",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Finger Millet",
+        "area_1000ha": 94.6
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 82.8
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 21.6
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 14.4
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 2.2
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 1.6
+      }
+    ]
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Buldhana",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Soyabean",
+        "area_1000ha": 370.3
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 174.5
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 132.2
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 76.2
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 39.6
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 35.9
+      }
+    ]
+  },
+  {
+    "state": "Bihar",
+    "district": "Saharsa",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 168.8
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 102.0
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 44.0
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 7.0
+      },
+      {
+        "name": "Sunflower",
+        "area_1000ha": 4.5
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 2.7
+      }
+    ]
+  },
+  {
+    "state": "Gujarat",
+    "district": "Amreli",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Cotton",
+        "area_1000ha": 374.8
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 126.7
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 8.0
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 6.3
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 5.6
+      },
+      {
+        "name": "Onion",
+        "area_1000ha": 4.4
+      }
+    ]
+  },
+  {
+    "state": "Bihar",
+    "district": "Purnea",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 400.4
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 148.4
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 91.2
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 23.2
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 6.0
+      },
+      {
+        "name": "Linseed",
+        "area_1000ha": 2.7
+      }
+    ]
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Shahjahanpur",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 247.7
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 210.8
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 45.7
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 14.4
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 8.8
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 8.8
+      }
+    ]
+  },
+  {
+    "state": "Orissa",
+    "district": "Puri",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 276.3
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 13.5
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 6.2
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 4.7
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 4.6
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 2.1
+      }
+    ]
+  },
+  {
+    "state": "Gujarat",
+    "district": "Mehsana",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Castor",
+        "area_1000ha": 151.6
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 122.2
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 91.7
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 50.6
+      },
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 35.5
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 24.9
+      }
+    ]
+  },
+  {
+    "state": "Karnataka",
+    "district": "Kodagu / Coorg",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 27.2
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 3.6
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 0.1
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 0.0
+      }
+    ]
+  },
+  {
+    "state": "Karnataka",
+    "district": "Shimoge",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 93.5
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 71.2
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 1.3
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 1.2
+      },
+      {
+        "name": "Finger Millet",
+        "area_1000ha": 1.1
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 0.5
+      }
+    ]
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Satna",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 156.8
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 132.0
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 116.0
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 75.0
+      },
+      {
+        "name": "Soyabean",
+        "area_1000ha": 59.8
+      },
+      {
+        "name": "Barley",
+        "area_1000ha": 20.0
+      }
+    ]
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Kolhapur",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 143.9
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 109.5
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 54.5
+      },
+      {
+        "name": "Soyabean",
+        "area_1000ha": 51.3
+      },
+      {
+        "name": "Finger Millet",
+        "area_1000ha": 21.3
+      },
+      {
+        "name": "Sorghum",
+        "area_1000ha": 17.5
+      }
+    ]
+  },
+  {
+    "state": "Orissa",
+    "district": "Sambalpur",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 529.8
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 33.8
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 25.1
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 18.2
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 9.0
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 7.7
+      }
+    ]
+  },
+  {
+    "state": "Gujarat",
+    "district": "Kutch",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Castor",
+        "area_1000ha": 99.4
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 58.6
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 54.8
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 49.9
+      },
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 27.0
+      },
+      {
+        "name": "Kharif Sorghum",
+        "area_1000ha": 26.1
+      }
+    ]
+  },
+  {
+    "state": "Orissa",
+    "district": "Sundargarh",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 199.0
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 19.8
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 8.5
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 7.4
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 7.0
+      },
+      {
+        "name": "Finger Millet",
+        "area_1000ha": 4.1
+      }
+    ]
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Sidhi",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 114.0
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 101.8
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 66.6
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 46.2
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 38.1
+      },
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 32.5
+      }
+    ]
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Moradabad",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 300.4
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 142.6
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 140.6
+      },
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 50.8
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 12.4
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 10.1
+      }
+    ]
+  },
+  {
+    "state": "Karnataka",
+    "district": "Belgaum",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 208.7
+      },
+      {
+        "name": "Sorghum",
+        "area_1000ha": 145.0
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 141.2
+      },
+      {
+        "name": "Rabi Sorghum",
+        "area_1000ha": 132.4
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 112.2
+      },
+      {
+        "name": "Soyabean",
+        "area_1000ha": 76.8
+      }
+    ]
+  },
+  {
+    "state": "Haryana",
+    "district": "Mahendragarh / Narnaul",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 188.6
+      },
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 186.7
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 139.0
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 65.7
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 10.6
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 9.1
+      }
+    ]
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Balaghat",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 220.2
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 61.0
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 55.6
+      },
+      {
+        "name": "Linseed",
+        "area_1000ha": 20.9
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 20.4
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 10.0
+      }
+    ]
+  },
+  {
+    "state": "West Bengal",
+    "district": "24 Parganas",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 606.1
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 38.2
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 15.5
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 10.5
+      },
+      {
+        "name": "Sunflower",
+        "area_1000ha": 5.3
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 2.2
+      }
+    ]
+  },
+  {
+    "state": "Punjab",
+    "district": "Patiala",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 322.4
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 314.7
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 4.8
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 4.0
+      },
+      {
+        "name": "Sunflower",
+        "area_1000ha": 3.6
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 1.6
+      }
+    ]
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Budaun",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 276.3
+      },
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 121.1
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 88.3
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 44.5
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 40.5
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 16.5
+      }
+    ]
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Aurangabad",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Cotton",
+        "area_1000ha": 800.9
+      },
+      {
+        "name": "Sorghum",
+        "area_1000ha": 252.1
+      },
+      {
+        "name": "Rabi Sorghum",
+        "area_1000ha": 248.6
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 145.6
+      },
+      {
+        "name": "Soyabean",
+        "area_1000ha": 141.6
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 118.3
+      }
+    ]
+  },
+  {
+    "state": "West Bengal",
+    "district": "Nadia",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 242.7
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 87.9
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 29.5
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 6.0
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 4.5
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 4.5
+      }
+    ]
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Rewa",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 173.6
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 121.3
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 54.3
+      },
+      {
+        "name": "Soyabean",
+        "area_1000ha": 42.5
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 32.9
+      },
+      {
+        "name": "Kharif Sorghum",
+        "area_1000ha": 26.1
+      }
+    ]
+  },
+  {
+    "state": "Gujarat",
+    "district": "Kheda",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 235.2
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 144.2
+      },
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 88.3
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 21.7
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 11.3
+      },
+      {
+        "name": "Castor",
+        "area_1000ha": 7.7
+      }
+    ]
+  },
+  {
+    "state": "West Bengal",
+    "district": "Murshidabad",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 367.5
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 129.3
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 23.0
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 13.8
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 11.9
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 8.9
+      }
+    ]
+  },
+  {
+    "state": "Haryana",
+    "district": "Hissar",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 829.6
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 482.6
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 305.4
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 252.8
+      },
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 110.5
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 21.5
+      }
+    ]
+  },
+  {
+    "state": "Karnataka",
+    "district": "Uttara Kannada",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 62.9
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 9.9
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 1.7
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 1.2
+      },
+      {
+        "name": "Soyabean",
+        "area_1000ha": 0.0
+      },
+      {
+        "name": "Onion",
+        "area_1000ha": 0.0
+      }
+    ]
+  },
+  {
+    "state": "Karnataka",
+    "district": "Chickmagalur",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Finger Millet",
+        "area_1000ha": 52.1
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 26.9
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 15.3
+      },
+      {
+        "name": "Sorghum",
+        "area_1000ha": 13.2
+      },
+      {
+        "name": "Rabi Sorghum",
+        "area_1000ha": 12.7
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 11.3
+      }
+    ]
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Panna",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Chickpea",
+        "area_1000ha": 93.7
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 77.8
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 58.4
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 34.6
+      },
+      {
+        "name": "Soyabean",
+        "area_1000ha": 17.5
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 16.7
+      }
+    ]
+  },
+  {
+    "state": "Gujarat",
+    "district": "Banaskantha",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 163.0
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 157.6
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 131.2
+      },
+      {
+        "name": "Castor",
+        "area_1000ha": 112.0
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 78.1
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 74.0
+      }
+    ]
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Buland Shahar",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 216.0
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 102.1
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 62.8
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 44.3
+      },
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 15.6
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 11.1
+      }
+    ]
+  },
+  {
+    "state": "West Bengal",
+    "district": "Birbhum",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 423.8
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 35.1
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 32.9
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 15.4
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 12.4
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 6.0
+      }
+    ]
+  },
+  {
+    "state": "West Bengal",
+    "district": "Burdwan",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 520.6
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 64.1
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 31.9
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 18.1
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 3.4
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 2.2
+      }
+    ]
+  },
+  {
+    "state": "Gujarat",
+    "district": "Junagadh",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Groundnut",
+        "area_1000ha": 450.8
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 98.8
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 77.5
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 74.8
+      },
+      {
+        "name": "Rabi Sorghum",
+        "area_1000ha": 14.4
+      },
+      {
+        "name": "Sorghum",
+        "area_1000ha": 14.4
+      }
+    ]
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Chhatarpur",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 175.3
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 97.5
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 50.0
+      },
+      {
+        "name": "Soyabean",
+        "area_1000ha": 30.8
+      },
+      {
+        "name": "Barley",
+        "area_1000ha": 15.9
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 14.0
+      }
+    ]
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Bareilly",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 195.1
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 145.2
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 97.0
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 15.5
+      },
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 7.2
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 2.5
+      }
+    ]
+  },
+  {
+    "state": "Karnataka",
+    "district": "Chitradurga",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Maize",
+        "area_1000ha": 270.3
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 108.4
+      },
+      {
+        "name": "Finger Millet",
+        "area_1000ha": 73.4
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 66.0
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 38.2
+      },
+      {
+        "name": "Onion",
+        "area_1000ha": 35.4
+      }
+    ]
+  },
+  {
+    "state": "Gujarat",
+    "district": "Jamnagar",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Groundnut",
+        "area_1000ha": 323.4
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 197.3
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 14.2
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 11.0
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 10.4
+      },
+      {
+        "name": "Castor",
+        "area_1000ha": 7.9
+      }
+    ]
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Parbhani",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Soyabean",
+        "area_1000ha": 405.5
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 272.1
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 183.1
+      },
+      {
+        "name": "Sorghum",
+        "area_1000ha": 182.8
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 130.3
+      },
+      {
+        "name": "Rabi Sorghum",
+        "area_1000ha": 113.6
+      }
+    ]
+  },
+  {
+    "state": "West Bengal",
+    "district": "Bankura",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 384.6
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 30.8
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 27.1
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 13.8
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 1.3
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 1.2
+      }
+    ]
+  },
+  {
+    "state": "West Bengal",
+    "district": "Hooghly",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 260.4
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 103.9
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 39.9
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 14.3
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 9.7
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 0.6
+      }
+    ]
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Tikamgarh",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 97.2
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 30.0
+      },
+      {
+        "name": "Soyabean",
+        "area_1000ha": 23.5
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 16.5
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 12.4
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 11.4
+      }
+    ]
+  },
+  {
+    "state": "Gujarat",
+    "district": "Dangs",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 20.8
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 20.2
+      },
+      {
+        "name": "Finger Millet",
+        "area_1000ha": 7.6
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 3.1
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 3.0
+      },
+      {
+        "name": "Soyabean",
+        "area_1000ha": 2.9
+      }
+    ]
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Damoh",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Chickpea",
+        "area_1000ha": 185.8
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 81.6
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 75.7
+      },
+      {
+        "name": "Soyabean",
+        "area_1000ha": 66.5
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 36.2
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 5.1
+      }
+    ]
+  },
+  {
+    "state": "West Bengal",
+    "district": "Howrah",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 110.4
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 5.8
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 4.5
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 2.8
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 1.9
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 0.2
+      }
+    ]
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Etah",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 229.7
+      },
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 88.8
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 56.5
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 28.8
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 24.1
+      },
+      {
+        "name": "Barley",
+        "area_1000ha": 10.6
+      }
+    ]
+  },
+  {
+    "state": "Bihar",
+    "district": "Darbhanga",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 379.1
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 204.3
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 76.4
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 23.8
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 11.0
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 5.0
+      }
+    ]
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Mainpuri",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 214.1
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 76.6
+      },
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 73.5
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 46.2
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 45.7
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 15.3
+      }
+    ]
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Beed",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Sorghum",
+        "area_1000ha": 521.3
+      },
+      {
+        "name": "Rabi Sorghum",
+        "area_1000ha": 500.3
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 348.5
+      },
+      {
+        "name": "Soyabean",
+        "area_1000ha": 181.3
+      },
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 152.7
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 138.4
+      }
+    ]
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Sagar",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 278.0
+      },
+      {
+        "name": "Soyabean",
+        "area_1000ha": 216.2
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 183.0
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 12.6
+      },
+      {
+        "name": "Onion",
+        "area_1000ha": 9.5
+      },
+      {
+        "name": "Kharif Sorghum",
+        "area_1000ha": 7.0
+      }
+    ]
+  },
+  {
+    "state": "West Bengal",
+    "district": "Jalpaiguri",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 214.2
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 45.9
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 31.0
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 10.8
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 10.4
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 4.2
+      }
+    ]
+  },
+  {
+    "state": "Gujarat",
+    "district": "Valsad",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 121.7
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 23.5
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 9.3
+      },
+      {
+        "name": "Finger Millet",
+        "area_1000ha": 4.3
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 3.5
+      },
+      {
+        "name": "Sorghum",
+        "area_1000ha": 0.8
+      }
+    ]
+  },
+  {
+    "state": "West Bengal",
+    "district": "Darjeeling",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 28.3
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 12.7
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 3.9
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 0.4
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 0.4
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 0.2
+      }
+    ]
+  },
+  {
+    "state": "Haryana",
+    "district": "Gurgaon",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 243.7
+      },
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 64.6
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 64.2
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 41.1
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 23.7
+      },
+      {
+        "name": "Sorghum",
+        "area_1000ha": 17.6
+      }
+    ]
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Agra",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 169.8
+      },
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 151.0
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 74.4
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 58.1
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 12.9
+      },
+      {
+        "name": "Barley",
+        "area_1000ha": 8.0
+      }
+    ]
+  },
+  {
+    "state": "Karnataka",
+    "district": "Bellary",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 101.9
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 97.8
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 60.4
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 59.2
+      },
+      {
+        "name": "Sorghum",
+        "area_1000ha": 39.3
+      },
+      {
+        "name": "Rabi Sorghum",
+        "area_1000ha": 28.0
+      }
+    ]
+  },
+  {
+    "state": "West Bengal",
+    "district": "Cooch Behar",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 273.1
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 33.4
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 32.3
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 24.4
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 7.4
+      },
+      {
+        "name": "Linseed",
+        "area_1000ha": 1.1
+      }
+    ]
+  },
+  {
+    "state": "West Bengal",
+    "district": "Malda",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 213.9
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 46.5
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 36.7
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 9.7
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 8.9
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 2.8
+      }
+    ]
+  },
+  {
+    "state": "West Bengal",
+    "district": "Purulia",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 273.2
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 10.5
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 4.7
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 1.4
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 1.1
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 1.1
+      }
+    ]
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Mandla",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 215.1
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 90.0
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 47.5
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 34.0
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 28.8
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 18.9
+      }
+    ]
+  },
+  {
+    "state": "Karnataka",
+    "district": "Dakshina Kannada",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 80.3
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 1.8
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 0.3
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 0.0
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 0.0
+      }
+    ]
+  },
+  {
+    "state": "Gujarat",
+    "district": "Bharuch",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Cotton",
+        "area_1000ha": 141.9
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 92.9
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 37.5
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 19.8
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 19.5
+      },
+      {
+        "name": "Soyabean",
+        "area_1000ha": 8.9
+      }
+    ]
+  },
+  {
+    "state": "Bihar",
+    "district": "Muzaffarpur",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 284.7
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 234.9
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 74.2
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 27.9
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 18.6
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 8.8
+      }
+    ]
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Mathura",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 200.4
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 46.1
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 45.3
+      },
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 37.6
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 11.8
+      },
+      {
+        "name": "Barley",
+        "area_1000ha": 3.9
+      }
+    ]
+  },
+  {
+    "state": "Gujarat",
+    "district": "Bhavnagar",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Cotton",
+        "area_1000ha": 324.7
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 95.6
+      },
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 34.8
+      },
+      {
+        "name": "Onion",
+        "area_1000ha": 28.3
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 18.9
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 13.9
+      }
+    ]
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Nanded",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Cotton",
+        "area_1000ha": 299.5
+      },
+      {
+        "name": "Soyabean",
+        "area_1000ha": 273.5
+      },
+      {
+        "name": "Sorghum",
+        "area_1000ha": 124.1
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 123.6
+      },
+      {
+        "name": "Kharif Sorghum",
+        "area_1000ha": 88.4
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 77.2
+      }
+    ]
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Seoni / Shivani",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 200.7
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 133.1
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 99.7
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 40.0
+      },
+      {
+        "name": "Soyabean",
+        "area_1000ha": 31.0
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 13.7
+      }
+    ]
+  },
+  {
+    "state": "West Bengal",
+    "district": "West Dinajpur",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 418.0
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 156.6
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 83.0
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 44.4
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 16.6
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 1.4
+      }
+    ]
+  },
+  {
+    "state": "West Bengal",
+    "district": "Midnapur",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 971.0
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 73.2
+      },
+      {
+        "name": "Sesamum",
+        "area_1000ha": 72.6
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 28.7
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 12.9
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 2.8
+      }
+    ]
+  },
+  {
+    "state": "Gujarat",
+    "district": "Vadodara / Baroda",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Cotton",
+        "area_1000ha": 159.2
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 67.5
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 52.9
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 45.0
+      },
+      {
+        "name": "Castor",
+        "area_1000ha": 40.7
+      },
+      {
+        "name": "Soyabean",
+        "area_1000ha": 22.5
+      }
+    ]
+  },
+  {
+    "state": "Karnataka",
+    "district": "Dharwad",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Maize",
+        "area_1000ha": 251.6
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 237.6
+      },
+      {
+        "name": "Sorghum",
+        "area_1000ha": 170.0
+      },
+      {
+        "name": "Rabi Sorghum",
+        "area_1000ha": 165.0
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 148.1
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 78.4
+      }
+    ]
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Osmanabad",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Soyabean",
+        "area_1000ha": 508.2
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 362.8
+      },
+      {
+        "name": "Sorghum",
+        "area_1000ha": 286.4
+      },
+      {
+        "name": "Rabi Sorghum",
+        "area_1000ha": 195.1
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 181.6
+      },
+      {
+        "name": "Kharif Sorghum",
+        "area_1000ha": 91.3
+      }
+    ]
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Aligarh",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 306.2
+      },
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 135.3
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 107.6
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 69.7
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 34.9
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 21.9
+      }
+    ]
+  },
+  {
+    "state": "Haryana",
+    "district": "Jind",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Wheat",
+        "area_1000ha": 247.7
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 165.7
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 63.9
+      },
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 14.3
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 5.1
+      },
+      {
+        "name": "Barley",
+        "area_1000ha": 0.3
+      }
+    ]
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Narsinghpur",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Chickpea",
+        "area_1000ha": 101.5
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 92.0
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 62.5
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 51.1
+      },
+      {
+        "name": "Soyabean",
+        "area_1000ha": 43.5
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 39.1
+      }
+    ]
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Chhindwara",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Maize",
+        "area_1000ha": 263.5
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 181.0
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 66.0
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 47.6
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 38.9
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 34.0
+      }
+    ]
+  },
+  {
+    "state": "Bihar",
+    "district": "Champaran",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 401.1
+      },
+      {
+        "name": "Wheat",
+        "area_1000ha": 221.2
+      },
+      {
+        "name": "Sugarcane",
+        "area_1000ha": 167.0
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 88.6
+      },
+      {
+        "name": "Potatoes",
+        "area_1000ha": 18.0
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 6.6
+      }
+    ]
+  },
+  {
+    "state": "Jharkhand",
+    "district": "Ranchi",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Rice",
+        "area_1000ha": 556.3
+      },
+      {
+        "name": "Rapeseed And Mustard",
+        "area_1000ha": 62.5
+      },
+      {
+        "name": "Pigeonpea",
+        "area_1000ha": 54.7
+      },
+      {
+        "name": "Chickpea",
+        "area_1000ha": 43.3
+      },
+      {
+        "name": "Maize",
+        "area_1000ha": 39.6
+      },
+      {
+        "name": "Groundnut",
+        "area_1000ha": 17.5
+      }
+    ]
+  },
+  {
+    "state": "Karnataka",
+    "district": "Raichur",
+    "year": 2017,
+    "crops": [
+      {
+        "name": "Chickpea",
+        "area_1000ha": 187.5
+      },
+      {
+        "name": "Rice",
+        "area_1000ha": 167.4
+      },
+      {
+        "name": "Pearl Millet",
+        "area_1000ha": 118.9
+      },
+      {
+        "name": "Sorghum",
+        "area_1000ha": 114.3
+      },
+      {
+        "name": "Rabi Sorghum",
+        "area_1000ha": 112.8
+      },
+      {
+        "name": "Cotton",
+        "area_1000ha": 92.5
+      }
+    ]
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Bombay",
+    "year": 2016,
+    "crops": [
+      {
+        "name": "Maize",
+        "area_1000ha": 0.1
+      }
+    ]
+  }
+]

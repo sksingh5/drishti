@@ -4,6 +4,7 @@ import type { IndicatorType } from "./indicators";
 import cropZonesData from "../data/crop-zones.json";
 import cropAlertRulesData from "../data/crop-alert-rules.json";
 import cropGuidanceRulesData from "../data/crop-guidance-rules.json";
+import districtCropsData from "../data/district-crops.json";
 
 // ── Types ──────────────────────────────────────────────────────────────────
 
@@ -35,9 +36,15 @@ export interface CropAlert {
   alert: string;
 }
 
+export interface CropInfo {
+  name: string;
+  area_1000ha: number;
+}
+
 export interface CropAdvisory {
   crop: string;
   zone: string;
+  area_1000ha?: number;
   alerts: CropAlert[];
   guidance: string[];
 }
@@ -47,6 +54,7 @@ export interface CropAdvisory {
 const zones: Zone[] = cropZonesData.zones as Zone[];
 const alertRules: AlertRule[] = cropAlertRulesData as AlertRule[];
 const guidanceRules: GuidanceRule[] = cropGuidanceRulesData as GuidanceRule[];
+const districtCrops: Record<string, CropInfo[]> = districtCropsData as Record<string, CropInfo[]>;
 
 // ── Zone lookup ────────────────────────────────────────────────────────────
 
@@ -61,16 +69,41 @@ export function getZoneForDistrict(districtId: number): Zone | null {
 // ── Crop lookup ────────────────────────────────────────────────────────────
 
 /**
- * Get the major crops for a district, based on its agro-climatic zone.
- * Returns an empty crops array and an empty zoneName if the district is unmapped.
+ * Get the major crops for a district.
+ * Uses ICRISAT district-level data (277 districts with area under cultivation).
+ * Falls back to agro-climatic zone mapping for districts without ICRISAT data.
  */
 export function getCropsForDistrict(districtId: number): {
   crops: string[];
+  cropDetails: CropInfo[];
   zoneName: string;
+  source: "icrisat" | "zone" | "none";
 } {
   const zone = getZoneForDistrict(districtId);
-  if (!zone) return { crops: [], zoneName: "" };
-  return { crops: zone.major_crops, zoneName: zone.name };
+  const zoneName = zone?.name ?? "";
+
+  // Priority 1: ICRISAT district-level data (actual area under cultivation)
+  const icrisatCrops = districtCrops[String(districtId)];
+  if (icrisatCrops && icrisatCrops.length > 0) {
+    return {
+      crops: icrisatCrops.map((c) => c.name),
+      cropDetails: icrisatCrops,
+      zoneName,
+      source: "icrisat",
+    };
+  }
+
+  // Priority 2: Zone-based fallback
+  if (zone) {
+    return {
+      crops: zone.major_crops,
+      cropDetails: zone.major_crops.map((name) => ({ name, area_1000ha: 0 })),
+      zoneName,
+      source: "zone",
+    };
+  }
+
+  return { crops: [], cropDetails: [], zoneName: "", source: "none" };
 }
 
 // ── Alert generation ───────────────────────────────────────────────────────
@@ -141,18 +174,20 @@ export function getGuidanceForCrop(
 
 /**
  * Generate a full crop advisory for every major crop in a district.
- * Combines zone lookup, alert generation, and guidance generation.
+ * Uses ICRISAT district-level data when available (includes area under cultivation),
+ * falls back to zone-based crop mapping otherwise.
  */
 export function getDistrictCropAdvisory(
   districtId: number,
   scores: Partial<Record<IndicatorType, number>>
 ): CropAdvisory[] {
-  const { crops, zoneName } = getCropsForDistrict(districtId);
+  const { cropDetails, zoneName } = getCropsForDistrict(districtId);
 
-  return crops.map((crop) => ({
-    crop,
+  return cropDetails.map((cropInfo) => ({
+    crop: cropInfo.name,
     zone: zoneName,
-    alerts: getAlertsForCrop(crop, scores),
-    guidance: getGuidanceForCrop(crop, scores),
+    area_1000ha: cropInfo.area_1000ha > 0 ? cropInfo.area_1000ha : undefined,
+    alerts: getAlertsForCrop(cropInfo.name, scores),
+    guidance: getGuidanceForCrop(cropInfo.name, scores),
   }));
 }

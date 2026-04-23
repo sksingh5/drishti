@@ -1,0 +1,7056 @@
+{
+  "609": [
+    {
+      "name": "Cotton",
+      "area_1000ha": 251.1
+    },
+    {
+      "name": "Soyabean",
+      "area_1000ha": 116.1
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 88.5
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 31.4
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 14.8
+    },
+    {
+      "name": "Sorghum",
+      "area_1000ha": 6.5
+    }
+  ],
+  "274": [
+    {
+      "name": "Rice",
+      "area_1000ha": 386.9
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 37.1
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 30.0
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 28.4
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 27.1
+    },
+    {
+      "name": "Linseed",
+      "area_1000ha": 20.1
+    }
+  ],
+  "263": [
+    {
+      "name": "Rice",
+      "area_1000ha": 121.9
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 74.4
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 66.3
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 49.1
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 40.0
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 8.4
+    }
+  ],
+  "787": [
+    {
+      "name": "Castor",
+      "area_1000ha": 34.9
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 24.1
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 22.2
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 20.4
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 17.6
+    },
+    {
+      "name": "Pearl Millet",
+      "area_1000ha": 16.6
+    }
+  ],
+  "323": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 210.9
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 163.9
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 153.5
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 26.6
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 10.1
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 10.0
+    }
+  ],
+  "276": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 188.2
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 140.3
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 7.9
+    },
+    {
+      "name": "Kharif Sorghum",
+      "area_1000ha": 7.8
+    },
+    {
+      "name": "Sorghum",
+      "area_1000ha": 7.8
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 6.7
+    }
+  ],
+  "614": [
+    {
+      "name": "Cotton",
+      "area_1000ha": 470.3
+    },
+    {
+      "name": "Soyabean",
+      "area_1000ha": 254.5
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 134.6
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 94.1
+    },
+    {
+      "name": "Sorghum",
+      "area_1000ha": 23.9
+    },
+    {
+      "name": "Kharif Sorghum",
+      "area_1000ha": 22.6
+    }
+  ],
+  "765": [
+    {
+      "name": "Rice",
+      "area_1000ha": 660.4
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 41.9
+    },
+    {
+      "name": "Finger Millet",
+      "area_1000ha": 6.3
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 2.8
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 2.7
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 1.6
+    }
+  ],
+  "116": [
+    {
+      "name": "Rice",
+      "area_1000ha": 841.1
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 258.5
+    },
+    {
+      "name": "Soyabean",
+      "area_1000ha": 77.4
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 43.5
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 26.2
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 19.9
+    }
+  ],
+  "106": [
+    {
+      "name": "Rice",
+      "area_1000ha": 53.3
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 11.1
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 7.0
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 5.4
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 5.0
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 0.5
+    }
+  ],
+  "498": [
+    {
+      "name": "Cotton",
+      "area_1000ha": 121.8
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 76.7
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 56.8
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 50.3
+    },
+    {
+      "name": "Sorghum",
+      "area_1000ha": 10.9
+    },
+    {
+      "name": "Kharif Sorghum",
+      "area_1000ha": 8.9
+    }
+  ],
+  "717": [
+    {
+      "name": "Groundnut",
+      "area_1000ha": 129.5
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 64.8
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 18.2
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 8.0
+    },
+    {
+      "name": "Finger Millet",
+      "area_1000ha": 6.7
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 2.5
+    }
+  ],
+  "151": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 314.4
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 149.8
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 37.3
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 36.2
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 17.7
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 13.4
+    }
+  ],
+  "677": [
+    {
+      "name": "Sorghum",
+      "area_1000ha": 72.8
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 42.9
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 36.8
+    },
+    {
+      "name": "Rabi Sorghum",
+      "area_1000ha": 36.5
+    },
+    {
+      "name": "Kharif Sorghum",
+      "area_1000ha": 36.3
+    },
+    {
+      "name": "Cotton",
+      "area_1000ha": 19.7
+    }
+  ],
+  "754": [
+    {
+      "name": "Rice",
+      "area_1000ha": 520.2
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 20.1
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 10.2
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 8.5
+    },
+    {
+      "name": "Cotton",
+      "area_1000ha": 7.7
+    },
+    {
+      "name": "Sorghum",
+      "area_1000ha": 6.4
+    }
+  ],
+  "352": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 244.4
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 95.0
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 29.2
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 17.3
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 11.2
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 7.7
+    }
+  ],
+  "198": [
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 248.1
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 188.6
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 181.8
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 27.1
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 8.4
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 6.5
+    }
+  ],
+  "318": [
+    {
+      "name": "Pearl Millet",
+      "area_1000ha": 271.3
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 86.1
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 35.8
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 33.0
+    },
+    {
+      "name": "Barley",
+      "area_1000ha": 25.7
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 22.5
+    }
+  ],
+  "553": [
+    {
+      "name": "Rice",
+      "area_1000ha": 267.2
+    },
+    {
+      "name": "Soyabean",
+      "area_1000ha": 73.7
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 71.5
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 30.4
+    },
+    {
+      "name": "Cotton",
+      "area_1000ha": 19.2
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 7.2
+    }
+  ],
+  "141": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 237.0
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 232.6
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 123.7
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 51.0
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 25.7
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 14.6
+    }
+  ],
+  "108": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 227.1
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 220.2
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 31.9
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 7.7
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 7.6
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 4.5
+    }
+  ],
+  "156": [
+    {
+      "name": "Rice",
+      "area_1000ha": 266.0
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 64.3
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 64.3
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 61.8
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 41.8
+    },
+    {
+      "name": "Linseed",
+      "area_1000ha": 7.5
+    }
+  ],
+  "302": [
+    {
+      "name": "Pearl Millet",
+      "area_1000ha": 194.3
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 170.4
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 139.7
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 40.1
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 39.8
+    },
+    {
+      "name": "Soyabean",
+      "area_1000ha": 5.0
+    }
+  ],
+  "223": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 81.6
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 51.6
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 4.4
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 4.1
+    },
+    {
+      "name": "Kharif Sorghum",
+      "area_1000ha": 2.1
+    },
+    {
+      "name": "Sorghum",
+      "area_1000ha": 2.1
+    }
+  ],
+  "344": [
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 186.6
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 101.4
+    },
+    {
+      "name": "Kharif Sorghum",
+      "area_1000ha": 52.4
+    },
+    {
+      "name": "Sorghum",
+      "area_1000ha": 52.4
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 45.8
+    },
+    {
+      "name": "Pearl Millet",
+      "area_1000ha": 41.8
+    }
+  ],
+  "714": [
+    {
+      "name": "Groundnut",
+      "area_1000ha": 423.1
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 74.4
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 72.8
+    },
+    {
+      "name": "Cotton",
+      "area_1000ha": 45.5
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 30.9
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 23.3
+    }
+  ],
+  "681": [
+    {
+      "name": "Rice",
+      "area_1000ha": 217.3
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 24.8
+    },
+    {
+      "name": "Cotton",
+      "area_1000ha": 20.0
+    },
+    {
+      "name": "Sorghum",
+      "area_1000ha": 16.9
+    },
+    {
+      "name": "Rabi Sorghum",
+      "area_1000ha": 11.8
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 11.2
+    }
+  ],
+  "33": [
+    {
+      "name": "Rice",
+      "area_1000ha": 239.9
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 236.4
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 92.4
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 30.6
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 10.6
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 5.3
+    }
+  ],
+  "335": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 187.5
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 160.5
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 10.3
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 7.8
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 7.3
+    },
+    {
+      "name": "Kharif Sorghum",
+      "area_1000ha": 6.5
+    }
+  ],
+  "723": [
+    {
+      "name": "Cotton",
+      "area_1000ha": 264.9
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 212.0
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 109.7
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 100.8
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 79.4
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 55.5
+    }
+  ],
+  "264": [
+    {
+      "name": "Chickpea",
+      "area_1000ha": 100.0
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 82.1
+    },
+    {
+      "name": "Kharif Sorghum",
+      "area_1000ha": 69.7
+    },
+    {
+      "name": "Sorghum",
+      "area_1000ha": 69.7
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 64.2
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 47.8
+    }
+  ],
+  "272": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 148.3
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 96.4
+    },
+    {
+      "name": "Pearl Millet",
+      "area_1000ha": 9.4
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 6.1
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 5.6
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 3.4
+    }
+  ],
+  "784": [
+    {
+      "name": "Pearl Millet",
+      "area_1000ha": 307.5
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 53.7
+    },
+    {
+      "name": "Cotton",
+      "area_1000ha": 53.7
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 45.0
+    },
+    {
+      "name": "Kharif Sorghum",
+      "area_1000ha": 27.7
+    },
+    {
+      "name": "Sorghum",
+      "area_1000ha": 27.7
+    }
+  ],
+  "346": [
+    {
+      "name": "Maize",
+      "area_1000ha": 240.9
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 137.2
+    },
+    {
+      "name": "Soyabean",
+      "area_1000ha": 63.6
+    },
+    {
+      "name": "Barley",
+      "area_1000ha": 17.4
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 16.7
+    },
+    {
+      "name": "Kharif Sorghum",
+      "area_1000ha": 15.8
+    }
+  ],
+  "28": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 330.5
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 307.4
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 25.6
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 6.9
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 6.4
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 6.1
+    }
+  ],
+  "545": [
+    {
+      "name": "Soyabean",
+      "area_1000ha": 151.1
+    },
+    {
+      "name": "Cotton",
+      "area_1000ha": 145.2
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 135.2
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 97.3
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 66.0
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 64.4
+    }
+  ],
+  "575": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 360.9
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 197.1
+    },
+    {
+      "name": "Pearl Millet",
+      "area_1000ha": 69.6
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 51.3
+    },
+    {
+      "name": "Sorghum",
+      "area_1000ha": 27.4
+    },
+    {
+      "name": "Cotton",
+      "area_1000ha": 26.7
+    }
+  ],
+  "729": [
+    {
+      "name": "Rice",
+      "area_1000ha": 242.5
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 51.0
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 34.1
+    },
+    {
+      "name": "Cotton",
+      "area_1000ha": 18.3
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 13.7
+    },
+    {
+      "name": "Pearl Millet",
+      "area_1000ha": 8.6
+    }
+  ],
+  "689": [
+    {
+      "name": "Rice",
+      "area_1000ha": 77.0
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 44.8
+    },
+    {
+      "name": "Sorghum",
+      "area_1000ha": 11.0
+    },
+    {
+      "name": "Rabi Sorghum",
+      "area_1000ha": 10.7
+    },
+    {
+      "name": "Cotton",
+      "area_1000ha": 10.1
+    },
+    {
+      "name": "Pearl Millet",
+      "area_1000ha": 9.8
+    }
+  ],
+  "46": [
+    {
+      "name": "Rice",
+      "area_1000ha": 181.6
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 168.3
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 20.6
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 15.0
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 9.2
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 4.5
+    }
+  ],
+  "214": [
+    {
+      "name": "Soyabean",
+      "area_1000ha": 275.1
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 236.2
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 122.4
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 101.2
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 39.0
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 24.3
+    }
+  ],
+  "245": [
+    {
+      "name": "Rice",
+      "area_1000ha": 132.4
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 127.2
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 17.8
+    },
+    {
+      "name": "Soyabean",
+      "area_1000ha": 6.1
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 4.2
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 4.0
+    }
+  ],
+  "719": [
+    {
+      "name": "Rice",
+      "area_1000ha": 224.3
+    },
+    {
+      "name": "Cotton",
+      "area_1000ha": 200.1
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 81.6
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 68.2
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 66.4
+    },
+    {
+      "name": "Sorghum",
+      "area_1000ha": 40.1
+    }
+  ],
+  "663": [
+    {
+      "name": "Rice",
+      "area_1000ha": 180.8
+    },
+    {
+      "name": "Cotton",
+      "area_1000ha": 180.0
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 102.9
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 30.8
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 17.4
+    },
+    {
+      "name": "Soyabean",
+      "area_1000ha": 16.2
+    }
+  ],
+  "52": [
+    {
+      "name": "Rice",
+      "area_1000ha": 370.9
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 368.4
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 46.0
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 8.3
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 8.3
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 6.5
+    }
+  ],
+  "566": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 27.4
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 26.3
+    },
+    {
+      "name": "Finger Millet",
+      "area_1000ha": 11.9
+    },
+    {
+      "name": "Barley",
+      "area_1000ha": 4.4
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 2.8
+    },
+    {
+      "name": "Soyabean",
+      "area_1000ha": 2.1
+    }
+  ],
+  "18": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 45.2
+    },
+    {
+      "name": "Finger Millet",
+      "area_1000ha": 36.9
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 28.8
+    },
+    {
+      "name": "Barley",
+      "area_1000ha": 4.0
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 2.2
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 1.4
+    }
+  ],
+  "688": [
+    {
+      "name": "Rice",
+      "area_1000ha": 99.6
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 88.7
+    },
+    {
+      "name": "Sorghum",
+      "area_1000ha": 67.3
+    },
+    {
+      "name": "Cotton",
+      "area_1000ha": 59.9
+    },
+    {
+      "name": "Kharif Sorghum",
+      "area_1000ha": 45.7
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 41.2
+    }
+  ],
+  "530": [
+    {
+      "name": "Cotton",
+      "area_1000ha": 275.1
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 170.8
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 143.0
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 138.1
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 120.0
+    },
+    {
+      "name": "Castor",
+      "area_1000ha": 26.7
+    }
+  ],
+  "471": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 24.3
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 19.6
+    },
+    {
+      "name": "Finger Millet",
+      "area_1000ha": 16.2
+    },
+    {
+      "name": "Barley",
+      "area_1000ha": 3.2
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 2.1
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 0.8
+    }
+  ],
+  "722": [
+    {
+      "name": "Rice",
+      "area_1000ha": 258.7
+    },
+    {
+      "name": "Cotton",
+      "area_1000ha": 48.4
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 28.8
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 10.3
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 2.3
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 2.3
+    }
+  ],
+  "488": [
+    {
+      "name": "Rice",
+      "area_1000ha": 433.2
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 222.3
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 16.6
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 13.0
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 5.2
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 4.0
+    }
+  ],
+  "279": [
+    {
+      "name": "Rice",
+      "area_1000ha": 959.0
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 31.4
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 14.6
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 6.1
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 4.9
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 3.9
+    }
+  ],
+  "177": [
+    {
+      "name": "Pearl Millet",
+      "area_1000ha": 421.9
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 149.4
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 129.4
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 66.1
+    },
+    {
+      "name": "Cotton",
+      "area_1000ha": 46.7
+    },
+    {
+      "name": "Kharif Sorghum",
+      "area_1000ha": 34.5
+    }
+  ],
+  "678": [
+    {
+      "name": "Potatoes",
+      "area_1000ha": 0.9
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 0.2
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 0.0
+    }
+  ],
+  "734": [
+    {
+      "name": "Rice",
+      "area_1000ha": 393.2
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 59.4
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 8.0
+    },
+    {
+      "name": "Cotton",
+      "area_1000ha": 4.5
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 2.6
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 0.4
+    }
+  ],
+  "102": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 271.1
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 255.1
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 79.1
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 15.9
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 11.8
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 5.3
+    }
+  ],
+  "176": [
+    {
+      "name": "Pearl Millet",
+      "area_1000ha": 219.3
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 86.0
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 58.6
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 58.1
+    },
+    {
+      "name": "Barley",
+      "area_1000ha": 8.9
+    },
+    {
+      "name": "Cotton",
+      "area_1000ha": 8.7
+    }
+  ],
+  "606": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 10.7
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 10.2
+    },
+    {
+      "name": "Finger Millet",
+      "area_1000ha": 5.2
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 2.9
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 1.0
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 0.7
+    }
+  ],
+  "491": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 226.0
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 204.0
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 26.0
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 9.0
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 2.8
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 0.5
+    }
+  ],
+  "142": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 337.7
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 319.7
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 20.0
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 7.1
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 7.1
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 4.2
+    }
+  ],
+  "340": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 20.7
+    },
+    {
+      "name": "Finger Millet",
+      "area_1000ha": 11.1
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 10.4
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 2.1
+    },
+    {
+      "name": "Barley",
+      "area_1000ha": 2.1
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 1.5
+    }
+  ],
+  "718": [
+    {
+      "name": "Rice",
+      "area_1000ha": 386.5
+    },
+    {
+      "name": "Cotton",
+      "area_1000ha": 16.4
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 11.8
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 10.3
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 2.5
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 2.3
+    }
+  ],
+  "732": [
+    {
+      "name": "Rice",
+      "area_1000ha": 173.4
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 38.4
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 25.8
+    },
+    {
+      "name": "Finger Millet",
+      "area_1000ha": 18.2
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 9.7
+    },
+    {
+      "name": "Cotton",
+      "area_1000ha": 8.3
+    }
+  ],
+  "269": [
+    {
+      "name": "Finger Millet",
+      "area_1000ha": 17.1
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 13.4
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 10.0
+    },
+    {
+      "name": "Barley",
+      "area_1000ha": 3.9
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 2.2
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 2.0
+    }
+  ],
+  "173": [
+    {
+      "name": "Soyabean",
+      "area_1000ha": 209.4
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 102.2
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 57.9
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 46.0
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 39.8
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 4.5
+    }
+  ],
+  "100": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 16.9
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 9.3
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 6.8
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 3.9
+    },
+    {
+      "name": "Finger Millet",
+      "area_1000ha": 1.2
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 0.8
+    }
+  ],
+  "464": [
+    {
+      "name": "Rice",
+      "area_1000ha": 315.9
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 18.7
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 15.4
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 13.2
+    },
+    {
+      "name": "Linseed",
+      "area_1000ha": 5.5
+    },
+    {
+      "name": "Soyabean",
+      "area_1000ha": 5.3
+    }
+  ],
+  "466": [
+    {
+      "name": "Rice",
+      "area_1000ha": 492.7
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 359.5
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 13.7
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 10.7
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 7.0
+    },
+    {
+      "name": "Barley",
+      "area_1000ha": 6.2
+    }
+  ],
+  "450": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 375.0
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 362.0
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 7.0
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 2.3
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 2.0
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 1.2
+    }
+  ],
+  "669": [
+    {
+      "name": "Rice",
+      "area_1000ha": 90.2
+    },
+    {
+      "name": "Sorghum",
+      "area_1000ha": 46.6
+    },
+    {
+      "name": "Kharif Sorghum",
+      "area_1000ha": 27.7
+    },
+    {
+      "name": "Rabi Sorghum",
+      "area_1000ha": 18.9
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 18.3
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 18.1
+    }
+  ],
+  "547": [
+    {
+      "name": "Rice",
+      "area_1000ha": 415.2
+    },
+    {
+      "name": "Cotton",
+      "area_1000ha": 351.3
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 26.9
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 12.8
+    },
+    {
+      "name": "Sorghum",
+      "area_1000ha": 2.1
+    },
+    {
+      "name": "Kharif Sorghum",
+      "area_1000ha": 1.7
+    }
+  ],
+  "388": [
+    {
+      "name": "Rice",
+      "area_1000ha": 13.8
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 4.2
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 3.5
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 3.0
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 1.9
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 1.0
+    }
+  ],
+  "167": [
+    {
+      "name": "Pearl Millet",
+      "area_1000ha": 314.1
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 83.2
+    },
+    {
+      "name": "Castor",
+      "area_1000ha": 49.3
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 46.9
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 27.2
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 20.6
+    }
+  ],
+  "730": [
+    {
+      "name": "Rice",
+      "area_1000ha": 279.1
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 51.9
+    },
+    {
+      "name": "Cotton",
+      "area_1000ha": 14.3
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 12.7
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 11.6
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 8.7
+    }
+  ],
+  "38": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 136.9
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 115.9
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 31.8
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 8.3
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 6.7
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 6.5
+    }
+  ],
+  "658": [
+    {
+      "name": "Cotton",
+      "area_1000ha": 290.5
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 269.3
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 103.1
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 17.9
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 9.2
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 2.0
+    }
+  ],
+  "706": [
+    {
+      "name": "Rice",
+      "area_1000ha": 325.7
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 42.4
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 21.3
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 7.4
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 3.9
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 1.7
+    }
+  ],
+  "164": [
+    {
+      "name": "Chickpea",
+      "area_1000ha": 159.1
+    },
+    {
+      "name": "Pearl Millet",
+      "area_1000ha": 105.1
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 41.7
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 25.7
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 9.0
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 6.0
+    }
+  ],
+  "386": [
+    {
+      "name": "Rice",
+      "area_1000ha": 141.5
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 10.8
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 4.4
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 1.3
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 0.4
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 0.1
+    }
+  ],
+  "157": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 349.5
+    },
+    {
+      "name": "Soyabean",
+      "area_1000ha": 138.0
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 136.8
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 134.1
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 35.2
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 18.0
+    }
+  ],
+  "67": [
+    {
+      "name": "Maize",
+      "area_1000ha": 24.5
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 23.8
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 1.4
+    },
+    {
+      "name": "Barley",
+      "area_1000ha": 0.1
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 0.1
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 0.1
+    }
+  ],
+  "510": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 515.5
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 508.4
+    },
+    {
+      "name": "Cotton",
+      "area_1000ha": 5.9
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 4.7
+    },
+    {
+      "name": "Pearl Millet",
+      "area_1000ha": 2.5
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 0.2
+    }
+  ],
+  "741": [
+    {
+      "name": "Soyabean",
+      "area_1000ha": 149.0
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 78.7
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 65.4
+    },
+    {
+      "name": "Sorghum",
+      "area_1000ha": 42.7
+    },
+    {
+      "name": "Rabi Sorghum",
+      "area_1000ha": 22.4
+    },
+    {
+      "name": "Kharif Sorghum",
+      "area_1000ha": 20.3
+    }
+  ],
+  "407": [
+    {
+      "name": "Rice",
+      "area_1000ha": 348.1
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 63.0
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 16.7
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 5.7
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 5.2
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 2.1
+    }
+  ],
+  "599": [
+    {
+      "name": "Rice",
+      "area_1000ha": 132.7
+    },
+    {
+      "name": "Finger Millet",
+      "area_1000ha": 13.9
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 3.3
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 2.5
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 0.6
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 0.1
+    }
+  ],
+  "182": [
+    {
+      "name": "Rice",
+      "area_1000ha": 427.4
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 51.5
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 22.6
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 5.9
+    },
+    {
+      "name": "Onion",
+      "area_1000ha": 2.3
+    },
+    {
+      "name": "Linseed",
+      "area_1000ha": 2.2
+    }
+  ],
+  "134": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 166.2
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 154.8
+    },
+    {
+      "name": "Pearl Millet",
+      "area_1000ha": 14.8
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 10.9
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 7.3
+    },
+    {
+      "name": "Barley",
+      "area_1000ha": 6.9
+    }
+  ],
+  "171": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 207.7
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 157.3
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 43.4
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 19.5
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 9.5
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 7.3
+    }
+  ],
+  "309": [
+    {
+      "name": "Soyabean",
+      "area_1000ha": 350.0
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 136.4
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 125.8
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 22.4
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 14.1
+    },
+    {
+      "name": "Onion",
+      "area_1000ha": 10.5
+    }
+  ],
+  "163": [
+    {
+      "name": "Pearl Millet",
+      "area_1000ha": 449.2
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 231.4
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 116.2
+    },
+    {
+      "name": "Barley",
+      "area_1000ha": 57.3
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 41.3
+    },
+    {
+      "name": "Kharif Sorghum",
+      "area_1000ha": 37.1
+    }
+  ],
+  "429": [
+    {
+      "name": "Rice",
+      "area_1000ha": 132.9
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 23.7
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 10.5
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 7.9
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 3.3
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 1.2
+    }
+  ],
+  "282": [
+    {
+      "name": "Soyabean",
+      "area_1000ha": 309.4
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 152.0
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 112.6
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 63.9
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 9.0
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 6.2
+    }
+  ],
+  "508": [
+    {
+      "name": "Rice",
+      "area_1000ha": 118.0
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 108.0
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 4.0
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 2.0
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 0.5
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 0.1
+    }
+  ],
+  "655": [
+    {
+      "name": "Rice",
+      "area_1000ha": 161.3
+    },
+    {
+      "name": "Cotton",
+      "area_1000ha": 143.2
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 41.0
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 5.1
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 4.8
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 4.8
+    }
+  ],
+  "705": [
+    {
+      "name": "Rice",
+      "area_1000ha": 190.7
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 40.8
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 13.5
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 0.6
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 0.5
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 0.4
+    }
+  ],
+  "202": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 506.6
+    },
+    {
+      "name": "Cotton",
+      "area_1000ha": 315.6
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 302.9
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 196.5
+    },
+    {
+      "name": "Barley",
+      "area_1000ha": 71.7
+    },
+    {
+      "name": "Pearl Millet",
+      "area_1000ha": 46.0
+    }
+  ],
+  "294": [
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 212.7
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 156.6
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 70.5
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 8.2
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 4.4
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 2.4
+    }
+  ],
+  "683": [
+    {
+      "name": "Sorghum",
+      "area_1000ha": 157.4
+    },
+    {
+      "name": "Kharif Sorghum",
+      "area_1000ha": 117.1
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 73.1
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 66.6
+    },
+    {
+      "name": "Finger Millet",
+      "area_1000ha": 65.8
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 52.0
+    }
+  ],
+  "356": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 230.3
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 194.5
+    },
+    {
+      "name": "Pearl Millet",
+      "area_1000ha": 18.9
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 11.1
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 5.1
+    },
+    {
+      "name": "Kharif Sorghum",
+      "area_1000ha": 4.7
+    }
+  ],
+  "56": [
+    {
+      "name": "Soyabean",
+      "area_1000ha": 223.0
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 104.4
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 80.0
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 45.0
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 41.1
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 28.2
+    }
+  ],
+  "115": [
+    {
+      "name": "Maize",
+      "area_1000ha": 61.5
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 47.7
+    },
+    {
+      "name": "Soyabean",
+      "area_1000ha": 32.8
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 17.2
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 11.7
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 1.3
+    }
+  ],
+  "571": [
+    {
+      "name": "Rice",
+      "area_1000ha": 114.2
+    },
+    {
+      "name": "Finger Millet",
+      "area_1000ha": 6.7
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 0.3
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 0.1
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 0.0
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 0.0
+    }
+  ],
+  "139": [
+    {
+      "name": "Rice",
+      "area_1000ha": 286.2
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 25.2
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 9.5
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 7.0
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 3.4
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 1.2
+    }
+  ],
+  "357": [
+    {
+      "name": "Soyabean",
+      "area_1000ha": 277.5
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 263.0
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 207.0
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 10.5
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 7.3
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 6.6
+    }
+  ],
+  "509": [
+    {
+      "name": "Rice",
+      "area_1000ha": 353.7
+    },
+    {
+      "name": "Cotton",
+      "area_1000ha": 175.0
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 65.4
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 7.1
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 4.7
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 3.2
+    }
+  ],
+  "90": [
+    {
+      "name": "Pearl Millet",
+      "area_1000ha": 266.1
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 107.1
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 72.9
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 63.5
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 33.5
+    },
+    {
+      "name": "Barley",
+      "area_1000ha": 7.7
+    }
+  ],
+  "280": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 197.6
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 167.2
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 112.0
+    },
+    {
+      "name": "Soyabean",
+      "area_1000ha": 84.7
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 33.7
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 6.9
+    }
+  ],
+  "573": [
+    {
+      "name": "Rice",
+      "area_1000ha": 139.2
+    },
+    {
+      "name": "Finger Millet",
+      "area_1000ha": 16.0
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 1.4
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 1.1
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 0.0
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 0.0
+    }
+  ],
+  "114": [
+    {
+      "name": "Rice",
+      "area_1000ha": 351.0
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 92.4
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 80.8
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 50.6
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 40.5
+    },
+    {
+      "name": "Linseed",
+      "area_1000ha": 10.9
+    }
+  ],
+  "463": [
+    {
+      "name": "Rice",
+      "area_1000ha": 125.5
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 80.6
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 49.0
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 8.2
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 5.2
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 2.6
+    }
+  ],
+  "472": [
+    {
+      "name": "Rice",
+      "area_1000ha": 284.4
+    },
+    {
+      "name": "Cotton",
+      "area_1000ha": 170.7
+    },
+    {
+      "name": "Soyabean",
+      "area_1000ha": 66.1
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 45.7
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 37.6
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 18.7
+    }
+  ],
+  "242": [
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 239.2
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 135.3
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 32.9
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 5.4
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 1.8
+    },
+    {
+      "name": "Barley",
+      "area_1000ha": 0.2
+    }
+  ],
+  "44": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 208.7
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 142.5
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 60.7
+    },
+    {
+      "name": "Kharif Sorghum",
+      "area_1000ha": 40.5
+    },
+    {
+      "name": "Sorghum",
+      "area_1000ha": 40.5
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 33.9
+    }
+  ],
+  "500": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 217.0
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 207.6
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 14.7
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 10.9
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 1.8
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 0.3
+    }
+  ],
+  "303": [
+    {
+      "name": "Soyabean",
+      "area_1000ha": 365.2
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 278.4
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 165.9
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 36.5
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 17.1
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 14.7
+    }
+  ],
+  "75": [
+    {
+      "name": "Maize",
+      "area_1000ha": 26.8
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 18.7
+    },
+    {
+      "name": "Barley",
+      "area_1000ha": 3.6
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 2.5
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 1.6
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 0.5
+    }
+  ],
+  "88": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 174.9
+    },
+    {
+      "name": "Soyabean",
+      "area_1000ha": 159.4
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 120.8
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 38.6
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 22.9
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 18.8
+    }
+  ],
+  "184": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 147.3
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 115.8
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 37.0
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 3.6
+    },
+    {
+      "name": "Barley",
+      "area_1000ha": 2.6
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 1.8
+    }
+  ],
+  "217": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 21.9
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 15.1
+    },
+    {
+      "name": "Barley",
+      "area_1000ha": 2.4
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 1.3
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 0.9
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 0.8
+    }
+  ],
+  "514": [
+    {
+      "name": "Barley",
+      "area_1000ha": 1.0
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 0.2
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 0.2
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 0.1
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 0.0
+    },
+    {
+      "name": "Finger Millet",
+      "area_1000ha": 0.0
+    }
+  ],
+  "147": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 161.5
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 119.8
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 53.3
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 23.2
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 18.3
+    },
+    {
+      "name": "Kharif Sorghum",
+      "area_1000ha": 18.0
+    }
+  ],
+  "444": [
+    {
+      "name": "Cotton",
+      "area_1000ha": 341.0
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 93.7
+    },
+    {
+      "name": "Soyabean",
+      "area_1000ha": 58.3
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 47.0
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 30.2
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 27.3
+    }
+  ],
+  "496": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 173.0
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 98.4
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 59.1
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 25.3
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 4.5
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 1.2
+    }
+  ],
+  "522": [
+    {
+      "name": "Potatoes",
+      "area_1000ha": 0.7
+    },
+    {
+      "name": "Barley",
+      "area_1000ha": 0.4
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 0.1
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 0.1
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 0.0
+    }
+  ],
+  "278": [
+    {
+      "name": "Rice",
+      "area_1000ha": 411.1
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 10.2
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 6.8
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 6.3
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 5.0
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 3.9
+    }
+  ],
+  "449": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 194.2
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 170.6
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 5.3
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 5.2
+    },
+    {
+      "name": "Pearl Millet",
+      "area_1000ha": 1.1
+    },
+    {
+      "name": "Barley",
+      "area_1000ha": 0.1
+    }
+  ],
+  "121": [
+    {
+      "name": "Soyabean",
+      "area_1000ha": 173.6
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 163.5
+    },
+    {
+      "name": "Cotton",
+      "area_1000ha": 105.1
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 69.5
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 53.9
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 21.8
+    }
+  ],
+  "71": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 146.8
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 50.6
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 47.0
+    },
+    {
+      "name": "Soyabean",
+      "area_1000ha": 23.9
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 22.9
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 20.6
+    }
+  ],
+  "364": [
+    {
+      "name": "Cotton",
+      "area_1000ha": 282.0
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 185.6
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 124.8
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 123.8
+    },
+    {
+      "name": "Soyabean",
+      "area_1000ha": 97.9
+    },
+    {
+      "name": "Kharif Sorghum",
+      "area_1000ha": 51.9
+    }
+  ],
+  "695": [
+    {
+      "name": "Rice",
+      "area_1000ha": 216.7
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 93.7
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 25.3
+    },
+    {
+      "name": "Finger Millet",
+      "area_1000ha": 11.6
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 11.1
+    },
+    {
+      "name": "Pearl Millet",
+      "area_1000ha": 7.4
+    }
+  ],
+  "166": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 160.4
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 30.4
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 15.6
+    },
+    {
+      "name": "Pearl Millet",
+      "area_1000ha": 15.0
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 13.7
+    },
+    {
+      "name": "Barley",
+      "area_1000ha": 7.5
+    }
+  ],
+  "324": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 27.5
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 20.9
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 3.9
+    },
+    {
+      "name": "Barley",
+      "area_1000ha": 1.6
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 0.3
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 0.1
+    }
+  ],
+  "785": [
+    {
+      "name": "Chickpea",
+      "area_1000ha": 255.8
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 220.6
+    },
+    {
+      "name": "Pearl Millet",
+      "area_1000ha": 124.4
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 108.3
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 101.3
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 12.3
+    }
+  ],
+  "477": [
+    {
+      "name": "Cotton",
+      "area_1000ha": 297.0
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 123.9
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 96.2
+    },
+    {
+      "name": "Sorghum",
+      "area_1000ha": 87.0
+    },
+    {
+      "name": "Pearl Millet",
+      "area_1000ha": 82.8
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 75.7
+    }
+  ],
+  "231": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 61.0
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 46.6
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 18.9
+    },
+    {
+      "name": "Barley",
+      "area_1000ha": 2.3
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 2.2
+    },
+    {
+      "name": "Finger Millet",
+      "area_1000ha": 0.7
+    }
+  ],
+  "172": [
+    {
+      "name": "Maize",
+      "area_1000ha": 115.2
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 85.0
+    },
+    {
+      "name": "Soyabean",
+      "area_1000ha": 80.1
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 37.1
+    },
+    {
+      "name": "Cotton",
+      "area_1000ha": 34.0
+    },
+    {
+      "name": "Pearl Millet",
+      "area_1000ha": 17.0
+    }
+  ],
+  "107": [
+    {
+      "name": "Soyabean",
+      "area_1000ha": 279.4
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 198.9
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 149.7
+    },
+    {
+      "name": "Cotton",
+      "area_1000ha": 98.0
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 83.9
+    },
+    {
+      "name": "Barley",
+      "area_1000ha": 27.2
+    }
+  ],
+  "312": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 14.1
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 10.2
+    },
+    {
+      "name": "Barley",
+      "area_1000ha": 3.1
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 3.0
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 1.1
+    },
+    {
+      "name": "Finger Millet",
+      "area_1000ha": 0.6
+    }
+  ],
+  "786": [
+    {
+      "name": "Maize",
+      "area_1000ha": 158.9
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 102.8
+    },
+    {
+      "name": "Cotton",
+      "area_1000ha": 41.5
+    },
+    {
+      "name": "Kharif Sorghum",
+      "area_1000ha": 40.4
+    },
+    {
+      "name": "Sorghum",
+      "area_1000ha": 40.4
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 34.0
+    }
+  ],
+  "321": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 28.1
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 20.8
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 5.4
+    },
+    {
+      "name": "Barley",
+      "area_1000ha": 1.9
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 1.0
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 0.9
+    }
+  ],
+  "174": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 302.3
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 83.3
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 42.9
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 31.2
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 20.7
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 17.7
+    }
+  ],
+  "15": [
+    {
+      "name": "Rice",
+      "area_1000ha": 36.3
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 0.1
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 0.0
+    }
+  ],
+  "59": [
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 260.9
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 217.7
+    },
+    {
+      "name": "Pearl Millet",
+      "area_1000ha": 211.3
+    },
+    {
+      "name": "Kharif Sorghum",
+      "area_1000ha": 50.6
+    },
+    {
+      "name": "Sorghum",
+      "area_1000ha": 50.6
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 12.1
+    }
+  ],
+  "103": [
+    {
+      "name": "Soyabean",
+      "area_1000ha": 321.4
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 219.5
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 171.0
+    },
+    {
+      "name": "Linseed",
+      "area_1000ha": 21.6
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 13.3
+    },
+    {
+      "name": "Onion",
+      "area_1000ha": 11.8
+    }
+  ],
+  "527": [
+    {
+      "name": "Rice",
+      "area_1000ha": 270.9
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 264.8
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 3.5
+    },
+    {
+      "name": "Sunflower",
+      "area_1000ha": 1.6
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 1.5
+    },
+    {
+      "name": "Barley",
+      "area_1000ha": 1.4
+    }
+  ],
+  "207": [
+    {
+      "name": "Finger Millet",
+      "area_1000ha": 115.1
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 59.6
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 24.2
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 13.0
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 4.8
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 1.7
+    }
+  ],
+  "501": [
+    {
+      "name": "Cotton",
+      "area_1000ha": 514.3
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 202.7
+    },
+    {
+      "name": "Sorghum",
+      "area_1000ha": 91.1
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 72.3
+    },
+    {
+      "name": "Kharif Sorghum",
+      "area_1000ha": 55.7
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 51.0
+    }
+  ],
+  "187": [
+    {
+      "name": "Rice",
+      "area_1000ha": 10.1
+    }
+  ],
+  "50": [
+    {
+      "name": "Pearl Millet",
+      "area_1000ha": 901.1
+    },
+    {
+      "name": "Castor",
+      "area_1000ha": 23.8
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 14.5
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 10.1
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 4.7
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 4.4
+    }
+  ],
+  "233": [
+    {
+      "name": "Soyabean",
+      "area_1000ha": 383.5
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 125.7
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 103.2
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 73.1
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 58.6
+    },
+    {
+      "name": "Linseed",
+      "area_1000ha": 9.9
+    }
+  ],
+  "358": [
+    {
+      "name": "Chickpea",
+      "area_1000ha": 354.6
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 285.6
+    },
+    {
+      "name": "Sorghum",
+      "area_1000ha": 256.9
+    },
+    {
+      "name": "Rabi Sorghum",
+      "area_1000ha": 256.6
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 113.4
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 104.1
+    }
+  ],
+  "338": [
+    {
+      "name": "Rice",
+      "area_1000ha": 377.1
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 48.4
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 23.2
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 20.7
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 19.2
+    },
+    {
+      "name": "Linseed",
+      "area_1000ha": 9.8
+    }
+  ],
+  "215": [
+    {
+      "name": "Rice",
+      "area_1000ha": 18.1
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 0.8
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 0.4
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 0.0
+    },
+    {
+      "name": "Finger Millet",
+      "area_1000ha": 0.0
+    }
+  ],
+  "126": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 170.2
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 82.1
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 42.1
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 17.5
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 15.2
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 9.4
+    }
+  ],
+  "445": [
+    {
+      "name": "Sorghum",
+      "area_1000ha": 550.5
+    },
+    {
+      "name": "Rabi Sorghum",
+      "area_1000ha": 548.9
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 208.0
+    },
+    {
+      "name": "Cotton",
+      "area_1000ha": 132.8
+    },
+    {
+      "name": "Pearl Millet",
+      "area_1000ha": 119.5
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 104.4
+    }
+  ],
+  "216": [
+    {
+      "name": "Rice",
+      "area_1000ha": 7.7
+    }
+  ],
+  "349": [
+    {
+      "name": "Soyabean",
+      "area_1000ha": 446.9
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 220.6
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 195.2
+    },
+    {
+      "name": "Onion",
+      "area_1000ha": 14.4
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 12.4
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 6.5
+    }
+  ],
+  "45": [
+    {
+      "name": "Maize",
+      "area_1000ha": 125.1
+    },
+    {
+      "name": "Soyabean",
+      "area_1000ha": 111.9
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 108.7
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 28.9
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 17.8
+    },
+    {
+      "name": "Cotton",
+      "area_1000ha": 10.9
+    }
+  ],
+  "229": [
+    {
+      "name": "Rice",
+      "area_1000ha": 7.8
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 0.1
+    }
+  ],
+  "670": [
+    {
+      "name": "Rice",
+      "area_1000ha": 294.9
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 68.4
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 47.1
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 37.7
+    },
+    {
+      "name": "Pearl Millet",
+      "area_1000ha": 34.3
+    },
+    {
+      "name": "Cotton",
+      "area_1000ha": 19.4
+    }
+  ],
+  "288": [
+    {
+      "name": "Soyabean",
+      "area_1000ha": 205.0
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 110.4
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 91.4
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 55.5
+    },
+    {
+      "name": "Cotton",
+      "area_1000ha": 29.4
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 9.3
+    }
+  ],
+  "188": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 226.8
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 74.0
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 38.4
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 36.8
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 34.2
+    },
+    {
+      "name": "Kharif Sorghum",
+      "area_1000ha": 23.4
+    }
+  ],
+  "208": [
+    {
+      "name": "Rice",
+      "area_1000ha": 5.0
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 0.0
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 0.0
+    }
+  ],
+  "262": [
+    {
+      "name": "Rice",
+      "area_1000ha": 75.3
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 0.3
+    },
+    {
+      "name": "Sorghum",
+      "area_1000ha": 0.2
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 0.2
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 0.1
+    },
+    {
+      "name": "Finger Millet",
+      "area_1000ha": 0.1
+    }
+  ],
+  "19": [
+    {
+      "name": "Pearl Millet",
+      "area_1000ha": 275.8
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 229.0
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 203.8
+    },
+    {
+      "name": "Cotton",
+      "area_1000ha": 46.2
+    },
+    {
+      "name": "Kharif Sorghum",
+      "area_1000ha": 23.8
+    },
+    {
+      "name": "Sorghum",
+      "area_1000ha": 23.8
+    }
+  ],
+  "446": [
+    {
+      "name": "Soyabean",
+      "area_1000ha": 504.5
+    },
+    {
+      "name": "Cotton",
+      "area_1000ha": 183.8
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 124.9
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 113.7
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 25.5
+    },
+    {
+      "name": "Sorghum",
+      "area_1000ha": 19.6
+    }
+  ],
+  "565": [
+    {
+      "name": "Rice",
+      "area_1000ha": 191.9
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 148.7
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 14.1
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 12.5
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 10.1
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 6.3
+    }
+  ],
+  "486": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 768.5
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 641.1
+    },
+    {
+      "name": "Cotton",
+      "area_1000ha": 112.1
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 7.0
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 2.0
+    },
+    {
+      "name": "Barley",
+      "area_1000ha": 1.8
+    }
+  ],
+  "160": [
+    {
+      "name": "Soyabean",
+      "area_1000ha": 216.9
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 110.4
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 94.4
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 44.2
+    },
+    {
+      "name": "Onion",
+      "area_1000ha": 14.1
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 12.2
+    }
+  ],
+  "14": [
+    {
+      "name": "Kharif Sorghum",
+      "area_1000ha": 126.8
+    },
+    {
+      "name": "Sorghum",
+      "area_1000ha": 126.8
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 66.2
+    },
+    {
+      "name": "Pearl Millet",
+      "area_1000ha": 58.5
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 40.3
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 23.8
+    }
+  ],
+  "567": [
+    {
+      "name": "Sorghum",
+      "area_1000ha": 225.1
+    },
+    {
+      "name": "Rabi Sorghum",
+      "area_1000ha": 223.4
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 113.1
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 90.3
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 72.4
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 52.0
+    }
+  ],
+  "342": [
+    {
+      "name": "Rice",
+      "area_1000ha": 21.5
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 0.0
+    }
+  ],
+  "341": [
+    {
+      "name": "Rice",
+      "area_1000ha": 1.7
+    }
+  ],
+  "61": [
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 167.9
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 110.4
+    },
+    {
+      "name": "Pearl Millet",
+      "area_1000ha": 61.9
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 35.6
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 25.0
+    },
+    {
+      "name": "Kharif Sorghum",
+      "area_1000ha": 11.3
+    }
+  ],
+  "124": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 198.2
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 101.3
+    },
+    {
+      "name": "Pearl Millet",
+      "area_1000ha": 69.7
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 30.0
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 23.9
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 14.6
+    }
+  ],
+  "125": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 150.7
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 85.5
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 85.3
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 34.6
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 17.1
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 8.4
+    }
+  ],
+  "438": [
+    {
+      "name": "Cotton",
+      "area_1000ha": 447.8
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 41.7
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 38.7
+    },
+    {
+      "name": "Castor",
+      "area_1000ha": 28.3
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 17.4
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 14.1
+    }
+  ],
+  "240": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 183.0
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 162.7
+    },
+    {
+      "name": "Pearl Millet",
+      "area_1000ha": 148.5
+    },
+    {
+      "name": "Soyabean",
+      "area_1000ha": 40.2
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 38.9
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 29.4
+    }
+  ],
+  "583": [
+    {
+      "name": "Sorghum",
+      "area_1000ha": 160.7
+    },
+    {
+      "name": "Rabi Sorghum",
+      "area_1000ha": 136.6
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 80.6
+    },
+    {
+      "name": "Soyabean",
+      "area_1000ha": 69.7
+    },
+    {
+      "name": "Pearl Millet",
+      "area_1000ha": 67.4
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 45.8
+    }
+  ],
+  "237": [
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 257.4
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 219.4
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 52.4
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 11.3
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 9.1
+    },
+    {
+      "name": "Pearl Millet",
+      "area_1000ha": 8.4
+    }
+  ],
+  "581": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 242.4
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 236.6
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 60.8
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 27.7
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 13.1
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 7.9
+    }
+  ],
+  "709": [
+    {
+      "name": "Rice",
+      "area_1000ha": 193.2
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 18.2
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 7.4
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 1.7
+    },
+    {
+      "name": "Pearl Millet",
+      "area_1000ha": 0.8
+    },
+    {
+      "name": "Finger Millet",
+      "area_1000ha": 0.5
+    }
+  ],
+  "64": [
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 201.6
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 157.3
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 50.9
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 4.1
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 0.9
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 0.7
+    }
+  ],
+  "98": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 120.8
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 54.4
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 29.5
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 16.6
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 16.4
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 6.9
+    }
+  ],
+  "9": [
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 110.7
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 105.8
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 30.1
+    },
+    {
+      "name": "Soyabean",
+      "area_1000ha": 27.7
+    },
+    {
+      "name": "Sorghum",
+      "area_1000ha": 24.5
+    },
+    {
+      "name": "Kharif Sorghum",
+      "area_1000ha": 20.2
+    }
+  ],
+  "91": [
+    {
+      "name": "Rice",
+      "area_1000ha": 417.2
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 40.0
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 8.9
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 6.1
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 5.6
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 3.4
+    }
+  ],
+  "130": [
+    {
+      "name": "Rice",
+      "area_1000ha": 243.2
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 30.9
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 26.7
+    },
+    {
+      "name": "Finger Millet",
+      "area_1000ha": 21.5
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 16.2
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 15.0
+    }
+  ],
+  "110": [
+    {
+      "name": "Rice",
+      "area_1000ha": 154.3
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 55.6
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 24.4
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 13.0
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 8.2
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 7.0
+    }
+  ],
+  "740": [
+    {
+      "name": "Finger Millet",
+      "area_1000ha": 83.8
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 33.9
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 20.9
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 10.3
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 6.8
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 1.1
+    }
+  ],
+  "181": [
+    {
+      "name": "Rice",
+      "area_1000ha": 288.8
+    },
+    {
+      "name": "Cotton",
+      "area_1000ha": 62.5
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 32.5
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 19.0
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 15.9
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 12.1
+    }
+  ],
+  "144": [
+    {
+      "name": "Soyabean",
+      "area_1000ha": 323.3
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 255.8
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 164.6
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 33.1
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 15.5
+    },
+    {
+      "name": "Pearl Millet",
+      "area_1000ha": 7.6
+    }
+  ],
+  "286": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 149.2
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 138.7
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 21.9
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 3.8
+    },
+    {
+      "name": "Pearl Millet",
+      "area_1000ha": 2.7
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 1.8
+    }
+  ],
+  "161": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 300.7
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 210.2
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 121.3
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 21.4
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 17.9
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 13.9
+    }
+  ],
+  "180": [
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 386.8
+    },
+    {
+      "name": "Sorghum",
+      "area_1000ha": 251.5
+    },
+    {
+      "name": "Rabi Sorghum",
+      "area_1000ha": 250.7
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 226.7
+    },
+    {
+      "name": "Cotton",
+      "area_1000ha": 123.8
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 113.3
+    }
+  ],
+  "292": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 154.2
+    },
+    {
+      "name": "Cotton",
+      "area_1000ha": 119.7
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 94.7
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 56.1
+    },
+    {
+      "name": "Castor",
+      "area_1000ha": 46.6
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 28.5
+    }
+  ],
+  "580": [
+    {
+      "name": "Sorghum",
+      "area_1000ha": 193.1
+    },
+    {
+      "name": "Rabi Sorghum",
+      "area_1000ha": 139.3
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 80.2
+    },
+    {
+      "name": "Pearl Millet",
+      "area_1000ha": 58.8
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 58.8
+    },
+    {
+      "name": "Kharif Sorghum",
+      "area_1000ha": 53.8
+    }
+  ],
+  "314": [
+    {
+      "name": "Groundnut",
+      "area_1000ha": 104.3
+    },
+    {
+      "name": "Soyabean",
+      "area_1000ha": 83.6
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 76.9
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 54.7
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 32.0
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 12.5
+    }
+  ],
+  "437": [
+    {
+      "name": "Cotton",
+      "area_1000ha": 385.4
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 320.6
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 71.2
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 19.6
+    },
+    {
+      "name": "Castor",
+      "area_1000ha": 12.8
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 5.7
+    }
+  ],
+  "591": [
+    {
+      "name": "Rabi Sorghum",
+      "area_1000ha": 656.9
+    },
+    {
+      "name": "Sorghum",
+      "area_1000ha": 656.9
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 100.5
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 75.8
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 68.7
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 68.2
+    }
+  ],
+  "211": [
+    {
+      "name": "Rice",
+      "area_1000ha": 401.5
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 112.7
+    },
+    {
+      "name": "Finger Millet",
+      "area_1000ha": 81.6
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 35.0
+    },
+    {
+      "name": "Cotton",
+      "area_1000ha": 34.0
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 24.0
+    }
+  ],
+  "753": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 408.8
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 403.9
+    },
+    {
+      "name": "Cotton",
+      "area_1000ha": 9.0
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 5.2
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 2.1
+    },
+    {
+      "name": "Barley",
+      "area_1000ha": 1.9
+    }
+  ],
+  "270": [
+    {
+      "name": "Rice",
+      "area_1000ha": 140.7
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 132.0
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 79.3
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 10.8
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 1.0
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 0.6
+    }
+  ],
+  "145": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 65.0
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 40.8
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 26.5
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 26.0
+    },
+    {
+      "name": "Kharif Sorghum",
+      "area_1000ha": 13.4
+    },
+    {
+      "name": "Sorghum",
+      "area_1000ha": 13.4
+    }
+  ],
+  "307": [
+    {
+      "name": "Rice",
+      "area_1000ha": 240.3
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 87.3
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 45.5
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 39.8
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 38.8
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 23.5
+    }
+  ],
+  "265": [
+    {
+      "name": "Maize",
+      "area_1000ha": 256.8
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 128.0
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 72.7
+    },
+    {
+      "name": "Soyabean",
+      "area_1000ha": 61.4
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 43.7
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 34.3
+    }
+  ],
+  "153": [
+    {
+      "name": "Finger Millet",
+      "area_1000ha": 94.6
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 82.8
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 21.6
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 14.4
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 2.2
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 1.6
+    }
+  ],
+  "469": [
+    {
+      "name": "Soyabean",
+      "area_1000ha": 370.3
+    },
+    {
+      "name": "Cotton",
+      "area_1000ha": 174.5
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 132.2
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 76.2
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 39.6
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 35.9
+    }
+  ],
+  "578": [
+    {
+      "name": "Rice",
+      "area_1000ha": 168.8
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 102.0
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 44.0
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 7.0
+    },
+    {
+      "name": "Sunflower",
+      "area_1000ha": 4.5
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 2.7
+    }
+  ],
+  "434": [
+    {
+      "name": "Cotton",
+      "area_1000ha": 374.8
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 126.7
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 8.0
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 6.3
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 5.6
+    },
+    {
+      "name": "Onion",
+      "area_1000ha": 4.4
+    }
+  ],
+  "308": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 247.7
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 210.8
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 45.7
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 14.4
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 8.8
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 8.8
+    }
+  ],
+  "275": [
+    {
+      "name": "Rice",
+      "area_1000ha": 276.3
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 13.5
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 6.2
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 4.7
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 4.6
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 2.1
+    }
+  ],
+  "204": [
+    {
+      "name": "Rice",
+      "area_1000ha": 27.2
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 3.6
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 0.1
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 0.0
+    }
+  ],
+  "301": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 156.8
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 132.0
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 116.0
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 75.0
+    },
+    {
+      "name": "Soyabean",
+      "area_1000ha": 59.8
+    },
+    {
+      "name": "Barley",
+      "area_1000ha": 20.0
+    }
+  ],
+  "518": [
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 143.9
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 109.5
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 54.5
+    },
+    {
+      "name": "Soyabean",
+      "area_1000ha": 51.3
+    },
+    {
+      "name": "Finger Millet",
+      "area_1000ha": 21.3
+    },
+    {
+      "name": "Sorghum",
+      "area_1000ha": 17.5
+    }
+  ],
+  "297": [
+    {
+      "name": "Rice",
+      "area_1000ha": 529.8
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 33.8
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 25.1
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 18.2
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 9.0
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 7.7
+    }
+  ],
+  "336": [
+    {
+      "name": "Rice",
+      "area_1000ha": 199.0
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 19.8
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 8.5
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 7.4
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 7.0
+    },
+    {
+      "name": "Finger Millet",
+      "area_1000ha": 4.1
+    }
+  ],
+  "317": [
+    {
+      "name": "Rice",
+      "area_1000ha": 114.0
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 101.8
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 66.6
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 46.2
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 38.1
+    },
+    {
+      "name": "Pearl Millet",
+      "area_1000ha": 32.5
+    }
+  ],
+  "239": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 300.4
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 142.6
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 140.6
+    },
+    {
+      "name": "Pearl Millet",
+      "area_1000ha": 50.8
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 12.4
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 10.1
+    }
+  ],
+  "532": [
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 188.6
+    },
+    {
+      "name": "Pearl Millet",
+      "area_1000ha": 186.7
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 139.0
+    },
+    {
+      "name": "Cotton",
+      "area_1000ha": 65.7
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 10.6
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 9.1
+    }
+  ],
+  "34": [
+    {
+      "name": "Rice",
+      "area_1000ha": 220.2
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 61.0
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 55.6
+    },
+    {
+      "name": "Linseed",
+      "area_1000ha": 20.9
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 20.4
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 10.0
+    }
+  ],
+  "554": [
+    {
+      "name": "Rice",
+      "area_1000ha": 606.1
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 38.2
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 15.5
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 10.5
+    },
+    {
+      "name": "Sunflower",
+      "area_1000ha": 5.3
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 2.2
+    }
+  ],
+  "564": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 322.4
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 314.7
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 4.8
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 4.0
+    },
+    {
+      "name": "Sunflower",
+      "area_1000ha": 3.6
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 1.6
+    }
+  ],
+  "29": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 276.3
+    },
+    {
+      "name": "Pearl Millet",
+      "area_1000ha": 121.1
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 88.3
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 44.5
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 40.5
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 16.5
+    }
+  ],
+  "455": [
+    {
+      "name": "Cotton",
+      "area_1000ha": 800.9
+    },
+    {
+      "name": "Sorghum",
+      "area_1000ha": 252.1
+    },
+    {
+      "name": "Rabi Sorghum",
+      "area_1000ha": 248.6
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 145.6
+    },
+    {
+      "name": "Soyabean",
+      "area_1000ha": 141.6
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 118.3
+    }
+  ],
+  "544": [
+    {
+      "name": "Rice",
+      "area_1000ha": 242.7
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 87.9
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 29.5
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 6.0
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 4.5
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 4.5
+    }
+  ],
+  "290": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 173.6
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 121.3
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 54.3
+    },
+    {
+      "name": "Soyabean",
+      "area_1000ha": 42.5
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 32.9
+    },
+    {
+      "name": "Kharif Sorghum",
+      "area_1000ha": 26.1
+    }
+  ],
+  "440": [
+    {
+      "name": "Rice",
+      "area_1000ha": 235.2
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 144.2
+    },
+    {
+      "name": "Pearl Millet",
+      "area_1000ha": 88.3
+    },
+    {
+      "name": "Cotton",
+      "area_1000ha": 21.7
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 11.3
+    },
+    {
+      "name": "Castor",
+      "area_1000ha": 7.7
+    }
+  ],
+  "542": [
+    {
+      "name": "Rice",
+      "area_1000ha": 367.5
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 129.3
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 23.0
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 13.8
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 11.9
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 8.9
+    }
+  ],
+  "354": [
+    {
+      "name": "Rice",
+      "area_1000ha": 62.9
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 9.9
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 1.7
+    },
+    {
+      "name": "Cotton",
+      "area_1000ha": 1.2
+    },
+    {
+      "name": "Soyabean",
+      "area_1000ha": 0.0
+    },
+    {
+      "name": "Onion",
+      "area_1000ha": 0.0
+    }
+  ],
+  "266": [
+    {
+      "name": "Chickpea",
+      "area_1000ha": 93.7
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 77.8
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 58.4
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 34.6
+    },
+    {
+      "name": "Soyabean",
+      "area_1000ha": 17.5
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 16.7
+    }
+  ],
+  "43": [
+    {
+      "name": "Pearl Millet",
+      "area_1000ha": 163.0
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 157.6
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 131.2
+    },
+    {
+      "name": "Castor",
+      "area_1000ha": 112.0
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 78.1
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 74.0
+    }
+  ],
+  "70": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 216.0
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 102.1
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 62.8
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 44.3
+    },
+    {
+      "name": "Pearl Millet",
+      "area_1000ha": 15.6
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 11.1
+    }
+  ],
+  "468": [
+    {
+      "name": "Rice",
+      "area_1000ha": 423.8
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 35.1
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 32.9
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 15.4
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 12.4
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 6.0
+    }
+  ],
+  "178": [
+    {
+      "name": "Groundnut",
+      "area_1000ha": 450.8
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 98.8
+    },
+    {
+      "name": "Cotton",
+      "area_1000ha": 77.5
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 74.8
+    },
+    {
+      "name": "Rabi Sorghum",
+      "area_1000ha": 14.4
+    },
+    {
+      "name": "Sorghum",
+      "area_1000ha": 14.4
+    }
+  ],
+  "81": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 175.3
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 97.5
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 50.0
+    },
+    {
+      "name": "Soyabean",
+      "area_1000ha": 30.8
+    },
+    {
+      "name": "Barley",
+      "area_1000ha": 15.9
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 14.0
+    }
+  ],
+  "49": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 195.1
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 145.2
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 97.0
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 15.5
+    },
+    {
+      "name": "Pearl Millet",
+      "area_1000ha": 7.2
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 2.5
+    }
+  ],
+  "86": [
+    {
+      "name": "Maize",
+      "area_1000ha": 270.3
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 108.4
+    },
+    {
+      "name": "Finger Millet",
+      "area_1000ha": 73.4
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 66.0
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 38.2
+    },
+    {
+      "name": "Onion",
+      "area_1000ha": 35.4
+    }
+  ],
+  "5": [
+    {
+      "name": "Groundnut",
+      "area_1000ha": 323.4
+    },
+    {
+      "name": "Cotton",
+      "area_1000ha": 197.3
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 14.2
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 11.0
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 10.4
+    },
+    {
+      "name": "Castor",
+      "area_1000ha": 7.9
+    }
+  ],
+  "560": [
+    {
+      "name": "Soyabean",
+      "area_1000ha": 405.5
+    },
+    {
+      "name": "Cotton",
+      "area_1000ha": 272.1
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 183.1
+    },
+    {
+      "name": "Sorghum",
+      "area_1000ha": 182.8
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 130.3
+    },
+    {
+      "name": "Rabi Sorghum",
+      "area_1000ha": 113.6
+    }
+  ],
+  "457": [
+    {
+      "name": "Rice",
+      "area_1000ha": 384.6
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 30.8
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 27.1
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 13.8
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 1.3
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 1.2
+    }
+  ],
+  "497": [
+    {
+      "name": "Rice",
+      "area_1000ha": 260.4
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 103.9
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 39.9
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 14.3
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 9.7
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 0.6
+    }
+  ],
+  "343": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 97.2
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 30.0
+    },
+    {
+      "name": "Soyabean",
+      "area_1000ha": 23.5
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 16.5
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 12.4
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 11.4
+    }
+  ],
+  "96": [
+    {
+      "name": "Rice",
+      "area_1000ha": 20.8
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 20.2
+    },
+    {
+      "name": "Finger Millet",
+      "area_1000ha": 7.6
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 3.1
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 3.0
+    },
+    {
+      "name": "Soyabean",
+      "area_1000ha": 2.9
+    }
+  ],
+  "95": [
+    {
+      "name": "Chickpea",
+      "area_1000ha": 185.8
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 81.6
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 75.7
+    },
+    {
+      "name": "Soyabean",
+      "area_1000ha": 66.5
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 36.2
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 5.1
+    }
+  ],
+  "493": [
+    {
+      "name": "Rice",
+      "area_1000ha": 110.4
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 5.8
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 4.5
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 2.8
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 1.9
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 0.2
+    }
+  ],
+  "123": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 229.7
+    },
+    {
+      "name": "Pearl Millet",
+      "area_1000ha": 88.8
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 56.5
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 28.8
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 24.1
+    },
+    {
+      "name": "Barley",
+      "area_1000ha": 10.6
+    }
+  ],
+  "475": [
+    {
+      "name": "Rice",
+      "area_1000ha": 379.1
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 204.3
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 76.4
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 23.8
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 11.0
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 5.0
+    }
+  ],
+  "228": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 214.1
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 76.6
+    },
+    {
+      "name": "Pearl Millet",
+      "area_1000ha": 73.5
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 46.2
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 45.7
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 15.3
+    }
+  ],
+  "467": [
+    {
+      "name": "Sorghum",
+      "area_1000ha": 521.3
+    },
+    {
+      "name": "Rabi Sorghum",
+      "area_1000ha": 500.3
+    },
+    {
+      "name": "Cotton",
+      "area_1000ha": 348.5
+    },
+    {
+      "name": "Soyabean",
+      "area_1000ha": 181.3
+    },
+    {
+      "name": "Pearl Millet",
+      "area_1000ha": 152.7
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 138.4
+    }
+  ],
+  "293": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 278.0
+    },
+    {
+      "name": "Soyabean",
+      "area_1000ha": 216.2
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 183.0
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 12.6
+    },
+    {
+      "name": "Onion",
+      "area_1000ha": 9.5
+    },
+    {
+      "name": "Kharif Sorghum",
+      "area_1000ha": 7.0
+    }
+  ],
+  "503": [
+    {
+      "name": "Rice",
+      "area_1000ha": 214.2
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 45.9
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 31.0
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 10.8
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 10.4
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 4.2
+    }
+  ],
+  "11": [
+    {
+      "name": "Rice",
+      "area_1000ha": 121.7
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 23.5
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 9.3
+    },
+    {
+      "name": "Finger Millet",
+      "area_1000ha": 4.3
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 3.5
+    },
+    {
+      "name": "Sorghum",
+      "area_1000ha": 0.8
+    }
+  ],
+  "476": [
+    {
+      "name": "Rice",
+      "area_1000ha": 28.3
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 12.7
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 3.9
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 0.4
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 0.4
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 0.2
+    }
+  ],
+  "13": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 169.8
+    },
+    {
+      "name": "Pearl Millet",
+      "area_1000ha": 151.0
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 74.4
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 58.1
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 12.9
+    },
+    {
+      "name": "Barley",
+      "area_1000ha": 8.0
+    }
+  ],
+  "743": [
+    {
+      "name": "Rice",
+      "area_1000ha": 273.1
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 33.4
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 32.3
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 24.4
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 7.4
+    },
+    {
+      "name": "Linseed",
+      "area_1000ha": 1.1
+    }
+  ],
+  "533": [
+    {
+      "name": "Rice",
+      "area_1000ha": 213.9
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 46.5
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 36.7
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 9.7
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 8.9
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 2.8
+    }
+  ],
+  "570": [
+    {
+      "name": "Rice",
+      "area_1000ha": 273.2
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 10.5
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 4.7
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 1.4
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 1.1
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 1.1
+    }
+  ],
+  "232": [
+    {
+      "name": "Rice",
+      "area_1000ha": 215.1
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 90.0
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 47.5
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 34.0
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 28.8
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 18.9
+    }
+  ],
+  "93": [
+    {
+      "name": "Rice",
+      "area_1000ha": 80.3
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 1.8
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 0.3
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 0.0
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 0.0
+    }
+  ],
+  "8": [
+    {
+      "name": "Cotton",
+      "area_1000ha": 141.9
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 92.9
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 37.5
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 19.8
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 19.5
+    },
+    {
+      "name": "Soyabean",
+      "area_1000ha": 8.9
+    }
+  ],
+  "543": [
+    {
+      "name": "Rice",
+      "area_1000ha": 284.7
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 234.9
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 74.2
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 27.9
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 18.6
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 8.8
+    }
+  ],
+  "234": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 200.4
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 46.1
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 45.3
+    },
+    {
+      "name": "Pearl Millet",
+      "area_1000ha": 37.6
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 11.8
+    },
+    {
+      "name": "Barley",
+      "area_1000ha": 3.9
+    }
+  ],
+  "7": [
+    {
+      "name": "Cotton",
+      "area_1000ha": 324.7
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 95.6
+    },
+    {
+      "name": "Pearl Millet",
+      "area_1000ha": 34.8
+    },
+    {
+      "name": "Onion",
+      "area_1000ha": 28.3
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 18.9
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 13.9
+    }
+  ],
+  "548": [
+    {
+      "name": "Cotton",
+      "area_1000ha": 299.5
+    },
+    {
+      "name": "Soyabean",
+      "area_1000ha": 273.5
+    },
+    {
+      "name": "Sorghum",
+      "area_1000ha": 124.1
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 123.6
+    },
+    {
+      "name": "Kharif Sorghum",
+      "area_1000ha": 88.4
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 77.2
+    }
+  ],
+  "304": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 200.7
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 133.1
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 99.7
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 40.0
+    },
+    {
+      "name": "Soyabean",
+      "area_1000ha": 31.0
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 13.7
+    }
+  ],
+  "605": [
+    {
+      "name": "Rice",
+      "area_1000ha": 418.0
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 156.6
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 83.0
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 44.4
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 16.6
+    },
+    {
+      "name": "Sesamum",
+      "area_1000ha": 1.4
+    }
+  ],
+  "355": [
+    {
+      "name": "Cotton",
+      "area_1000ha": 159.2
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 67.5
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 52.9
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 45.0
+    },
+    {
+      "name": "Castor",
+      "area_1000ha": 40.7
+    },
+    {
+      "name": "Soyabean",
+      "area_1000ha": 22.5
+    }
+  ],
+  "109": [
+    {
+      "name": "Maize",
+      "area_1000ha": 251.6
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 237.6
+    },
+    {
+      "name": "Sorghum",
+      "area_1000ha": 170.0
+    },
+    {
+      "name": "Rabi Sorghum",
+      "area_1000ha": 165.0
+    },
+    {
+      "name": "Cotton",
+      "area_1000ha": 148.1
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 78.4
+    }
+  ],
+  "555": [
+    {
+      "name": "Soyabean",
+      "area_1000ha": 508.2
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 362.8
+    },
+    {
+      "name": "Sorghum",
+      "area_1000ha": 286.4
+    },
+    {
+      "name": "Rabi Sorghum",
+      "area_1000ha": 195.1
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 181.6
+    },
+    {
+      "name": "Kharif Sorghum",
+      "area_1000ha": 91.3
+    }
+  ],
+  "16": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 306.2
+    },
+    {
+      "name": "Pearl Millet",
+      "area_1000ha": 135.3
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 107.6
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 69.7
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 34.9
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 21.9
+    }
+  ],
+  "506": [
+    {
+      "name": "Wheat",
+      "area_1000ha": 247.7
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 165.7
+    },
+    {
+      "name": "Cotton",
+      "area_1000ha": 63.9
+    },
+    {
+      "name": "Pearl Millet",
+      "area_1000ha": 14.3
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 5.1
+    },
+    {
+      "name": "Barley",
+      "area_1000ha": 0.3
+    }
+  ],
+  "248": [
+    {
+      "name": "Chickpea",
+      "area_1000ha": 101.5
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 92.0
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 62.5
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 51.1
+    },
+    {
+      "name": "Soyabean",
+      "area_1000ha": 43.5
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 39.1
+    }
+  ],
+  "82": [
+    {
+      "name": "Maize",
+      "area_1000ha": 263.5
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 181.0
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 66.0
+    },
+    {
+      "name": "Cotton",
+      "area_1000ha": 47.6
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 38.9
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 34.0
+    }
+  ],
+  "568": [
+    {
+      "name": "Rice",
+      "area_1000ha": 401.1
+    },
+    {
+      "name": "Wheat",
+      "area_1000ha": 221.2
+    },
+    {
+      "name": "Sugarcane",
+      "area_1000ha": 167.0
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 88.6
+    },
+    {
+      "name": "Potatoes",
+      "area_1000ha": 18.0
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 6.6
+    }
+  ],
+  "287": [
+    {
+      "name": "Rice",
+      "area_1000ha": 556.3
+    },
+    {
+      "name": "Rapeseed And Mustard",
+      "area_1000ha": 62.5
+    },
+    {
+      "name": "Pigeonpea",
+      "area_1000ha": 54.7
+    },
+    {
+      "name": "Chickpea",
+      "area_1000ha": 43.3
+    },
+    {
+      "name": "Maize",
+      "area_1000ha": 39.6
+    },
+    {
+      "name": "Groundnut",
+      "area_1000ha": 17.5
+    }
+  ],
+  "277": [
+    {
+      "name": "Chickpea",
+      "area_1000ha": 187.5
+    },
+    {
+      "name": "Rice",
+      "area_1000ha": 167.4
+    },
+    {
+      "name": "Pearl Millet",
+      "area_1000ha": 118.9
+    },
+    {
+      "name": "Sorghum",
+      "area_1000ha": 114.3
+    },
+    {
+      "name": "Rabi Sorghum",
+      "area_1000ha": 112.8
+    },
+    {
+      "name": "Cotton",
+      "area_1000ha": 92.5
+    }
+  ]
+}
