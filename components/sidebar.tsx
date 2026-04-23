@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 import { Home, Bell, BookOpen, Search, Briefcase } from "lucide-react";
 import { openDistrictSearch } from "@/components/district-search";
 import { ThemeToggle } from "@/components/theme-toggle";
+import { Logo } from "@/components/logo";
 
 const NAV_ITEMS = [
   { href: "/dashboard", label: "Overview", icon: Home },
@@ -20,9 +21,9 @@ export function Sidebar() {
       {/* Desktop sidebar */}
       <nav className="hidden md:flex h-screen w-[68px] flex-shrink-0 flex-col items-center py-4 gap-1 sticky top-0"
            style={{ background: "linear-gradient(180deg, var(--dicra-brand) 0%, #0A2E1A 100%)" }}>
-        <Link href="/" className="mb-6 flex h-9 w-9 items-center justify-center rounded-[var(--dicra-radius-md)] font-black text-sm text-white"
-              style={{ background: "linear-gradient(135deg, var(--dicra-accent), #059669)", boxShadow: "0 4px 12px rgba(5,150,105,0.3)" }}>
-          D
+        <Link href="/" className="mb-6 flex h-9 w-9 items-center justify-center"
+              style={{ filter: "drop-shadow(0 2px 6px rgba(5,150,105,0.4))" }}>
+          <Logo size={36} />
         </Link>
 
         <button
