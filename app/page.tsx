@@ -100,16 +100,9 @@ export default async function LandingPage() {
           >
             Comprehensive District-Level Climate Analysis for India
           </h1>
-          <p
-            className="mt-5 text-[17px] leading-relaxed max-w-[560px]"
-            style={{ color: "rgba(255,255,255,0.7)" }}
-          >
-            Actionable insights across {districtCount ?? 784} districts — built
-            for bankers, state planners, and climate researchers.
-          </p>
           <Link
             href="/dashboard"
-            className="mt-10 inline-flex items-center gap-2 px-8 py-4 rounded-full text-[15px] font-bold transition-all hover:scale-105"
+            className="mt-8 inline-flex items-center gap-2 px-8 py-4 rounded-full text-[15px] font-bold transition-all hover:scale-105"
             style={{
               background: "var(--dicra-accent)",
               color: "var(--dicra-brand)",
@@ -240,23 +233,6 @@ export default async function LandingPage() {
             ))}
           </div>
 
-          {/* Transparency banner */}
-          <ScrollReveal delay={100}>
-            <div
-              className="mt-14 rounded-2xl p-8 text-center text-white"
-              style={{
-                background:
-                  "linear-gradient(135deg, var(--dicra-brand) 0%, #0A2E1A 100%)",
-              }}
-            >
-              <p className="text-[14px] leading-relaxed max-w-[600px] mx-auto opacity-90">
-                <strong>Transparency guarantee:</strong> DRISHTI does not generate
-                or estimate data. All scores are computed from published datasets
-                using transparent, peer-reviewed methodologies with full source
-                provenance.
-              </p>
-            </div>
-          </ScrollReveal>
         </div>
       </section>
 
