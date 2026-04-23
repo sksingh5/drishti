@@ -26,12 +26,16 @@ CACHE_DIR = Path(__file__).parent.parent / "data" / "cache" / "gee_ndvi"
 
 
 def initialize_gee():
-    project = os.environ.get("GEE_PROJECT", "climaterisk-494201")
     try:
-        ee.Initialize(project=project)
+        from src.gee_service_auth import authenticate_service_account
+        authenticate_service_account()
     except Exception:
-        ee.Authenticate()
-        ee.Initialize(project=project)
+        project = os.environ.get("GEE_PROJECT", "climaterisk-494201")
+        try:
+            ee.Initialize(project=project)
+        except Exception:
+            ee.Authenticate()
+            ee.Initialize(project=project)
 
 
 def fetch_ndvi_by_district(year: int, month: int) -> pd.DataFrame:

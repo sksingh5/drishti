@@ -1,0 +1,62 @@
+name: Monthly Climate Data Pipeline
+
+on:
+  schedule:
+    - cron: '0 2 5 * *'
+  workflow_dispatch:
+    inputs:
+      year:
+        description: 'Year (e.g. 2026)'
+        required: false
+      month:
+        description: 'Month (e.g. 3)'
+        required: false
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+          cache-dependency-path: pipeline/requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r pipeline/requirements.txt
+
+      - name: Determine target month
+        id: target
+        run: |
+          if [ -n "${{ inputs.year }}" ] && [ -n "${{ inputs.month }}" ]; then
+            echo "year=${{ inputs.year }}" >> $GITHUB_OUTPUT
+            echo "month=${{ inputs.month }}" >> $GITHUB_OUTPUT
+          else
+            PREV=$(date -d "last month" +"%Y %m")
+            echo "year=$(echo $PREV | cut -d' ' -f1)" >> $GITHUB_OUTPUT
+            echo "month=$(echo $PREV | cut -d' ' -f2 | sed 's/^0//')" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Run pipeline
+        working-directory: pipeline
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          GEE_PROJECT: ${{ secrets.GEE_PROJECT }}
+          GEE_SERVICE_ACCOUNT_EMAIL: ${{ secrets.GEE_SERVICE_ACCOUNT_EMAIL }}
+          GEE_PRIVATE_KEY: ${{ secrets.GEE_PRIVATE_KEY }}
+          CDS_URL: ${{ secrets.CDS_URL }}
+          CDS_KEY: ${{ secrets.CDS_KEY }}
+        run: python -m src.run_pipeline ${{ steps.target.outputs.year }} ${{ steps.target.outputs.month }}
+
+      - name: Summary
+        if: always()
+        run: |
+          echo "## Pipeline Run: ${{ steps.target.outputs.year }}-${{ steps.target.outputs.month }}" >> $GITHUB_STEP_SUMMARY
+          echo "Status: ${{ job.status }}" >> $GITHUB_STEP_SUMMARY
