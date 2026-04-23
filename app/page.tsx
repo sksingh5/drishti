@@ -110,23 +110,6 @@ export default async function LandingPage() {
             <ArrowRight className="w-5 h-5" />
           </Link>
 
-          {/* Credibility strip */}
-          <div className="mt-12 flex items-center gap-8 flex-wrap justify-center">
-            {[
-              `${INDICATOR_LIST.length} Indicators`,
-              `${districtCount ?? 784} Districts`,
-              `${stateCount ?? 36} States & UTs`,
-              "Peer-Reviewed",
-            ].map((label) => (
-              <span
-                key={label}
-                className="text-[12px] font-medium tracking-wide"
-                style={{ color: "rgba(255,255,255,0.4)" }}
-              >
-                {label}
-              </span>
-            ))}
-          </div>
         </div>
       </section>
 
