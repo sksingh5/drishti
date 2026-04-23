@@ -587,6 +587,13 @@ export default async function LandingPage() {
             <span><span className="font-bold tracking-wide">DRISHTI</span> · District Risk Intelligence System for Hazard Tracking in India</span>
           </div>
           <div className="flex items-center gap-4">
+            <Link
+              href="/about"
+              className="hover:opacity-70 transition-opacity"
+              style={{ color: "var(--dicra-text-muted)" }}
+            >
+              About
+            </Link>
             <span style={{ color: "var(--dicra-text-faint)" }}>Built by</span>
             <a
               href="https://www.intellecap.com"
