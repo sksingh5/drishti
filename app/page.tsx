@@ -410,7 +410,7 @@ export default async function LandingPage() {
                     className="text-[13px] leading-relaxed"
                     style={{ color: "var(--dicra-text-secondary)" }}
                   >
-                    {ind.explainer.split(". ")[0]}.
+                    {ind.explainer}
                   </p>
                   <div className="mt-4 flex items-center gap-2 flex-wrap">
                     <span

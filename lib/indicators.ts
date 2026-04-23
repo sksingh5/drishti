@@ -32,7 +32,7 @@ export const INDICATORS: Record<IndicatorType, IndicatorMeta> = {
     resolution: "0.25°",
     frequency: "Monthly",
     reliability: "high",
-    explainer: "Measures how current monthly rainfall deviates from the 5-year climatological mean (2019-2023) for each district. Higher score indicates greater anomaly — both excess and deficit increase risk. WMO recommends 30-year normals; our 5-year baseline is an interim measure.",
+    explainer: "Tracks whether your district is getting unusually high or low rainfall compared to what's normal. A high score means rainfall is far from normal — either too much (flood risk) or too little (drought risk). This directly affects crop health, water availability, and farming decisions.",
     methodology: "IMD 0.25° gridded daily rainfall aggregated to monthly district-level totals via zonal statistics. Per-district monthly baseline computed from 2019-2023 means. Anomaly = |current - baseline_mean| / baseline_mean, percentile-ranked across all districts.",
   },
   heat_stress: {
@@ -44,7 +44,7 @@ export const INDICATORS: Record<IndicatorType, IndicatorMeta> = {
     resolution: "1°",
     frequency: "Monthly",
     reliability: "high",
-    explainer: "Mean daily maximum temperature scored against historical distribution. Higher scores indicate extreme heat conditions affecting public health and crop yields.",
+    explainer: "Measures how extreme daily temperatures are in your district. A high score means dangerously hot conditions that can harm crops, reduce worker productivity, and increase health risks — especially for outdoor laborers and the elderly.",
     methodology: "IMD gridded daily Tmax, monthly mean computed, percentile-scored against all-district distribution for the month.",
   },
   drought_index: {
@@ -56,7 +56,7 @@ export const INDICATORS: Record<IndicatorType, IndicatorMeta> = {
     resolution: "District",
     frequency: "Monthly",
     reliability: "derived",
-    explainer: "Drought risk derived from rainfall deficit analysis. Currently uses cross-district percentile ranking of 3-month accumulated rainfall (low rainfall = high drought risk). Will upgrade to full SPI-3 (gamma-fitted) when 10+ years of monthly data are available.",
+    explainer: "Indicates how dry your district has been over the past 3 months compared to the rest of India. A high score signals prolonged rainfall deficit — meaning wells may run low, crops face water stress, and irrigation demand increases.",
     methodology: "3-month accumulated rainfall from IMD, percentile-ranked across all districts. Inverted scoring: lowest rainfall districts score highest. Upgrade path: gamma distribution SPI-3 requires 10+ years of same-month history per district (WMO guideline).",
   },
   vegetation_health: {
@@ -68,7 +68,7 @@ export const INDICATORS: Record<IndicatorType, IndicatorMeta> = {
     resolution: "1km",
     frequency: "Monthly",
     reliability: "high",
-    explainer: "Satellite-derived NDVI from MODIS MOD13A3 at 1km resolution. Low NDVI indicates vegetation stress — a leading indicator of crop failure, drought impact, or land degradation.",
+    explainer: "Shows how green and healthy the vegetation in your district is, measured by satellites. A high score means vegetation is stressed or dying — an early warning sign of crop failure, overgrazing, or the effects of drought and heat.",
     methodology: "MOD13A3 monthly 1km NDVI via Google Earth Engine. Scaled by 0.0001, aggregated to district-level zonal means using FAO GAUL boundaries. Inverted percentile scoring: low NDVI = high risk.",
   },
   flood_risk: {
@@ -80,7 +80,7 @@ export const INDICATORS: Record<IndicatorType, IndicatorMeta> = {
     resolution: "District",
     frequency: "Monthly",
     reliability: "derived",
-    explainer: "Composite of rainfall anomaly (40%) and soil moisture saturation (40%). An elevation factor (20%) is included but currently uses a neutral placeholder — DEM integration is pending. Actual flood risk may vary significantly with topography.",
+    explainer: "Estimates your district's exposure to flooding based on recent heavy rainfall and soil saturation. A high score means the ground is already wet and more rain could cause waterlogging, crop damage, or displacement.",
     methodology: "Weighted composite: 0.4 × rainfall_score + 0.4 × (100 − soil_moisture_score) + 0.2 × elevation_score. Elevation currently uses a placeholder value of 50 (neutral). Real elevation data from SRTM DEM will replace this in a future update.",
   },
   soil_moisture: {
@@ -92,7 +92,7 @@ export const INDICATORS: Record<IndicatorType, IndicatorMeta> = {
     resolution: "0.1°",
     frequency: "Monthly",
     reliability: "high",
-    explainer: "Volumetric soil water content from ERA5-Land reanalysis at 0.1° resolution. Low soil moisture indicates drought stress for agriculture and increased wildfire risk.",
+    explainer: "Measures how much water is in the topsoil across your district. A high score means the soil is unusually dry — bad news for crops that depend on soil moisture, and an early indicator of drought conditions.",
     methodology: "ERA5-Land monthly averaged volumetric soil water layer 1 (swvl1) from Copernicus CDS. Zonal statistics per district. Inverted percentile scoring: low moisture = high risk.",
   },
   vulnerability: {
@@ -104,7 +104,7 @@ export const INDICATORS: Record<IndicatorType, IndicatorMeta> = {
     resolution: "District",
     frequency: "Monthly",
     reliability: "derived",
-    explainer: "Composite vulnerability score combining rainfall anomaly and vegetation health divergence. Districts where climate stress is high but vegetation is also stressed indicate systemic agricultural vulnerability.",
+    explainer: "A combined measure of how exposed your district is to multiple climate stresses at once. A high score means both rainfall patterns and vegetation health are abnormal — districts with high vulnerability need the most urgent attention.",
     methodology: "Vulnerability = mean(rainfall_anomaly_score, vegetation_health_score). Captures NDVI-rainfall divergence — districts with both high rainfall anomaly and vegetation stress are flagged. Scale: 0-100 (mapped to 1-10 for display).",
   },
 };
